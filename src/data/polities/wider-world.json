@@ -1,113 +1,113 @@
 [
   {"names":["Oyo","Oyo Empire"],"wiki":"Oyo_Empire","britannica":"place/Oyo-empire","eras":[
-    {"from":1300,"to":1600,"title":"A Yoruba kingdom","text":"Oyo is one of several Yoruba kingdoms in today's south-western Nigeria, looking to the holy city of Ife. It is driven from its capital by the Nupe in the 16th century and rebuilds."},
-    {"from":1600,"to":1836,"title":"The Oyo Empire","text":"With a powerful cavalry, Oyo dominates the region from the Niger to Dahomey, which pays it tribute, and grows rich from trade with the coast, including the Atlantic slave trade. Civil war and the Sokoto jihad bring its collapse in the 1830s."}
+    {"from":1300,"to":1600,"title":"A Yoruba kingdom","text":"Oyo is one of several Yoruba kingdoms in today's south-western Nigeria, looking to the holy city of Ife. It is driven from its capital by the Nupe in the 16th century and rebuilds.","sources":[{"title":"Oyo Empire","url":"https://en.wikipedia.org/wiki/Oyo_Empire","publisher":"Wikipedia"}]},
+    {"from":1600,"to":1836,"title":"The Oyo Empire","text":"With a powerful cavalry, Oyo dominates the region from the Niger to Dahomey, which pays it tribute, and grows rich from trade with the coast, including the Atlantic slave trade. Civil war and the Sokoto jihad bring its collapse in the 1830s.","sources":[{"title":"Oyo Empire","url":"https://en.wikipedia.org/wiki/Oyo_Empire","publisher":"Wikipedia"}]}
   ]},
   {"names":["Asante","Ashanti Empire"],"wiki":"Asante_Empire","eras":[
-    {"from":1701,"to":1824,"title":"The Golden Stool","text":"Osei Tutu and the priest Okomfo Anokye unite the Akan states around Kumasi. Asante grows rich on gold and on trade with European forts on the coast, and builds a sophisticated state with roads and a bureaucracy."},
-    {"from":1824,"to":1902,"title":"Wars with Britain","text":"Asante fights a series of wars with Britain; Kumasi is burned in 1874, and after the War of the Golden Stool led by Queen Mother Yaa Asantewaa (1900) Asante is annexed to the Gold Coast colony."}
+    {"from":1701,"to":1824,"title":"The Golden Stool","text":"Osei Tutu and the priest Okomfo Anokye unite the Akan states around Kumasi. Asante grows rich on gold and on trade with European forts on the coast, and builds a sophisticated state with roads and a bureaucracy.","sources":[{"title":"Asante Empire","url":"https://en.wikipedia.org/wiki/Asante_Empire","publisher":"Wikipedia"}]},
+    {"from":1824,"to":1902,"title":"Wars with Britain","text":"Asante fights a series of wars with Britain; Kumasi is burned in 1874, and after the War of the Golden Stool led by Queen Mother Yaa Asantewaa (1900) Asante is annexed to the Gold Coast colony.","sources":[{"title":"Asante Empire","url":"https://en.wikipedia.org/wiki/Asante_Empire","publisher":"Wikipedia"}]}
   ]},
   {"names":["Hausa States","Hausa Kingdoms"],"wiki":"Hausa_Kingdoms","britannica":"place/Hausa-states","eras":[
-    {"from":1000,"to":1808,"title":"The Hausa city-states","text":"Walled city-states such as Kano, Katsina and Zazzau in northern Nigeria grow rich on trans-Saharan trade, cloth and leatherwork, often paying tribute to Songhai or Kanem-Bornu, until the Sokoto jihad overthrows their kings."}
+    {"from":1000,"to":1808,"title":"The Hausa city-states","text":"The Hausa Kingdoms, a group of states between the Niger River and Lake Chad in today's northern Nigeria, lie between the great empires of the western and central Sahel, until the Fulani jihads of the early 19th century.","sources":[{"title":"Hausa Kingdoms","url":"https://en.wikipedia.org/wiki/Hausa_Kingdoms","publisher":"Wikipedia"},{"title":"Sokoto Caliphate","url":"https://en.wikipedia.org/wiki/Sokoto_Caliphate","publisher":"Wikipedia"}]}
   ]},
   {"names":["Sokoto Caliphate","Fulani Empire"],"wiki":"Sokoto_Caliphate","eras":[
-    {"from":1804,"to":1903,"title":"The Sokoto Caliphate","text":"Founded by Usman dan Fodio's jihad, this federation of emirates is one of the largest and most populous states of 19th-century Africa, a centre of Islamic scholarship, until the British conquer it in 1903."}
+    {"from":1804,"to":1903,"title":"The Sokoto Caliphate","text":"Founded by Usman dan Fodio's jihad, this federation of emirates is one of the largest and most populous states of 19th-century Africa, a centre of Islamic scholarship, until the British conquer it in 1903.","sources":[{"title":"Sokoto Caliphate","url":"https://en.wikipedia.org/wiki/Sokoto_Caliphate","publisher":"Wikipedia"}]}
   ]},
   {"names":["Mossi States","Mossi Kingdoms"],"wiki":"Mossi_Kingdoms","britannica":"place/Mossi-states","eras":[
-    {"from":1200,"to":1896,"title":"The Mossi kingdoms","text":"Horse-riding Mossi kingdoms centred on Ouagadougou in today's Burkina Faso resist the Mali and Songhai empires and keep their traditional religion, until French conquest in 1896."}
+    {"from":1200,"to":1896,"title":"The Mossi kingdoms","text":"Horse-riding Mossi kingdoms centred on Ouagadougou in today's Burkina Faso resist the Mali and Songhai empires and keep their traditional religion, until French conquest in 1896.","sources":[{"title":"Mossi Kingdoms","url":"https://en.wikipedia.org/wiki/Mossi_Kingdoms","publisher":"Wikipedia"}]}
   ]},
   {"names":["Mwenemutapa","Kingdom of Mutapa"],"wiki":"Mutapa_Empire","britannica":"place/Matapa-Southern-African-empire","eras":[
-    {"from":1430,"to":1760,"title":"Mutapa","text":"A Shona state that succeeds Great Zimbabwe, controlling gold mines and the trade to the Swahili coast. The Portuguese try to conquer it in the 16th–17th centuries and make it a vassal for a time."}
+    {"from":1430,"to":1760,"title":"Mutapa","text":"A Shona state that succeeds Great Zimbabwe, controlling gold mines and the trade to the Swahili coast. The Portuguese try to conquer it in the 16th–17th centuries and make it a vassal for a time.","sources":[{"title":"Mutapa Empire","url":"https://en.wikipedia.org/wiki/Mutapa_Empire","publisher":"Wikipedia"}]}
   ]},
   {"names":["Ndongo","Kingdom of Ndongo"],"wiki":"Kingdom_of_Ndongo","britannica":"place/Ndongo-historical-kingdom-Africa","eras":[
-    {"from":1500,"to":1671,"title":"Ndongo and Queen Nzinga","text":"A Mbundu kingdom in today's Angola that fights the Portuguese colony of Luanda, a major source of the Atlantic slave trade. Queen Nzinga (ruled 1624–63) resists for four decades from her base in Matamba."}
+    {"from":1500,"to":1671,"title":"Ndongo and Queen Nzinga","text":"A Mbundu kingdom in today's Angola that fights the Portuguese colony of Luanda, a major source of the Atlantic slave trade. Queen Nzinga (ruled 1624–1663) resists for four decades from her base in Matamba.","sources":[{"title":"Kingdom of Ndongo","url":"https://en.wikipedia.org/wiki/Kingdom_of_Ndongo","publisher":"Wikipedia"},{"title":"Nzinga of Ndongo and Matamba","url":"https://en.wikipedia.org/wiki/Nzinga_of_Ndongo_and_Matamba","publisher":"Wikipedia"}]}
   ]},
   {"names":["Luba","Lunda","Luba Empire","Lunda Empire"],"wiki":"Luba_Empire","eras":[
-    {"from":1585,"to":1889,"title":"The Luba and Lunda states","text":"In the savannas of the southern Congo basin, the Luba kingdom and its offshoot the Lunda empire build networks of tributary chiefdoms, trading copper, salt and later slaves and ivory with both African coasts."}
+    {"from":1585,"to":1889,"title":"The Luba and Lunda states","text":"In the savannas of the southern Congo basin, the Luba kingdom and its offshoot the Lunda empire build networks of tributary chiefdoms, trading copper, salt and later slaves and ivory with both African coasts.","sources":[{"title":"Luba Empire","url":"https://en.wikipedia.org/wiki/Luba_Empire","publisher":"Wikipedia"}]}
   ]},
   {"names":["Zulu","Zululand","Zulu Kingdom"],"wiki":"Zulu_Kingdom","britannica":"place/Zululand","eras":[
-    {"from":1816,"to":1879,"title":"The Zulu Kingdom","text":"Shaka turns the Zulu into a military power that dominates south-east Africa. His successors face Boer settlers and the British, who are defeated at Isandlwana (1879) before conquering Zululand the same year."}
+    {"from":1816,"to":1879,"title":"The Zulu Kingdom","text":"Shaka turns the Zulu into a military power that dominates south-east Africa. His successors face Boer settlers and the British, who are defeated at Isandlwana (1879) before conquering Zululand the same year.","sources":[{"title":"Zulu Kingdom","url":"https://en.wikipedia.org/wiki/Zulu_Kingdom","publisher":"Wikipedia"}]}
   ]},
   {"names":["Dahomey","Kingdom of Dahomey"],"wiki":"Dahomey","britannica":"place/Dahomey-historical-kingdom-Africa","eras":[
-    {"from":1600,"to":1904,"title":"Dahomey","text":"A Fon kingdom in today's Benin, known for its all-female military regiments, which takes over the coastal slave ports in the 1720s. France conquers it in 1894."}
+    {"from":1600,"to":1904,"title":"Dahomey","text":"A Fon kingdom in today's Benin, known for its all-female military regiments, which takes over the coastal slave ports in the 1720s. France conquers it in 1894.","sources":[{"title":"Dahomey","url":"https://en.wikipedia.org/wiki/Dahomey","publisher":"Wikipedia"}]}
   ]},
   {"names":["Buganda","Kingdom of Buganda"],"wiki":"Buganda","britannica":"place/Buganda","eras":[
-    {"from":1300,"to":1894,"title":"Buganda","text":"A centralised kingdom on the northern shore of Lake Victoria that expands in the 18th–19th centuries; its kabaka welcomes Arab traders and then Christian missionaries, before it becomes the core of the British Uganda Protectorate."}
+    {"from":1300,"to":1894,"title":"Buganda","text":"A centralised kingdom on the northern shore of Lake Victoria that expands in the 18th–19th centuries; its kabaka welcomes Arab traders and then Christian missionaries, before it becomes the core of the British Uganda Protectorate.","sources":[{"title":"Buganda","url":"https://en.wikipedia.org/wiki/Buganda","publisher":"Wikipedia"}]}
   ]},
   {"names":["Funj","Funj Sultanate","Sultanate of Sennar"],"wiki":"Funj_Sultanate","britannica":"topic/Funj-dynasty","eras":[
-    {"from":1504,"to":1821,"title":"The Sultanate of Sennar","text":"The Funj conquer the last Christian Nubian kingdom and rule the middle Nile from Sennar, until Muhammad Ali's Egyptian army conquers Sudan in 1821."}
+    {"from":1504,"to":1821,"title":"The Sultanate of Sennar","text":"The Funj conquer the last Christian Nubian kingdom and rule the middle Nile from Sennar, until Muhammad Ali's Egyptian army conquers Sudan in 1821.","sources":[{"title":"Funj Sultanate","url":"https://en.wikipedia.org/wiki/Funj_Sultanate","publisher":"Wikipedia"}]}
   ]},
   {"names":["Darfur","Sultanate of Darfur"],"wiki":"Sultanate_of_Darfur","eras":[
-    {"from":1603,"to":1916,"title":"Sultanate of Darfur","text":"The Keira dynasty rules Darfur in western Sudan, trading on the 'Forty Days Road' caravan route to Egypt, until it is absorbed into Anglo-Egyptian Sudan."}
+    {"from":1603,"to":1916,"title":"Sultanate of Darfur","text":"The Keira dynasty rules Darfur in western Sudan, trading on the 'Forty Days Road' caravan route to Egypt, until it is absorbed into Anglo-Egyptian Sudan.","sources":[{"title":"Sultanate of Darfur","url":"https://en.wikipedia.org/wiki/Sultanate_of_Darfur","publisher":"Wikipedia"}]}
   ]},
   {"names":["Adal","Adal Sultanate"],"wiki":"Adal_Sultanate","eras":[
-    {"from":1415,"to":1577,"title":"The Adal Sultanate","text":"A Muslim state based at Harar in the Horn of Africa. Under Imam Ahmad 'Gragn' (1529–43), with Ottoman muskets, it nearly conquers Christian Ethiopia, which survives with Portuguese help."}
+    {"from":1415,"to":1577,"title":"The Adal Sultanate","text":"A Muslim state based at Harar in the Horn of Africa. Under Imam Ahmad 'Gragn' (1529–43), with Ottoman muskets, it nearly conquers Christian Ethiopia, which survives with Portuguese help.","sources":[{"title":"Adal Sultanate","url":"https://en.wikipedia.org/wiki/Adal_Sultanate","publisher":"Wikipedia"}]}
   ]},
   {"names":["Merina Kingdom","Imerina","Madagascar"],"wiki":"Imerina","eras":[
-    {"from":1540,"to":1897,"title":"The Merina Kingdom","text":"Madagascar was settled by Austronesian seafarers from Borneo and by Africans. The highland Merina kingdom unifies most of the island in the 19th century under Radama I and Queen Ranavalona, until France annexes it in 1897."}
+    {"from":1540,"to":1897,"title":"The Merina Kingdom","text":"Madagascar was settled by Austronesian seafarers from Borneo and by Africans. The highland Merina kingdom unifies most of the island in the 19th century under Radama I and Queen Ranavalona, until France annexes it in 1897.","sources":[{"title":"Imerina","url":"https://en.wikipedia.org/wiki/Imerina","publisher":"Wikipedia"}]}
   ]},
   {"names":["Oman","Muscat","Muscat and Oman","Zanzibar","Sultanate of Zanzibar","Sultinate of Zanzibar","Trucial Oman"],"wiki":"History_of_Oman","britannica":"topic/history-of-Oman","eras":[
-    {"from":1650,"to":1856,"title":"An Indian Ocean empire","text":"Omanis drive the Portuguese from Muscat (1650) and from the Swahili coast, building a maritime empire whose sultan moves his court to Zanzibar, centre of the clove and East African slave trades."},
-    {"from":1856,"to":2025,"title":"Oman and Zanzibar","text":"The empire splits into the Sultanates of Oman and Zanzibar, both under British influence; Zanzibar joins Tanganyika to form Tanzania in 1964."}
+    {"from":1650,"to":1856,"title":"An Indian Ocean empire","text":"Omanis drive out the Portuguese and take over former Portuguese colonies in Southeast Africa. At its height Oman's empire reaches from the Persian Gulf to Zanzibar, centre of a slave trade on the Swahili coast.","sources":[{"title":"History of Oman","url":"https://en.wikipedia.org/wiki/History_of_Oman","publisher":"Wikipedia"}]},
+    {"from":1856,"to":2025,"title":"Oman and Zanzibar","text":"When Sultan Said bin Sultan dies in 1856 his sons quarrel over the succession, and with British mediation the empire is divided in 1861 into the Sultanates of Muscat and Oman and of Zanzibar.","sources":[{"title":"History of Oman","url":"https://en.wikipedia.org/wiki/History_of_Oman","publisher":"Wikipedia"}]}
   ]},
   {"names":["Malacca","Malacca Sultanate"],"wiki":"Malacca_Sultanate","britannica":"place/sultanate-of-Malacca","eras":[
-    {"from":1400,"to":1511,"title":"The Malacca Sultanate","text":"Founded by the prince Parameswara, Malacca becomes the great entrepôt of Southeast Asia, where ships from India, Arabia, China and the islands meet, and spreads Islam through the Malay world. The Portuguese seize it in 1511."}
+    {"from":1400,"to":1511,"title":"The Malacca Sultanate","text":"Founded by the prince Parameswara, Malacca becomes the great entrepôt of Southeast Asia, where ships from India, Arabia, China and the islands meet, and spreads Islam through the Malay world. The Portuguese seize it in 1511.","sources":[{"title":"Malacca Sultanate","url":"https://en.wikipedia.org/wiki/Malacca_Sultanate","publisher":"Wikipedia"}]}
   ]},
   {"names":["Aceh","Aceh Sultanate"],"wiki":"Aceh_Sultanate","eras":[
-    {"from":1496,"to":1903,"title":"The Aceh Sultanate","text":"A powerful Muslim sultanate on northern Sumatra that trades pepper and fights the Portuguese in Malacca; it resists Dutch conquest in a war lasting from 1873 to 1904."}
+    {"from":1496,"to":1903,"title":"The Aceh Sultanate","text":"A powerful Muslim sultanate on northern Sumatra that trades pepper and fights the Portuguese in Malacca; it resists Dutch conquest in a war lasting from 1873 to 1904.","sources":[{"title":"Aceh Sultanate","url":"https://en.wikipedia.org/wiki/Aceh_Sultanate","publisher":"Wikipedia"}]}
   ]},
   {"names":["Mataram","Mataram Kingdom"],"wiki":"Mataram_kingdom","eras":[
-    {"from":716,"to":1016,"title":"Mataram in Java","text":"Hindu and Buddhist dynasties in Central and East Java build the temples of Borobudur and Prambanan."}
+    {"from":716,"to":1016,"title":"Mataram in Java","text":"Hindu and Buddhist dynasties in Central and East Java build the temples of Borobudur and Prambanan.","sources":[{"title":"Mataram kingdom","url":"https://en.wikipedia.org/wiki/Mataram_kingdom","publisher":"Wikipedia"}]}
   ]},
   {"names":["Burma","Toungoo Empire","Konbaung dynasty"],"wiki":"History_of_Myanmar","eras":[
-    {"from":1510,"to":1752,"title":"Toungoo Burma","text":"The Toungoo kings, above all Bayinnaung (1550–81), build briefly the largest empire in Southeast Asian history."},
-    {"from":1752,"to":1885,"title":"The Konbaung dynasty","text":"A revived Burmese state sacks Ayutthaya (1767) but loses three wars to Britain, which annexes the whole country by 1885."},
-    {"from":1948,"to":2025,"title":"Independent Myanmar","text":"Independent from 1948, Burma is ruled by the military for most of the time since 1962."}
+    {"from":1510,"to":1752,"title":"Toungoo Burma","text":"The Toungoo kings, above all Bayinnaung (1550–1581), build for a time the largest empire in Southeast Asian history.","sources":[{"title":"History of Myanmar","url":"https://en.wikipedia.org/wiki/History_of_Myanmar","publisher":"Wikipedia"}]},
+    {"from":1752,"to":1885,"title":"The Konbaung dynasty","text":"A revived Burmese state sacks Ayutthaya (1767) but loses three wars to Britain, which annexes the whole country by 1885.","sources":[{"title":"History of Myanmar","url":"https://en.wikipedia.org/wiki/History_of_Myanmar","publisher":"Wikipedia"}]},
+    {"from":1948,"to":2025,"title":"Independent Myanmar","text":"Independent from 1948, Burma is ruled by the military for most of the time since 1962.","sources":[{"title":"History of Myanmar","url":"https://en.wikipedia.org/wiki/History_of_Myanmar","publisher":"Wikipedia"}]}
   ]},
   {"names":["Brunei","Bruneian Empire","Sultanate of Brunei"],"wiki":"History_of_Brunei","eras":[
-    {"from":1368,"to":2025,"title":"Brunei","text":"A Muslim sultanate that once ruled much of Borneo and the southern Philippines; reduced to a small state by the 19th century, it is a British protectorate until 1984 and is now rich from oil."}
+    {"from":1368,"to":2025,"title":"Brunei","text":"A Muslim sultanate that once ruled much of Borneo and the southern Philippines; reduced to a small state by the 19th century, it is a British protectorate until 1984 and is now rich from oil.","sources":[{"title":"History of Brunei","url":"https://en.wikipedia.org/wiki/History_of_Brunei","publisher":"Wikipedia"}]}
   ]},
   {"names":["Bengal","Bengal Sultanate"],"wiki":"Bengal_Sultanate","eras":[
-    {"from":1352,"to":1576,"title":"The Bengal Sultanate","text":"An independent sultanate in the rich, densely populated Ganges delta, exporting textiles and rice across the Indian Ocean, until it is absorbed by the Mughals."},
-    {"from":1717,"to":1793,"title":"Nawabs of Bengal","text":"The Nawabs rule Mughal Bengal almost independently, until the East India Company's victory at Plassey (1757) makes Bengal the base of British power in India."}
+    {"from":1352,"to":1576,"title":"The Bengal Sultanate","text":"An independent sultanate in the rich, densely populated Ganges delta, exporting textiles and rice across the Indian Ocean, until it is absorbed by the Mughals.","sources":[{"title":"Bengal Sultanate","url":"https://en.wikipedia.org/wiki/Bengal_Sultanate","publisher":"Wikipedia"}]},
+    {"from":1717,"to":1793,"title":"Nawabs of Bengal","text":"The Nawabs rule Mughal Bengal almost independently, until the East India Company's victory at Plassey (1757) makes Bengal the base of British power in India.","sources":[{"title":"Bengal Sultanate","url":"https://en.wikipedia.org/wiki/Bengal_Sultanate","publisher":"Wikipedia"},{"title":"Battle of Plassey","url":"https://en.wikipedia.org/wiki/Battle_of_Plassey","publisher":"Wikipedia"}]}
   ]},
   {"names":["Sikhs","Sikh Empire"],"wiki":"Sikh_Empire","eras":[
-    {"from":1799,"to":1849,"title":"The Sikh Empire","text":"Maharaja Ranjit Singh unites the Punjab from Lahore into a powerful, religiously tolerant state with a modern army; the British annex it after two Anglo-Sikh wars."}
+    {"from":1799,"to":1849,"title":"The Sikh Empire","text":"Maharaja Ranjit Singh unites the Punjab from Lahore into a powerful, religiously tolerant state with a modern army; the British annex it after two Anglo-Sikh wars.","sources":[{"title":"Sikh Empire","url":"https://en.wikipedia.org/wiki/Sikh_Empire","publisher":"Wikipedia"}]}
   ]},
   {"names":["Rajput kingdoms","Rajput Clans and Small States","Rajputana","Rajputs"],"wiki":"Rajput","britannica":"topic/Rajput","eras":[
-    {"from":700,"to":1568,"title":"The Rajput kingdoms","text":"Warrior clans rule kingdoms across north-western India from hill forts such as Chittor, resisting Turkic and Afghan invaders."},
-    {"from":1568,"to":1949,"title":"Under the Mughals and the British","text":"Most Rajput rulers become allies and generals of the Mughals; under the British they remain princely states until India's independence."}
+    {"from":700,"to":1568,"title":"The Rajput kingdoms","text":"Warrior clans rule kingdoms across north-western India from hill forts such as Chittor, resisting Turkic invaders.","sources":[{"title":"Rajput","url":"https://en.wikipedia.org/wiki/Rajput","publisher":"Wikipedia"}]},
+    {"from":1568,"to":1949,"title":"Under the Mughals and the British","text":"Most Rajput rulers become allies and generals of the Mughals; under the British they remain princely states until India's independence.","sources":[{"title":"Rajput","url":"https://en.wikipedia.org/wiki/Rajput","publisher":"Wikipedia"}]}
   ]},
   {"names":["Ghaznavid Emirate","Ghaznavid Empire"],"wiki":"Ghaznavids","britannica":"topic/Ghaznavid-dynasty","eras":[
-    {"from":977,"to":1186,"title":"The Ghaznavids","text":"A Turkic dynasty ruling from Ghazni in Afghanistan; Mahmud of Ghazni raids deep into India and patronises the poet Ferdowsi and the scholar al-Biruni."}
+    {"from":977,"to":1186,"title":"The Ghaznavids","text":"A Turkic dynasty ruling from Ghazni in Afghanistan; Mahmud of Ghazni raids deep into India and patronises the poet Ferdowsi and the scholar al-Biruni.","sources":[{"title":"Ghaznavids","url":"https://en.wikipedia.org/wiki/Ghaznavids","publisher":"Wikipedia"}]}
   ]},
   {"names":["Samanid Empire"],"wiki":"Samanid_Empire","eras":[
-    {"from":819,"to":999,"title":"The Samanids","text":"A Persian dynasty ruling Central Asia and eastern Iran from Bukhara, where New Persian literature is born and the young Avicenna studies in the royal library."}
+    {"from":819,"to":999,"title":"The Samanids","text":"A Persian dynasty ruling Central Asia and eastern Iran from Bukhara, where New Persian literature is born and the young Avicenna studies in the royal library.","sources":[{"title":"Samanid Empire","url":"https://en.wikipedia.org/wiki/Samanid_Empire","publisher":"Wikipedia"}]}
   ]},
   {"names":["Khwarazmian dynasty","Khwarazmian Empire"],"wiki":"Khwarazmian_Empire","eras":[
-    {"from":1077,"to":1231,"title":"Khwarazm","text":"A Turkic dynasty builds an empire from the Aral Sea to Iran, only to be destroyed by Genghis Khan after its shah executes Mongol envoys (1219–21)."}
+    {"from":1077,"to":1231,"title":"Khwarazm","text":"A Turkic dynasty builds an empire from the Aral Sea to Iran, only to be destroyed by Genghis Khan after its shah executes Mongol envoys (1219–1221).","sources":[{"title":"Khwarazmian Empire","url":"https://en.wikipedia.org/wiki/Khwarazmian_Empire","publisher":"Wikipedia"},{"title":"Mongol invasion of the Khwarazmian Empire","url":"https://en.wikipedia.org/wiki/Mongol_invasion_of_the_Khwarazmian_Empire","publisher":"Wikipedia"}]}
   ]},
   {"names":["Kara Khitai Khaganate","Qara Khitai"],"wiki":"Qara_Khitai","britannica":"topic/Karakitai-dynasty","eras":[
-    {"from":1124,"to":1218,"title":"Qara Khitai","text":"Khitan refugees from northern China found a Chinese-style state in Central Asia ruling over Muslim subjects, until the Mongols absorb it."}
+    {"from":1124,"to":1218,"title":"Qara Khitai","text":"Khitan refugees from northern China found a Chinese-style state in Central Asia ruling over Muslim subjects, until the Mongols absorb it.","sources":[{"title":"Qara Khitai","url":"https://en.wikipedia.org/wiki/Qara_Khitai","publisher":"Wikipedia"}]}
   ]},
   {"names":["Quazaq Khanate","Kazakh Khanate","Kazakhstan"],"wiki":"Kazakh_Khanate","eras":[
-    {"from":1465,"to":1847,"title":"The Kazakh Khanate","text":"Nomadic clans break away from the Uzbeks to form the Kazakh Khanate on the steppe, later divided into three hordes that gradually fall under Russian rule."},
-    {"from":1991,"to":2025,"title":"Kazakhstan","text":"After decades as a Soviet republic — site of the Baikonur cosmodrome and nuclear tests — Kazakhstan becomes independent in 1991."}
+    {"from":1465,"to":1847,"title":"The Kazakh Khanate","text":"Nomadic clans break away from the Uzbeks to form the Kazakh Khanate on the steppe, later divided into three hordes that gradually fall under Russian rule.","sources":[{"title":"Kazakh Khanate","url":"https://en.wikipedia.org/wiki/Kazakh_Khanate","publisher":"Wikipedia"}]},
+    {"from":1991,"to":2025,"title":"Kazakhstan","text":"After decades as a Soviet republic, Kazakhstan becomes independent in 1991.","sources":[{"title":"Kazakh Khanate","url":"https://en.wikipedia.org/wiki/Kazakh_Khanate","publisher":"Wikipedia"},{"title":"Dissolution of the Soviet Union","url":"https://en.wikipedia.org/wiki/Dissolution_of_the_Soviet_Union","publisher":"Wikipedia"}]}
   ]},
   {"names":["Khiva Khanate","Bukara Khanate","Bukhara Khanate","central Asian khanates"],"wiki":"Khanate_of_Khiva","britannica":"place/khanate-of-Khiva","eras":[
-    {"from":1500,"to":1920,"title":"The Uzbek khanates","text":"After the Timurids, Uzbek dynasties rule the oasis cities of Bukhara, Khiva and later Kokand. Isolated as Silk Road trade declines, they become Russian protectorates in the 1860s–70s."}
+    {"from":1500,"to":1920,"title":"The Uzbek khanates","text":"After the Timurids, Uzbek dynasties rule the oasis cities of Bukhara, Khiva and later Kokand. Isolated as Silk Road trade declines, they become Russian protectorates in the 1860s–70s.","sources":[{"title":"Khanate of Khiva","url":"https://en.wikipedia.org/wiki/Khanate_of_Khiva","publisher":"Wikipedia"}]}
   ]},
   {"names":["Tiahuanaco Empire","Tiwanaku"],"wiki":"Tiwanaku","britannica":"place/Tiwanaku","eras":[
-    {"from":500,"to":1000,"title":"Tiwanaku","text":"A great Andean civilisation centred near Lake Titicaca, with monumental stone gateways and raised-field farming, whose influence reaches across Bolivia, Peru and Chile."}
+    {"from":500,"to":1000,"title":"Tiwanaku","text":"Tiwanaku, near Lake Titicaca in western Bolivia, is one of the largest sites in South America, with monumental stone structures; about 10,000 to 20,000 people may have lived there around AD 800.","sources":[{"title":"Tiwanaku","url":"https://en.wikipedia.org/wiki/Tiwanaku","publisher":"Wikipedia"}]}
   ]},
   {"names":["Iroquois","Ho-de-no-sau-nee-ga (Haudenosaunee)","Haudenosaunee"],"wiki":"Haudenosaunee","britannica":"topic/Iroquois-people","eras":[
-    {"from":1450,"to":1783,"title":"The Haudenosaunee Confederacy","text":"Five (from 1722, six) nations of the eastern Great Lakes united by the Great Law of Peace. A major power in the fur trade and in the wars between France and Britain, the confederacy splits during the American Revolution."}
+    {"from":1450,"to":1783,"title":"The Haudenosaunee Confederacy","text":"Five (from 1722, six) nations of the eastern Great Lakes united by the Great Law of Peace. A major power in the fur trade and in the wars between France and Britain, the confederacy splits during the American Revolution.","sources":[{"title":"Haudenosaunee","url":"https://en.wikipedia.org/wiki/Haudenosaunee","publisher":"Wikipedia"}]}
   ]},
   {"names":["Comanche","Nʉmʉnʉʉ (Comanche)"],"wiki":"Comanche","britannica":"topic/Comanche-people","eras":[
-    {"from":1700,"to":1875,"title":"Comanchería","text":"After adopting the horse, the Comanche dominate the southern Great Plains, raiding deep into Mexico and blocking Spanish expansion, until the US Army and the destruction of the bison herds force them onto a reservation."}
+    {"from":1700,"to":1875,"title":"Comanchería","text":"After adopting the horse, the Comanche dominate the southern Great Plains, raiding deep into Mexico and blocking Spanish expansion, until the US Army and the destruction of the bison herds force them onto a reservation.","sources":[{"title":"Comanche","url":"https://en.wikipedia.org/wiki/Comanche","publisher":"Wikipedia"}]}
   ]},
   {"names":["Kingdom of Hawaii","Kō Hawaiʻi Paeʻāina (Hawaiian Kingdom)"],"wiki":"Hawaiian_Kingdom","eras":[
-    {"from":1000,"to":1795,"title":"Hawaiian chiefdoms","text":"Polynesian settlers develop rival chiefdoms on each island, with intensive farming, fishponds and a strict kapu (taboo) system."},
-    {"from":1795,"to":1893,"title":"The Hawaiian Kingdom","text":"Kamehameha I unites the islands; the kingdom modernises and is recognised internationally, until American sugar planters overthrow Queen Liliʻuokalani in 1893. The US annexes Hawaii in 1898."}
+    {"from":1000,"to":1795,"title":"Hawaiian chiefdoms","text":"Polynesian settlers arrive between about 940 and 1200 AD. Their chiefdoms, each ruled by local chiefs called aliʻi, slowly grow until they encompass whole islands.","sources":[{"title":"Hawaiian Kingdom","url":"https://en.wikipedia.org/wiki/Hawaiian_Kingdom","publisher":"Wikipedia"},{"title":"History of Hawaii","url":"https://en.wikipedia.org/wiki/History_of_Hawaii","publisher":"Wikipedia"}]},
+    {"from":1795,"to":1893,"title":"The Hawaiian Kingdom","text":"Kamehameha I conquers most of the islands in 1795 and the rest join in 1810. The kingdom wins international recognition, but introduced diseases devastate the Native Hawaiian population. In 1893 Queen Liliʻuokalani is overthrown in a coup by mostly American-descended residents, supported by the US military.","sources":[{"title":"Hawaiian Kingdom","url":"https://en.wikipedia.org/wiki/Hawaiian_Kingdom","publisher":"Wikipedia"},{"title":"Kamehameha I","url":"https://en.wikipedia.org/wiki/Kamehameha_I","publisher":"Wikipedia"}]}
   ]}
 ]

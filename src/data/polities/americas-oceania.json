@@ -1,83 +1,83 @@
 [
   {"names":["Olmec"],"wiki":"Olmecs","britannica":"topic/Olmec","eras":[
-    {"from":-1600,"to":-350,"title":"Mesoamerica's first civilisation","text":"In the swampy lowlands of Mexico's Gulf Coast, the Olmec build San Lorenzo and La Venta and carve colossal basalt heads. Their gods, ball game and calendar influence every later Mesoamerican culture."}
+    {"from":-1600,"to":-350,"title":"Mesoamerica's first civilisation","text":"In the swampy lowlands of Mexico's Gulf Coast, the Olmec build San Lorenzo and La Venta and carve colossal basalt heads. Their gods, ball game and calendar influence every later Mesoamerican culture.","sources":[{"title":"Olmecs","url":"https://en.wikipedia.org/wiki/Olmecs","publisher":"Wikipedia"}]}
   ]},
   {"names":["Maya chiefdoms and states","Maya states","Maya city-states","Mayas","Maya","Maya Yucateco"],"wiki":"Maya_civilization","eras":[
-    {"from":-1000,"to":250,"title":"Preclassic Maya","text":"Maya villages grow into cities such as El Mirador with huge pyramids; writing and the Long Count calendar appear."},
-    {"from":250,"to":900,"title":"Classic Maya","text":"Dozens of rival city-states — Tikal, Calakmul, Palenque, Copán — ruled by divine kings fill the lowlands of Guatemala, Mexico and Belize. The Maya develop the Americas' only full writing system, advanced astronomy and the concept of zero."},
-    {"from":900,"to":1521,"title":"Postclassic Maya","text":"After the southern cities collapse, Chichén Itzá and then Mayapán dominate the Yucatán, which fragments into small states before the Spanish conquest."},
-    {"from":1521,"to":1901,"title":"Resistance under Spanish rule","text":"The Spanish conquest of the Maya is slow; the last independent Maya city, Nojpetén, falls only in 1697, and the Caste War of Yucatán (1847–1901) is a long Maya uprising."}
+    {"from":-1000,"to":250,"title":"Preclassic Maya","text":"Maya villages grow into cities such as El Mirador with huge pyramids; writing and the Long Count calendar appear.","sources":[{"title":"Maya civilization","url":"https://en.wikipedia.org/wiki/Maya_civilization","publisher":"Wikipedia"}]},
+    {"from":250,"to":900,"title":"Classic Maya","text":"Dozens of rival city-states — Tikal, Calakmul, Palenque, Copán — ruled by divine kings fill the lowlands of Guatemala, Mexico and Belize. The Maya develop the Americas' only full writing system, advanced astronomy and the concept of zero.","sources":[{"title":"Maya civilization","url":"https://en.wikipedia.org/wiki/Maya_civilization","publisher":"Wikipedia"}]},
+    {"from":900,"to":1521,"title":"Postclassic Maya","text":"After the southern cities collapse, Chichén Itzá and then Mayapán dominate the Yucatán, which fragments into small states before the Spanish conquest.","sources":[{"title":"Maya civilization","url":"https://en.wikipedia.org/wiki/Maya_civilization","publisher":"Wikipedia"}]},
+    {"from":1521,"to":1901,"title":"Resistance under Spanish rule","text":"The Spanish conquest of the Maya is slow and hard-fought; the last independent Maya city, Nojpetén, falls only in 1697.","sources":[{"title":"Maya civilization","url":"https://en.wikipedia.org/wiki/Maya_civilization","publisher":"Wikipedia"}]}
   ]},
   {"names":["Teotihuacan"],"wiki":"Teotihuacan","britannica":"place/Teotihuacan","eras":[
-    {"from":-100,"to":550,"title":"City of the Gods","text":"One of the largest cities in the ancient world (up to 100,000 people), with the Pyramids of the Sun and Moon. Its influence reaches the Maya cities; it is burned and abandoned around 550."}
+    {"from":-100,"to":550,"title":"City of the Gods","text":"One of the largest cities in the ancient world (up to 100,000 people), with the Pyramids of the Sun and Moon. Its influence reaches the Maya cities; it is burned and abandoned around 550.","sources":[{"title":"Teotihuacan","url":"https://en.wikipedia.org/wiki/Teotihuacan","publisher":"Wikipedia"}]}
   ]},
   {"names":["Monte Albán","Zapotec Empire","Mixtec Empire"],"wiki":"Zapotec_civilization","eras":[
-    {"from":-500,"to":850,"title":"Monte Albán","text":"The Zapotecs build their hilltop capital in the Oaxaca valley, one of Mesoamerica's first cities, with early writing."},
-    {"from":850,"to":1521,"title":"Zapotecs and Mixtecs","text":"Smaller Zapotec and Mixtec kingdoms flourish in Oaxaca, famous for their codices and goldwork, until Aztec and then Spanish conquest."}
+    {"from":-500,"to":850,"title":"Monte Albán","text":"The Zapotecs build their hilltop capital in the Oaxaca valley, one of Mesoamerica's first cities, with early writing.","sources":[{"title":"Zapotec civilization","url":"https://en.wikipedia.org/wiki/Zapotec_civilization","publisher":"Wikipedia"}]},
+    {"from":850,"to":1521,"title":"Zapotecs and Mixtecs","text":"After the decline of Monte Albán, Zapotec communities continue to flourish in the Valley of Oaxaca until the Spanish conquest of 1521.","sources":[{"title":"Zapotec civilization","url":"https://en.wikipedia.org/wiki/Zapotec_civilization","publisher":"Wikipedia"}]}
   ]},
   {"names":["Toltec Empire","Mesoamerican city-states and chiefdoms"],"wiki":"Toltec","britannica":"topic/Toltec","eras":[
-    {"from":900,"to":1168,"title":"The Toltecs","text":"From their capital Tula, the Toltecs dominate central Mexico; the Aztecs later revere them as the originators of civilisation."}
+    {"from":900,"to":1168,"title":"The Toltecs","text":"From their capital Tula, the Toltecs dominate central Mexico; the Aztecs later revere them as the originators of civilisation.","sources":[{"title":"Toltec","url":"https://en.wikipedia.org/wiki/Toltec","publisher":"Wikipedia"}]}
   ]},
   {"names":["Aztec Empire","Nahua (Mexico)","Mexicanero (Nahuas)"],"wiki":"Aztec_Empire","eras":[
-    {"from":1325,"to":1428,"title":"The rise of the Mexica","text":"The Mexica found Tenochtitlan on an island in Lake Texcoco and serve as mercenaries for more powerful neighbours."},
-    {"from":1428,"to":1521,"title":"The Triple Alliance","text":"Tenochtitlan, Texcoco and Tlacopan form the Aztec Empire, which collects tribute from much of central and southern Mexico. Tenochtitlan, with perhaps 200,000 people, causeways and floating gardens, is larger than any city in Spain. Cortés and his Indigenous allies conquer it in 1521."}
+    {"from":1325,"to":1428,"title":"The rise of the Mexica","text":"The Mexica found Tenochtitlan on an island in Lake Texcoco and serve as mercenaries for more powerful neighbours.","sources":[{"title":"Aztec Empire","url":"https://en.wikipedia.org/wiki/Aztec_Empire","publisher":"Wikipedia"}]},
+    {"from":1428,"to":1521,"title":"The Triple Alliance","text":"Three Nahua city-states — Tenochtitlan, Texcoco and Tlacopan — form the Triple Alliance after a civil war. Tenochtitlan becomes dominant, and the alliance conquers most of central Mexico, collecting tribute through its own officials, until the Spanish and their native allies defeat it in 1521.","sources":[{"title":"Aztec Empire","url":"https://en.wikipedia.org/wiki/Aztec_Empire","publisher":"Wikipedia"}]}
   ]},
   {"names":["Inca Empire","Tawantinsuyu"],"wiki":"Inca_Empire","britannica":"place/Tahuantinsuyu","eras":[
-    {"from":1438,"to":1527,"title":"Tawantinsuyu","text":"From Cusco, Pachacuti and his successors conquer the Andes from Ecuador to Chile — the largest empire in the Americas — linked by 40,000 km of roads, administered with knotted-string khipus and without money or markets."},
-    {"from":1527,"to":1572,"title":"Civil war and conquest","text":"A smallpox epidemic and a civil war between Atahualpa and Huáscar leave the empire vulnerable to Pizarro (1532). A rump Inca state survives at Vilcabamba until 1572."}
+    {"from":1438,"to":1527,"title":"Tawantinsuyu","text":"From Cusco, Pachacuti and his successors conquer the Andes from Ecuador to Chile — the largest empire in the Americas — linked by 40,000 km of roads, administered with knotted-string khipus and without money or markets.","sources":[{"title":"Inca Empire","url":"https://en.wikipedia.org/wiki/Inca_Empire","publisher":"Wikipedia"}]},
+    {"from":1527,"to":1572,"title":"Civil war and conquest","text":"A smallpox epidemic and a civil war between Atahualpa and Huáscar leave the empire vulnerable to Pizarro (1532). A rump Inca state survives at Vilcabamba until 1572.","sources":[{"title":"Inca Empire","url":"https://en.wikipedia.org/wiki/Inca_Empire","publisher":"Wikipedia"}]}
   ]},
   {"names":["Chimú Empire","Chimú","Chimor","Chimu Empire"],"wiki":"Chimú_culture","britannica":"topic/Chimu","eras":[
-    {"from":900,"to":1470,"title":"The Chimú","text":"A coastal Peruvian kingdom whose adobe capital Chan Chan is the largest city of the pre-Columbian Americas; the Inca conquer it around 1470."}
+    {"from":900,"to":1470,"title":"The Chimú","text":"A coastal Peruvian kingdom whose adobe capital Chan Chan is the largest city of the pre-Columbian Americas; the Inca conquer it around 1470.","sources":[{"title":"Chimú culture","url":"https://en.wikipedia.org/wiki/Chim%C3%BA_culture","publisher":"Wikipedia"}]}
   ]},
   {"names":["Moche"],"wiki":"Moche_culture","britannica":"topic/Moche","eras":[
-    {"from":100,"to":800,"title":"The Moche","text":"A civilisation of Peru's north coast, famous for irrigation, huge adobe pyramids and lifelike portrait pottery."}
+    {"from":100,"to":800,"title":"The Moche","text":"A civilisation of Peru's north coast, famous for irrigation, huge adobe pyramids and lifelike portrait pottery.","sources":[{"title":"Moche culture","url":"https://en.wikipedia.org/wiki/Moche_culture","publisher":"Wikipedia"}]}
   ]},
   {"names":["Nazca"],"wiki":"Nazca_culture","britannica":"art/Early-Nazca-pottery","eras":[
-    {"from":-100,"to":800,"title":"The Nazca","text":"A culture of Peru's southern desert, best known for the giant Nazca Lines drawn on the ground."}
+    {"from":-100,"to":800,"title":"The Nazca","text":"A culture of the river valleys of Peru's arid southern coast, known for its ceramics and textiles, the Nazca Lines (immense designs in the desert whose purpose is unknown) and underground aqueducts, some still working today.","sources":[{"title":"Nazca culture","url":"https://en.wikipedia.org/wiki/Nazca_culture","publisher":"Wikipedia"}]}
   ]},
   {"names":["Huari Empire","Wari Empire"],"wiki":"Wari_culture","eras":[
-    {"from":600,"to":1000,"title":"The Wari","text":"An Andean empire that, alongside Tiwanaku, foreshadows the Inca with roads and administrative centres."}
+    {"from":600,"to":1000,"title":"The Wari","text":"A Middle Horizon civilization that flourishes in the highlands and coast of modern Peru from about 500 to 1000 AD, ruled from its capital Wari, near modern Ayacucho.","sources":[{"title":"Wari culture","url":"https://en.wikipedia.org/wiki/Wari_culture","publisher":"Wikipedia"}]}
   ]},
   {"names":["Chavin"],"wiki":"Chavín_culture","britannica":"topic/Chavin","eras":[
-    {"from":-900,"to":-200,"title":"Chavín","text":"A religious culture centred on the temple at Chavín de Huántar in the Peruvian Andes, whose art spreads widely."}
+    {"from":-900,"to":-200,"title":"Chavín","text":"A religious culture centred on the temple at Chavín de Huántar in the Peruvian Andes, whose art spreads widely.","sources":[{"title":"Chavín culture","url":"https://en.wikipedia.org/wiki/Chav%C3%ADn_culture","publisher":"Wikipedia"}]}
   ]},
   {"names":["Hopewell Culture"],"wiki":"Hopewell_tradition","britannica":"topic/Hopewell-culture","eras":[
-    {"from":-100,"to":500,"title":"Hopewell","text":"Peoples of the Ohio and Mississippi valleys build great geometric earthworks and trade obsidian, copper and shells across North America."}
+    {"from":-100,"to":500,"title":"Hopewell","text":"Peoples of the Ohio and Mississippi valleys build great geometric earthworks and trade obsidian, copper and shells across North America.","sources":[{"title":"Hopewell tradition","url":"https://en.wikipedia.org/wiki/Hopewell_tradition","publisher":"Wikipedia"}]}
   ]},
   {"names":["Viceroyalty of New Spain","Cuba (Spain)","Hispaniola (Spain)","Florida (Spain)","Santo Domingo (Spain)"],"wiki":"New_Spain","britannica":"place/Viceroyalty-of-New-Spain","eras":[
-    {"from":1521,"to":1821,"title":"New Spain","text":"Spain's viceroyalty rules Mexico, Central America, the Caribbean and (via Manila) the Philippines. Silver from Zacatecas and Potosí fuels world trade while Indigenous populations collapse from epidemics."}
+    {"from":1521,"to":1821,"title":"New Spain","text":"Spain's viceroyalty rules Mexico, Central America, the Caribbean and (via Manila) the Philippines. Silver from Zacatecas and Potosí fuels world trade while Indigenous populations collapse from epidemics.","sources":[{"title":"New Spain","url":"https://en.wikipedia.org/wiki/New_Spain","publisher":"Wikipedia"}]}
   ]},
   {"names":["United States","United States of America","British American colonies"],"wiki":"History_of_the_United_States","britannica":"topic/history-of-United-States","eras":[
-    {"from":1607,"to":1776,"title":"Thirteen colonies","text":"English colonies stretch along the Atlantic coast, growing tobacco and rice with enslaved African labour in the South and trading and farming in the North."},
-    {"from":1776,"to":1865,"title":"Independence and expansion","text":"The colonies declare independence (1776) and win it (1783). The US expands west by purchase and war, displacing Native nations. The Civil War (1861–65) ends slavery."},
-    {"from":1865,"to":1945,"title":"Industrial giant","text":"Railways, immigration and industry make the US the world's largest economy by 1900. It decides both world wars."},
-    {"from":1945,"to":2025,"title":"Superpower","text":"The US leads the West in the Cold War, lands on the Moon (1969) and after 1991 is the sole superpower."}
+    {"from":1607,"to":1776,"title":"Thirteen colonies","text":"English colonies stretch along the Atlantic coast, growing tobacco and rice with enslaved African labour in the South and trading and farming in the North.","sources":[{"title":"History of the United States","url":"https://en.wikipedia.org/wiki/History_of_the_United_States","publisher":"Wikipedia"}]},
+    {"from":1776,"to":1865,"title":"Independence and expansion","text":"The Thirteen Colonies rebel against British taxes and the Intolerable Acts, declare independence in 1776 and win it in the Revolutionary War. The new country expands west, displacing Native nations, and the Civil War ends slavery.","sources":[{"title":"History of the United States","url":"https://en.wikipedia.org/wiki/History_of_the_United_States","publisher":"Wikipedia"},{"title":"United States Declaration of Independence","url":"https://en.wikipedia.org/wiki/United_States_Declaration_of_Independence","publisher":"Wikipedia"}]},
+    {"from":1865,"to":1945,"title":"Industrial giant","text":"Railways, immigration and industry make the US the world's largest economy by 1900. It decides both world wars.","sources":[{"title":"History of the United States","url":"https://en.wikipedia.org/wiki/History_of_the_United_States","publisher":"Wikipedia"}]},
+    {"from":1945,"to":2025,"title":"Superpower","text":"The US leads the West in the Cold War, lands on the Moon (1969) and after 1991 is the sole superpower.","sources":[{"title":"History of the United States","url":"https://en.wikipedia.org/wiki/History_of_the_United_States","publisher":"Wikipedia"}]}
   ]},
   {"names":["Canada","New France"],"wiki":"History_of_Canada","britannica":"topic/history-of-Canada","eras":[
-    {"from":1608,"to":1763,"title":"New France","text":"French fur traders and missionaries settle along the St Lawrence; Britain conquers New France in the Seven Years' War."},
-    {"from":1867,"to":2025,"title":"Dominion of Canada","text":"Canada becomes a self-governing confederation in 1867 and gradually gains full independence."}
+    {"from":1608,"to":1763,"title":"New France","text":"French fur traders and missionaries settle along the St Lawrence; Britain conquers New France in the Seven Years' War.","sources":[{"title":"History of Canada","url":"https://en.wikipedia.org/wiki/History_of_Canada","publisher":"Wikipedia"}]},
+    {"from":1867,"to":2025,"title":"Dominion of Canada","text":"Canada becomes a self-governing confederation in 1867 and gradually gains full independence.","sources":[{"title":"History of Canada","url":"https://en.wikipedia.org/wiki/History_of_Canada","publisher":"Wikipedia"}]}
   ]},
   {"names":["Mexico","Federated Republic of Mexico","First Mexican Empire","Second Mexican Empire","Centralist Mexico"],"wiki":"History_of_Mexico","britannica":"topic/history-of-Mexico","eras":[
-    {"from":1821,"to":1910,"title":"Independent Mexico","text":"Mexico wins independence from Spain (1821), loses half its territory to the US (1848), resists a French-installed emperor and is ruled by Porfirio Díaz."},
-    {"from":1910,"to":2025,"title":"Revolution and modern Mexico","text":"The Mexican Revolution is followed by 70 years of one-party rule and then multiparty democracy."}
+    {"from":1821,"to":1910,"title":"Independent Mexico","text":"After independence from Spain in 1821, Mexico faces conflicts between caudillos (strongmen), the Mexican–American War and a French invasion, before the long rule of Porfirio Díaz.","sources":[{"title":"History of Mexico","url":"https://en.wikipedia.org/wiki/History_of_Mexico","publisher":"Wikipedia"}]},
+    {"from":1910,"to":2025,"title":"Revolution and modern Mexico","text":"The Mexican Revolution is followed by 70 years of one-party rule and then multiparty democracy.","sources":[{"title":"History of Mexico","url":"https://en.wikipedia.org/wiki/History_of_Mexico","publisher":"Wikipedia"}]}
   ]},
   {"names":["Brazil","Portuguese Brazil","Viceroyalty of Brazil","Kingdom of Brazil","Dutch Brazil","Empire of Brazil","Brazilian Republic","Unitary State of Brazil"],"wiki":"History_of_Brazil","eras":[
-    {"from":1500,"to":1822,"title":"Colonial Brazil","text":"Portugal builds a sugar colony worked by millions of enslaved Africans; gold rushes in Minas Gerais follow. The Portuguese court moves to Rio in 1808."},
-    {"from":1822,"to":2025,"title":"Empire and republic","text":"Brazil becomes an independent empire (1822), abolishes slavery last in the Americas (1888) and becomes a republic (1889)."}
+    {"from":1500,"to":1822,"title":"Colonial Brazil","text":"Portugal builds a sugar colony worked by millions of enslaved Africans; gold rushes in Minas Gerais follow. The Portuguese court moves to Rio in 1808.","sources":[{"title":"History of Brazil","url":"https://en.wikipedia.org/wiki/History_of_Brazil","publisher":"Wikipedia"}]},
+    {"from":1822,"to":2025,"title":"Empire and republic","text":"Brazil becomes an independent empire (1822), abolishes slavery last in the Americas (1888) and becomes a republic (1889).","sources":[{"title":"History of Brazil","url":"https://en.wikipedia.org/wiki/History_of_Brazil","publisher":"Wikipedia"}]}
   ]},
   {"names":["Argentina","Argentine Confederation","Argentine Republic"],"wiki":"History_of_Argentina","eras":[
-    {"from":1816,"to":2025,"title":"Argentina","text":"Independent from 1816, Argentina becomes one of the world's richest countries around 1900 on beef and grain exports, before decades of instability and Peronism."}
+    {"from":1816,"to":2025,"title":"Argentina","text":"Argentina declares independence on 9 July 1816; after the defeat of the Spanish in 1824, a federal state, today's Argentine Republic, is formed in 1853–1861.","sources":[{"title":"History of Argentina","url":"https://en.wikipedia.org/wiki/History_of_Argentina","publisher":"Wikipedia"}]}
   ]},
   {"names":["Thule","Dorset","Paleo-Inuit"],"wiki":"Thule_people","britannica":"topic/Thule-culture","eras":[
-    {"from":-500,"to":1000,"title":"Paleo-Inuit (Dorset)","text":"The Dorset people live across the Canadian Arctic and Greenland, hunting seals and walrus."},
-    {"from":1000,"to":1600,"title":"Thule — ancestors of the Inuit","text":"Thule people from Alaska spread eastward across the Arctic with dog sleds, kayaks and umiaks, meeting Norse Greenlanders."}
+    {"from":-500,"to":1000,"title":"Paleo-Inuit (Dorset)","text":"The Dorset people live across the Canadian Arctic and Greenland, hunting seals and walrus.","sources":[{"title":"Thule people","url":"https://en.wikipedia.org/wiki/Thule_people","publisher":"Wikipedia"}]},
+    {"from":1000,"to":1600,"title":"Thule — ancestors of the Inuit","text":"The Thule people, precursors of all modern Inuit, develop in coastal Alaska by 1000 AD and spread east across northern Canada, reaching Greenland by the 13th century and replacing the Dorset. They were in contact with the Norse.","sources":[{"title":"Thule people","url":"https://en.wikipedia.org/wiki/Thule_people","publisher":"Wikipedia"}]}
   ]},
   {"names":["Polynesians","Tuʻi Tonga Empire","Maori","Rapa Nui"],"wiki":"Polynesia","eras":[
-    {"from":-1000,"to":1000,"title":"Voyagers of the Pacific","text":"Austronesian navigators in double-hulled canoes settle Tonga and Samoa, then the far islands of Polynesia — the greatest feat of ocean exploration before modern times."},
-    {"from":1000,"to":1800,"title":"Polynesian societies","text":"Polynesians reach Hawaii, Rapa Nui (Easter Island) and Aotearoa (New Zealand, c. 1250–1300). The Tuʻi Tonga maritime chiefdom dominates western Polynesia."}
+    {"from":-1000,"to":1000,"title":"Voyagers of the Pacific","text":"Austronesian navigators in double-hulled canoes settle Tonga and Samoa, then the far islands of Polynesia — the greatest feat of ocean exploration before modern times.","sources":[{"title":"Polynesia","url":"https://en.wikipedia.org/wiki/Polynesia","publisher":"Wikipedia"}]},
+    {"from":1000,"to":1800,"title":"Polynesian societies","text":"Polynesians settle the far corners of the Polynesian Triangle, including Hawaii, Rapa Nui (Easter Island) and New Zealand, where Māori ancestors arrive between about 1320 and 1350.","sources":[{"title":"Polynesia","url":"https://en.wikipedia.org/wiki/Polynesia","publisher":"Wikipedia"},{"title":"Māori people","url":"https://en.wikipedia.org/wiki/M%C4%81ori_people","publisher":"Wikipedia"}]}
   ]},
   {"names":["Australian aboriginal hunter-gatherers","Tasmanian hunter-gatherers","Australia"],"wiki":"Aboriginal_Australians","eras":[
-    {"from":-10000,"to":1788,"title":"The oldest living cultures","text":"Aboriginal Australians and Torres Strait Islanders have lived on the continent for at least 50,000 years, with hundreds of languages, complex kinship systems, land management by fire and Dreaming traditions."},
-    {"from":1788,"to":2025,"title":"Colonisation and the modern nation","text":"British colonisation begins in 1788, devastating Aboriginal peoples through disease, violence and dispossession. The colonies federate as Australia in 1901."}
+    {"from":-10000,"to":1788,"title":"The oldest living cultures","text":"Aboriginal Australians and Torres Strait Islanders have lived on the continent for at least 50,000 years, with hundreds of languages, complex kinship systems, land management by fire and Dreaming traditions.","sources":[{"title":"Aboriginal Australians","url":"https://en.wikipedia.org/wiki/Aboriginal_Australians","publisher":"Wikipedia"}]},
+    {"from":1788,"to":2025,"title":"Colonisation and the modern nation","text":"British colonisation begins in 1788. Over the following century and a half the Aboriginal population falls sharply, while the British colonies unite as the Commonwealth of Australia in 1901.","sources":[{"title":"Aboriginal Australians","url":"https://en.wikipedia.org/wiki/Aboriginal_Australians","publisher":"Wikipedia"},{"title":"Federation of Australia","url":"https://en.wikipedia.org/wiki/Federation_of_Australia","publisher":"Wikipedia"}]}
   ]}
 ]

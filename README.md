@@ -87,6 +87,12 @@ The app automatically uses `public/basemaps/` when it exists.
 
 Run `npm run validate` to check the data files.
 
+## How the text is sourced
+
+Every event summary and territory period in `src/data` cites the Wikipedia articles it is based on (`sources`), shown as numbered citations at the end of the text. Each text was checked against the full text of its cited articles: every year, number and proper name it contains, and at least 80% of its other significant words, had to appear in the sources; flagged texts were reread against the article and corrected or rewritten (about 200 of 737 were changed, including several wrong figures). Wikipedia article titles were confirmed on Wikidata, and event dates compared with Wikidata's records. "Learn more" also links each entry's Encyclopaedia Britannica article where Wikidata records one; Britannica is not cited, because its pages could not be checked automatically. Text loaded live from Wikipedia and Wikidata is labelled as such.
+
+When adding entries, include `sources` (`{ "title", "url", "publisher" }`) for the articles the text is based on.
+
 ## Caveats
 
 - All historical borders are approximate, and Cliopatria maps states only; peoples without a state come from coarser snapshot maps.
