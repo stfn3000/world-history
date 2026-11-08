@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Chronoglobe — the world at any moment in history</title>
+    <meta name="description" content="Spin a 3D globe, drag through 12,000 years of history, see the borders of every age and click any territory or event to read what was going on." />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌍</text></svg>" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="globe" aria-label="3D globe"></div>
+
+    <!-- Top bar -->
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">🌍</span>
+        <span class="brand-name">Chronoglobe</span>
+      </div>
+      <div class="search">
+        <input id="search-input" type="search" placeholder="Search events, empires, places…" autocomplete="off" aria-label="Search" />
+        <div id="search-results" class="search-results" hidden></div>
+      </div>
+      <div class="top-actions">
+        <button id="btn-overview" class="chip" title="Everything happening around the world in this period (O)">🗞️ <span>World now</span></button>
+        <button id="btn-layers" class="chip" title="Map layers" aria-haspopup="true">🗺️ <span>Layers</span></button>
+        <button id="btn-help" class="chip icon-only" title="How to use (?)">?</button>
+      </div>
+      <div id="layers-menu" class="popover" hidden>
+        <label><input type="checkbox" id="opt-borders" checked /> Borders &amp; territories</label>
+        <label><input type="checkbox" id="opt-labels" checked /> Territory names</label>
+        <label><input type="checkbox" id="opt-events" checked /> Curated events</label>
+        <label><input type="checkbox" id="opt-wikidata" checked /> More events from Wikidata <small>(live)</small></label>
+        <label><input type="checkbox" id="opt-rotate" /> Slowly rotate globe</label>
+        <hr />
+        <label class="row">Event window
+          <select id="opt-window">
+            <option value="auto" selected>Auto</option>
+            <option value="0">Same year</option>
+            <option value="5">± 5 years</option>
+            <option value="10">± 10 years</option>
+            <option value="25">± 25 years</option>
+            <option value="50">± 50 years</option>
+            <option value="100">± 100 years</option>
+          </select>
+        </label>
+        <div class="legend" id="legend"></div>
+      </div>
+    </header>
+
+    <div id="status" class="status" role="status" aria-live="polite"></div>
+    <div id="tooltip" class="tooltip" hidden></div>
+
+    <!-- Side panel (territory / event / overview) -->
+    <aside id="panel" class="panel" hidden aria-live="polite">
+      <button id="panel-close" class="panel-close" aria-label="Close panel">×</button>
+      <div id="panel-body" class="panel-body"></div>
+    </aside>
+
+    <!-- Timeline dock -->
+    <section class="dock" aria-label="Time controls">
+      <div class="dock-row dock-head">
+        <div class="when">
+          <button id="year-display" class="year-display" title="Click to type a year">1450 AD</button>
+          <form id="year-form" class="year-form" hidden>
+            <input id="year-input" type="number" inputmode="numeric" aria-label="Year" />
+            <select id="era-input" aria-label="Era"><option value="AD">AD</option><option value="BC">BC</option></select>
+            <button type="submit" class="chip">Go</button>
+          </form>
+          <div class="when-meta">
+            <span id="date-display" class="date-display">Whole year</span>
+            <span id="era-display" class="era-display">Late Middle Ages</span>
+          </div>
+        </div>
+        <div class="controls">
+          <button class="step" data-step="-100" title="Back 100 years">«100</button>
+          <button class="step" data-step="-10" title="Back 10 years">‹10</button>
+          <button class="step" data-step="-1" title="Back 1 year (←)">‹1</button>
+          <button id="btn-play" class="play" title="Play / pause (space)">▶</button>
+          <button class="step" data-step="1" title="Forward 1 year (→)">1›</button>
+          <button class="step" data-step="10" title="Forward 10 years">10›</button>
+          <button class="step" data-step="100" title="Forward 100 years">100»</button>
+          <select id="play-speed" title="Playback speed" aria-label="Playback speed">
+            <option value="1">1 yr/s</option>
+            <option value="5" selected>5 yr/s</option>
+            <option value="20">20 yr/s</option>
+            <option value="100">100 yr/s</option>
+          </select>
+        </div>
+        <div class="snapshot" id="snapshot-display" title="Borders come from the nearest earlier map in the dataset"></div>
+      </div>
+
+      <div class="track-wrap">
+        <canvas id="track-canvas" class="track-canvas" aria-hidden="true"></canvas>
+        <input id="year-slider" class="slider year-slider" type="range" min="0" max="1000" step="0.01" aria-label="Year" />
+        <div id="track-labels" class="track-labels" aria-hidden="true"></div>
+      </div>
+
+      <div class="track-wrap fine">
+        <canvas id="fine-canvas" class="track-canvas" aria-hidden="true"></canvas>
+        <input id="day-slider" class="slider day-slider" type="range" min="0" max="365" step="1" value="0" aria-label="Month and day (far left = whole year)" />
+        <div class="month-labels" aria-hidden="true">
+          <span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span><span>Jul</span><span>Aug</span><span>Sep</span><span>Oct</span><span>Nov</span><span>Dec</span>
+        </div>
+      </div>
+    </section>
+
+    <dialog id="help" class="help">
+      <h2>How to use Chronoglobe</h2>
+      <ul>
+        <li><b>Drag the big slider</b> to travel through time. It is stretched so recent centuries get more room. Use the <b>‹1 / 10› / 100»</b> buttons or <kbd>←</kbd> <kbd>→</kbd> (hold <kbd>Shift</kbd> for 10 years) for precise steps, or click the year to type one in.</li>
+        <li><b>The thin slider</b> under it picks a month and day (far left = the whole year). Once you pick a date, events earlier in the year are lit and ones still to come are dimmed.</li>
+        <li><b>Click any territory</b> to read what was happening there at that moment, see events inside it and find links to learn more.</li>
+        <li><b>Click an icon</b> to read about that event. Faded icons happened in the years around the selected year.</li>
+        <li><b>🗞️ World now</b> lists everything happening around the world in the current period, grouped by region.</li>
+        <li><b>Search</b> for an empire, a battle or a person's event — e.g. “Venice”, “Lepanto”, “Mongol”.</li>
+      </ul>
+      <h3>Where the data comes from</h3>
+      <p>Borders: <a href="https://github.com/aourednik/historical-basemaps" target="_blank" rel="noopener">historical-basemaps</a> by André Ourednik (GPL-3.0) — 50+ snapshot maps; borders between snapshots are approximated by the nearest earlier map, and are often approximate. Curated events and territory summaries were written for this app. Extra events and territory descriptions are loaded live from <a href="https://www.wikidata.org" target="_blank" rel="noopener">Wikidata</a> and <a href="https://en.wikipedia.org" target="_blank" rel="noopener">Wikipedia</a> (CC BY-SA).</p>
+      <form method="dialog"><button class="chip">Got it</button></form>
+    </dialog>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

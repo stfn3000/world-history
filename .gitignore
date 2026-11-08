@@ -1,0 +1,5 @@
+node_modules/
+dist/
+# Optional local copy of the historical-basemaps GeoJSON (see `npm run fetch-basemaps`)
+public/basemaps/
+.DS_Store
