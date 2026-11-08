@@ -18,7 +18,7 @@ const $ = (id) => document.getElementById(id);
 const NON_STATE = /hunter|gatherer|farmers|peoples|cultures?\b|tribes|nomads|foragers|pastoral|fishers|fichers|aboriginal|chiefdoms|^(siberians|khoisan|thule|athabaskan|bantu peoples|sámi|saami|polynesians|papuans|innu|dorset|beothuk|ainu|celts|germanic tribes|arabs|austronesians|mon-khmer)$/i;
 
 const state = {
-  year: 1450,
+  year: 1500,
   day: 0, // 0 = the whole year; 1..365 = a specific day
   windowMode: 'auto',
   showEvents: true,
@@ -174,7 +174,7 @@ const app = {
     elsewhere.sort((a, b) => b.importance - a.importance || timeDistance(a, state.year, w) - timeDistance(b, state.year, w));
     state.panel = { kind: 'territory', feature: f };
     globeApi.setSelected(stale ? null : f);
-    // A pulse helps find small territories (e.g. Venice) on a zoomed-out globe.
+    // A pulse helps find small territories (e.g. city-states) on a zoomed-out globe.
     globeApi.setRing(stale || f.area > 0.05 ? null : { lat: f.center.lat, lng: f.center.lng });
     state.selectedEvent = null;
     refreshPins();
@@ -463,7 +463,7 @@ setupSearch(app);
 // ---- boot ----------------------------------------------------------------------------
 (async function boot() {
   const h = readHash();
-  const y = h.y ? clampYear(parseInt(h.y, 10)) : 1450;
+  const y = h.y ? clampYear(parseInt(h.y, 10)) : 1500;
   if (h.d) app.setDay(parseInt(h.d, 10) || 0);
   else updateWhen();
   timeline.setYear(y);

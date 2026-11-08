@@ -4,8 +4,9 @@ export const REGIONS = ['Europe', 'Middle East & North Africa', 'Sub-Saharan Afr
 /** A coarse lat/lng → world-region lookup (good enough for grouping lists). */
 export function regionOf(lat, lng) {
   if (lat == null || lng == null) return 'Europe';
+  // Pacific first, so Hawaii and Rapa Nui don't count as the Americas.
+  if (lng > 160 || lng < -150 || (lat < -10 && lng > 110) || (lat < -10 && lng < -100)) return 'Oceania';
   if (lng < -25) return 'Americas';
-  if (lng > 160 || lng < -150 || (lat < -10 && lng > 110)) return 'Oceania';
   // Europe (incl. the Mediterranean islands and European Russia)
   if (lng < 26 && lng >= -25 && lat >= 36 && !(lng > -2 && lng < 11.6 && lat < 37.2)) return 'Europe';
   if (lng >= 11.6 && lng < 26 && lat >= 34.8) return 'Europe';

@@ -6,7 +6,7 @@
 //   node scripts/build-index.mjs ./index.json    # or reads a local copy
 //
 // snapshots.json   -> the list of years for which a border map exists
-// polity-index.json -> { years: [...], names: { "Venice": [i, j, ...] } }
+// polity-index.json -> { years: [...], names: { "Mali": [i, j, ...] } }
 //                      (indices into `years`), used by search to find the
 //                      years in which a polity appears on the map.
 

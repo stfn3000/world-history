@@ -1,7 +1,7 @@
 // Curated, year-aware summaries of territories.
 //
 // Each file in src/data/polities is an array of entries:
-//   { names: ["Venice", ...], wiki: "Republic_of_Venice", eras: [{ from, to, text }] }
+//   { names: ["Mali", ...], wiki: "Mali_Empire", eras: [{ from, to, text }] }
 // `names` are matched (case-insensitively) against the NAME / SUBJECTO
 // properties of the border dataset.
 import { toAstro } from './time.js';

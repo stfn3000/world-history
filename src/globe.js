@@ -14,7 +14,7 @@ export function createGlobe(container, handlers) {
     showLabels: true,
     pins: [], // event datums currently shown
     labels: [],
-    altitude: 2.2,
+    altitude: 2.5,
   };
 
   const globe = new Globe(container, { animateIn: false })
@@ -59,7 +59,7 @@ export function createGlobe(container, handlers) {
     .ringAltitude(0.021);
 
   globe.controls().autoRotateSpeed = 0.35;
-  globe.pointOfView({ lat: 35, lng: 20, altitude: state.altitude });
+  globe.pointOfView({ lat: 22, lng: 40, altitude: state.altitude });
   globe.onZoom((pov) => {
     const changed = Math.abs(pov.altitude - state.altitude) > 0.05;
     state.altitude = pov.altitude;

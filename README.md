@@ -4,7 +4,7 @@ An interactive 3D globe for answering the question *"what else was going on in t
 
 Drag a timeline from 10,000 BC to today and watch the borders of the world change. Click any territory to read what was happening there **in that year**; click an event icon (⚔️ battles, 📜 treaties, 👑 rulers, 🌋 disasters, ⛵ voyages …) to read about it. Every blurb links out to Wikipedia, YouTube, Britannica and more.
 
-It started from a podcast about Venice: as the Venetian empire grew, what was happening in the rest of Europe and the world? Try it: search **"Venice"**, open its timeline of 11 periods, then hit **🗞️ World now** to see everything happening around the globe in that period.
+Pick any moment — the rise of the Mongols, the height of Mali, the Inca conquests, the age of revolutions — and see what every other part of the world was doing at the same time. Try clicking a territory, then hit **🗞️ World now** to see everything happening around the globe in that period, grouped by region.
 
 ## Features
 
@@ -14,11 +14,11 @@ It started from a podcast about Venice: as the Venetian empire grew, what was ha
   - a fine month/day slider (far left = the whole year); once a date is picked, events later in the year are dimmed,
   - step buttons (±1/10/100 years), click the year to type one in (BC/AD), ▶ play at 1–100 years/second, ← → keys.
 - **Territories**: hover for the name, click for
-  - a hand-written, *year-specific* summary for ~125 major states and peoples (e.g. Venice in 1450 → "Expansion on the mainland"), with a clickable timeline of all its periods,
+  - a hand-written, *year-specific* summary for ~160 states and peoples on every continent (e.g. China in 1450 → "The Ming dynasty", Mali in 1330 → "The empire of gold"), with a clickable timeline of all its periods,
   - the Wikipedia lead section, fetched live,
   - events that happened inside its borders around that time, and "meanwhile elsewhere",
   - links: Wikipedia, "History of …", YouTube searches, Britannica, the Wikipedia page for that year.
-- **Events**: ~360 curated events with dates, places, summaries, "why it matters" notes and links, plus (optional, on by default) **notable battles, sieges, revolutions, treaties and disasters loaded live from Wikidata** for whatever period you are looking at.
+- **Events**: ~400 curated events from every region with dates, places, summaries, "why it matters" notes and links, plus (optional, on by default) **notable battles, sieges, revolutions, treaties and disasters loaded live from Wikidata** for whatever period you are looking at.
 - **🗞️ World now**: everything on record in the current window, grouped by region (Europe, Middle East & North Africa, East Asia, Americas …), plus the largest powers on the map.
 - **Search** across events and every territory name in the border dataset; it jumps to the right year and flies to it.
 - **Shareable URLs** — the year, date and open panel are kept in the address bar (e.g. `#y=1571&d=280&e=lepanto`).
@@ -59,15 +59,15 @@ The app automatically uses `public/basemaps/` when it exists.
 
 ```json
 {
-  "id": "peace-of-lodi",
-  "year": 1454, "month": 4, "day": 9,
-  "title": "Peace of Lodi",
+  "id": "waitangi",
+  "year": 1840, "month": 2, "day": 6,
+  "title": "Treaty of Waitangi",
   "type": "treaty",
-  "lat": 45.31, "lng": 9.5, "place": "Lodi, Lombardy",
+  "lat": -35.27, "lng": 174.08, "place": "Waitangi, New Zealand",
   "importance": 2,
-  "summary": "Venice and Milan end their long wars…",
+  "summary": "British representatives and over 500 Māori chiefs sign…",
   "significance": "(optional) why it matters",
-  "wiki": "Peace_of_Lodi"
+  "wiki": "Treaty_of_Waitangi"
 }
 ```
 
@@ -78,8 +78,8 @@ The app automatically uses `public/basemaps/` when it exists.
 **Add a territory summary** — add to `src/data/polities/*.json`:
 
 ```json
-{ "names": ["Venice", "Republic of Venice"], "wiki": "Republic_of_Venice",
-  "eras": [ { "from": 1381, "to": 1453, "title": "Expansion on the mainland", "text": "…" } ] }
+{ "names": ["Mali", "Mali Empire"], "wiki": "Mali_Empire",
+  "eras": [ { "from": 1235, "to": 1360, "title": "The empire of gold", "text": "…" } ] }
 ```
 
 `names` must match the `NAME` used in the border dataset (search `src/data/polity-index.json`); the era containing the selected year is shown, or the nearest one.

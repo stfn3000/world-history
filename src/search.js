@@ -13,7 +13,7 @@ const polityEntries = Object.entries(polityIndex.names)
   .map(([name, idx]) => ({ name, years: idx.map((i) => polityIndex.years[i]).filter((y) => y >= minYear) }))
   .filter((p) => p.years.length);
 
-// Curated aliases (e.g. "Republic of Venice" → "Venice") so searches find the map name.
+// Curated aliases (e.g. "Ashanti Empire" → "Asante") so searches find the map name.
 const aliasToMap = new Map();
 for (const p of POLITIES) {
   const onMap = p.names.find((n) => polityIndex.names[n]);
