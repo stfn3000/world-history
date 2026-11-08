@@ -16,7 +16,7 @@
   {"names":["Fatimid Caliphate"],"wiki":"Fatimid_Caliphate","eras":[
     {"from":909,"to":1171,"title":"The Shia caliphate of Cairo","text":"An Ismaili Shia dynasty rises in North Africa, conquers Egypt (969) and founds Cairo and al-Azhar. Its Red Sea trade links India to the Mediterranean; Saladin ends the dynasty in 1171."}
   ]},
-  {"names":["Abbasid Caliphate"],"wiki":"Abbasid_Caliphate","eras":[
+  {"names":["Abbasid Caliphate"],"wiki":"Abbasid_Caliphate","britannica":"topic/Abbasid-caliphate","eras":[
     {"from":750,"to":945,"title":"The golden age of Baghdad","text":"The Abbasids rule from their new round city of Baghdad. Under Harun al-Rashid and al-Ma'mun it is the world's intellectual capital: Greek, Persian and Indian works are translated, and scholars like al-Khwarizmi (algebra) flourish."},
     {"from":945,"to":1258,"title":"Caliphs without power","text":"Real power passes to Persian Buyids and then Seljuk Turks, while the caliph remains a religious figurehead. The Mongols sack Baghdad and kill the last Abbasid caliph in 1258."}
   ]},
@@ -33,7 +33,7 @@
     {"from":1037,"to":1194,"title":"The Great Seljuks","text":"Oghuz Turks conquer Iran and Iraq, take Baghdad (1055) as protectors of the Abbasid caliph, and defeat Byzantium at Manzikert (1071), opening Anatolia to Turkish settlement."},
     {"from":1077,"to":1308,"title":"Sultanate of Rum","text":"A Seljuk branch rules central Anatolia from Konya — a prosperous land of caravanserais and the poet Rumi — until the Mongols reduce it to vassalage and it fragments into beyliks, one of which is the Ottomans'."}
   ]},
-  {"names":["Ilkhanate"],"wiki":"Ilkhanate","eras":[
+  {"names":["Ilkhanate"],"wiki":"Ilkhanate","britannica":"topic/Il-Khanid-dynasty","eras":[
     {"from":1256,"to":1335,"title":"Mongol Persia","text":"Hülegü, grandson of Genghis, founds a Mongol state in Iran and Iraq after sacking Baghdad. The Ilkhans convert to Islam (1295) and preside over a Persian cultural revival; Venetian and Genoese merchants trade at Tabriz."}
   ]},
   {"names":["Timurid Empire","Timurid Emirates"],"wiki":"Timurid_Empire","eras":[
@@ -53,18 +53,18 @@
     {"from":-2025,"to":-912,"title":"Old and Middle Assyria","text":"A trading city-state on the Tigris becomes a regional power."},
     {"from":-912,"to":-609,"title":"The Neo-Assyrian Empire","text":"Assyria's ruthless army conquers Mesopotamia, the Levant and Egypt. Its kings build palaces at Nineveh decorated with reliefs, and Ashurbanipal collects a great library. Babylon and the Medes destroy it in 612 BC."}
   ]},
-  {"names":["Babylonia"],"wiki":"Babylonia","eras":[
+  {"names":["Babylonia"],"wiki":"Babylonia","britannica":"place/Babylonia","eras":[
     {"from":-1894,"to":-1595,"title":"Old Babylon","text":"Hammurabi makes Babylon the capital of Mesopotamia and issues his famous law code."},
     {"from":-1595,"to":-626,"title":"Kassite and Assyrian eras","text":"Babylon is ruled by the Kassites, then often by Assyria, but remains the region's cultural centre."},
     {"from":-626,"to":-539,"title":"Neo-Babylonian Empire","text":"Nebuchadnezzar II builds the Ishtar Gate and (perhaps) the Hanging Gardens and destroys Jerusalem. Cyrus of Persia takes Babylon in 539 BC."}
   ]},
-  {"names":["Hittites"],"wiki":"Hittites","eras":[
+  {"names":["Hittites"],"wiki":"Hittites","britannica":"topic/Hittite","eras":[
     {"from":-1650,"to":-1180,"title":"The Hittite Empire","text":"From Hattusa in central Anatolia, the Hittites rule a great empire, fight Egypt at Kadesh and sign the earliest known peace treaty. They collapse in the Bronze Age collapse."}
   ]},
-  {"names":["Elam"],"wiki":"Elam","eras":[
+  {"names":["Elam"],"wiki":"Elam","britannica":"place/Elam","eras":[
     {"from":-3200,"to":-539,"title":"Elam","text":"An ancient civilisation in south-west Iran, with its capital at Susa, Elam is a long-time rival and trading partner of the Mesopotamian states until absorbed by Persia."}
   ]},
-  {"names":["Minoan"],"wiki":"Minoan_civilization","eras":[
+  {"names":["Minoan"],"wiki":"Minoan_civilization","britannica":"topic/Minoan","eras":[
     {"from":-3100,"to":-1100,"title":"Minoan Crete","text":"A Bronze Age civilisation of palaces (Knossos, Phaistos), frescoes and sea trade, writing in Linear A. After the Thera eruption it is taken over by Mycenaean Greeks."}
   ]},
   {"names":["Carthaginian Empire","Carthage"],"wiki":"Ancient_Carthage","eras":[
@@ -74,7 +74,7 @@
   {"names":["Ptolemaic Kingdom"],"wiki":"Ptolemaic_Kingdom","eras":[
     {"from":-305,"to":-30,"title":"The Ptolemies","text":"A Greek dynasty rules Egypt from Alexandria, home to the Great Library and Lighthouse. The last ruler, Cleopatra VII, allies with Caesar and Mark Antony before Rome annexes Egypt."}
   ]},
-  {"names":["Seleucid Kingdom","Seleucid Empire"],"wiki":"Seleucid_Empire","eras":[
+  {"names":["Seleucid Kingdom","Seleucid Empire"],"wiki":"Seleucid_Empire","britannica":"place/Seleucid-kingdom","eras":[
     {"from":-312,"to":-63,"title":"The Seleucids","text":"Alexander's general Seleucus inherits the eastern empire from Syria to Afghanistan. It shrinks under pressure from Parthia and Rome, which annexes Syria in 63 BC."}
   ]},
   {"names":["Kush","Kushites","Meroe"],"wiki":"Kingdom_of_Kush","eras":[
@@ -90,11 +90,11 @@
     {"from":1632,"to":1855,"title":"Gondar and the Era of Princes","text":"Emperors build castles at Gondar; later regional lords rule while emperors are figureheads."},
     {"from":1855,"to":2025,"title":"Modern Ethiopia","text":"Tewodros and Menelik II reunite and expand Ethiopia, which defeats Italy at Adwa (1896) and stays independent through the Scramble for Africa. Italy occupies it 1936–41. Haile Selassie rules until 1974."}
   ]},
-  {"names":["Mali","Mali Empire"],"wiki":"Mali_Empire","eras":[
+  {"names":["Mali","Mali Empire"],"wiki":"Mali_Empire","britannica":"place/Mali-historical-empire-Africa","eras":[
     {"from":1235,"to":1360,"title":"The empire of gold","text":"Sundiata Keita founds the Mali Empire. Under Mansa Musa (1312–37), whose pilgrimage to Mecca dazzled Cairo, it is one of the richest states in the world, controlling West Africa's gold fields and the scholarly city of Timbuktu."},
     {"from":1360,"to":1670,"title":"Decline","text":"Succession struggles and the rise of Songhai shrink Mali to its Mande heartland."}
   ]},
-  {"names":["Songhai","Songhai Empire"],"wiki":"Songhai_Empire","eras":[
+  {"names":["Songhai","Songhai Empire"],"wiki":"Songhai_Empire","britannica":"place/Songhai-empire","eras":[
     {"from":1464,"to":1591,"title":"Songhai","text":"Sunni Ali and Askia Muhammad build the largest empire in West African history along the Niger, with Timbuktu and Djenné as centres of trade and Islamic learning. A Moroccan army with firearms destroys it in 1591."}
   ]},
   {"names":["Empire of Ghana","Ghana Empire"],"wiki":"Ghana_Empire","eras":[
@@ -103,17 +103,17 @@
   {"names":["Great Zimbabwe","Kingdom of Zimbabwe"],"wiki":"Kingdom_of_Great_Zimbabwe","eras":[
     {"from":1100,"to":1450,"title":"The stone city","text":"Shona kings build the great stone enclosures of Great Zimbabwe and trade gold and ivory through the Swahili ports for Chinese porcelain and Indian beads."}
   ]},
-  {"names":["Kanem-Bornu","Kanem–Bornu Empire","Empire of Kanem","Bornu Empire"],"wiki":"Kanem–Bornu_Empire","eras":[
+  {"names":["Kanem-Bornu","Kanem–Bornu Empire","Empire of Kanem","Bornu Empire"],"wiki":"Kanem–Bornu_Empire","britannica":"place/Kanem-Bornu","eras":[
     {"from":700,"to":1900,"title":"Around Lake Chad","text":"One of Africa's longest-lasting states, ruled by the Sayfawa dynasty around Lake Chad, trading horses, slaves and ivory across the Sahara and adopting Islam in the 11th century."}
   ]},
-  {"names":["Benin","Kingdom of Benin"],"wiki":"Kingdom_of_Benin","eras":[
+  {"names":["Benin","Kingdom of Benin"],"wiki":"Kingdom_of_Benin","britannica":"place/Benin-historical-kingdom-West-Africa","eras":[
     {"from":1180,"to":1897,"title":"Kingdom of Benin","text":"A powerful kingdom in today's southern Nigeria (not modern Benin), famed for its walled capital and brass plaques. It trades with the Portuguese from the 1480s, until the British sack Benin City in 1897."}
   ]},
-  {"names":["Congo","Kingdom of Kongo"],"wiki":"Kingdom_of_Kongo","eras":[
+  {"names":["Congo","Kingdom of Kongo"],"wiki":"Kingdom_of_Kongo","britannica":"place/Kongo-historical-kingdom-Africa","eras":[
     {"from":1390,"to":1914,"title":"Kingdom of Kongo","text":"A centralised kingdom near the Congo River's mouth; its king converts to Christianity after the Portuguese arrive (1483) and corresponds with the pope, but the Atlantic slave trade tears it apart."},
     {"from":1885,"to":2025,"title":"Colonial and independent Congo","text":"King Leopold II's brutal 'Congo Free State' becomes the Belgian Congo; it wins independence in 1960, followed by decades of dictatorship and war."}
   ]},
-  {"names":["Hafsid Caliphate","Hafsid dynasty"],"wiki":"Hafsid_dynasty","eras":[
+  {"names":["Hafsid Caliphate","Hafsid dynasty"],"wiki":"Hafsid_dynasty","britannica":"topic/Hafsid-dynasty","eras":[
     {"from":1229,"to":1574,"title":"The Hafsids of Tunis","text":"A Berber dynasty rules Tunisia and eastern Algeria, trading with Venice, Genoa and Pisa, until the Ottomans take Tunis."}
   ]},
   {"names":["Morocco","Wattasid Caliphate"],"wiki":"History_of_Morocco","eras":[

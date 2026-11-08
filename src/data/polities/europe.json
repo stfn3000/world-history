@@ -1,5 +1,5 @@
 [
-  {"names":["Venice","Republic of Venice","Most Serene Republic of Venice","Venetian Republic"],"wiki":"Republic_of_Venice","eras":[
+  {"names":["Venice","Republic of Venice","Most Serene Republic of Venice","Venetian Republic"],"wiki":"Republic_of_Venice","britannica":"topic/Venetian-Republic","eras":[
     {"from":421,"to":1000,"title":"From lagoon refuge to trading city","text":"Romans fleeing the Huns and Lombards settle the islands of the Venetian lagoon, which stay under Byzantine rule. The communities elect their own doge, move their capital to the Rialto (c. 810) and grow rich trading between Constantinople, the Islamic world and the Frankish West."},
     {"from":1000,"to":1204,"title":"Mistress of the Adriatic","text":"Venice subdues the Dalmatian coast, wins tax-free trade across the Byzantine Empire (1082) and profits from transporting and supplying the Crusades. Its state shipyard, the Arsenal, is founded."},
     {"from":1204,"to":1381,"title":"A maritime empire","text":"Venice diverts the Fourth Crusade to Constantinople (1204) and takes Crete and a chain of Greek ports. A closed aristocracy rules the city after 1297. It fights a long rivalry with Genoa, loses half its people to the Black Death and wins the War of Chioggia (1381)."},
@@ -7,7 +7,7 @@
     {"from":1508,"to":1718,"title":"Splendour and slow decline","text":"Venice survives the League of Cambrai (1508–16) and enjoys the age of Titian, Tintoretto and Palladio, but trade shifts to the Atlantic. It loses Cyprus (1571) and Crete (1669) to the Ottomans despite the victory at Lepanto."},
     {"from":1718,"to":1797,"title":"Neutrality and the end of the Republic","text":"No longer a great power, Venice stays neutral and becomes a highlight of the European Grand Tour. Facing Napoleon in 1797, its Great Council votes the 1,100-year-old Republic out of existence."}
   ]},
-  {"names":["Byzantine Empire","Eastern Roman Empire","Empire of Nicaea"],"wiki":"Byzantine_Empire","eras":[
+  {"names":["Byzantine Empire","Eastern Roman Empire","Empire of Nicaea"],"wiki":"Byzantine_Empire","britannica":"place/Byzantine-Empire","eras":[
     {"from":395,"to":565,"title":"The Roman Empire in the East","text":"After the empire's division, the East — richer and more urban — survives the barbarian invasions that end the West. Justinian I (527–565) codifies Roman law, builds the Hagia Sophia and reconquers Italy, North Africa and southern Spain, but the Plague of Justinian (541) cripples the empire."},
     {"from":565,"to":843,"title":"Survival against Persians and Arabs","text":"Exhausting wars with Sasanian Persia are followed by the Arab conquests, which take Syria, Egypt and North Africa. Constantinople survives two Arab sieges (674–78, 717–18) thanks partly to 'Greek fire'. The empire becomes more Greek-speaking and Orthodox; the Iconoclasm controversy splits it over the use of religious images."},
     {"from":843,"to":1071,"title":"The Macedonian revival","text":"Under the Macedonian dynasty Byzantium recovers: it retakes Crete, Cyprus and Antioch, converts the Bulgarians, Serbs and Rus' to Orthodoxy, and Basil II 'the Bulgar-Slayer' (976–1025) destroys the Bulgarian Empire. Constantinople is the largest and richest city in Christendom, trading through Venice with the West."},
@@ -15,7 +15,7 @@
     {"from":1204,"to":1261,"title":"Shattered by the Fourth Crusade","text":"Crusaders and Venetians sack Constantinople in 1204 and set up a Latin Empire; Venice takes islands and ports. Byzantine successor states survive in Nicaea, Epirus and Trebizond. Nicaea's emperor Michael VIII retakes Constantinople in 1261."},
     {"from":1261,"to":1453,"title":"The last centuries","text":"The restored empire is a shadow of its former self, squeezed between Serbs, Bulgarians, the rising Ottoman Turks and the Italian trading republics who control its commerce. By 1400 it is little more than Constantinople and the Morea. The city falls to Mehmed II on 29 May 1453."}
   ]},
-  {"names":["Ottoman Empire","Ottoman Sultanate"],"wiki":"Ottoman_Empire","eras":[
+  {"names":["Ottoman Empire","Ottoman Sultanate"],"wiki":"Ottoman_Empire","britannica":"place/Ottoman-Empire","eras":[
     {"from":1299,"to":1402,"title":"From frontier emirate to Balkan power","text":"Osman's small Turkish principality in north-west Anatolia expands at Byzantine expense, crosses into Europe (1354) and conquers much of the Balkans after Kosovo (1389). Defeat by Timur at Ankara (1402) nearly destroys it."},
     {"from":1402,"to":1453,"title":"Recovery and the road to Constantinople","text":"After a decade of civil war the sultans rebuild their power, fighting Venice, Hungary and crusading armies (Varna, 1444). Mehmed II takes Constantinople in 1453 and makes it his capital."},
     {"from":1453,"to":1566,"title":"Superpower","text":"Mehmed the Conqueror, Selim the Grim and Suleiman the Magnificent conquer Serbia, Egypt, Syria, Arabia's holy cities, Iraq, Hungary and North Africa. The Ottomans besiege Vienna (1529) and dominate the Mediterranean, taking Venetian islands one after another. Istanbul is the greatest city in Europe."},
@@ -23,13 +23,13 @@
     {"from":1699,"to":1839,"title":"Retreat and reform","text":"The empire wins back the Morea from Venice (1715–18) but loses wars to Russia and Austria; the Crimea goes to Russia (1783). Serbia and Greece break away. Sultan Mahmud II destroys the Janissaries (1826) and begins Westernising reforms."},
     {"from":1839,"to":1922,"title":"The 'sick man of Europe'","text":"The Tanzimat reforms modernise law and administration, but nationalism, debt and great-power pressure chip away at the empire. It loses most of its Balkan lands (1878, 1912–13), joins the First World War on Germany's side, and is partitioned after defeat. The sultanate is abolished in 1922."}
   ]},
-  {"names":["Holy Roman Empire"],"wiki":"Holy_Roman_Empire","eras":[
+  {"names":["Holy Roman Empire"],"wiki":"Holy_Roman_Empire","britannica":"place/Holy-Roman-Empire","eras":[
     {"from":962,"to":1250,"title":"Emperors and popes","text":"German kings crowned emperor in Rome — the Ottonians, Salians and Hohenstaufen — rule Germany, Burgundy and northern Italy. They clash with the papacy over who appoints bishops (the Investiture Controversy) and with the Lombard cities, which defeat Frederick Barbarossa at Legnano (1176)."},
     {"from":1250,"to":1438,"title":"A patchwork of princes","text":"After the Hohenstaufen fall, imperial power weakens; princes, bishops and free cities become nearly independent. The Golden Bull of 1356 fixes seven prince-electors to choose the emperor. The Hanseatic League dominates northern trade; Bohemia is shaken by the Hussite Wars."},
     {"from":1438,"to":1648,"title":"Habsburg emperors and the Reformation","text":"The imperial title passes almost permanently to the Habsburgs. Charles V (1519–56) rules Spain, the Netherlands and the Americas as well — and faces Luther's Reformation. The empire splits into Catholic and Protestant states, and the Thirty Years' War (1618–48) devastates Germany."},
     {"from":1648,"to":1806,"title":"A loose federation","text":"After Westphalia the empire is a loose federation of over 300 states. Austria and the rising Kingdom of Prussia compete for leadership. Napoleon's victories lead Francis II to dissolve the empire in 1806 — as Voltaire joked, it was 'neither holy, nor Roman, nor an empire'."}
   ]},
-  {"names":["France","Kingdom of France","Frankish Kingdom","Franks"],"wiki":"History_of_France","eras":[
+  {"names":["France","Kingdom of France","Frankish Kingdom","Franks"],"wiki":"History_of_France","britannica":"topic/history-of-France","eras":[
     {"from":481,"to":987,"title":"The Franks","text":"Clovis unites the Franks and converts to Catholicism; the Merovingian kingdom is replaced by the Carolingians, whose Charlemagne is crowned emperor in 800. After the Treaty of Verdun (843) West Francia slowly becomes France, ravaged by Viking raids."},
     {"from":987,"to":1328,"title":"The Capetian kings","text":"Hugh Capet's descendants slowly expand royal power from Paris. Philip II Augustus takes Normandy from the English kings (1204); Louis IX (St Louis) leads crusades. Gothic cathedrals rise and the University of Paris becomes Europe's intellectual centre."},
     {"from":1328,"to":1453,"title":"The Hundred Years' War","text":"English kings claim the French throne. France suffers crushing defeats (Crécy, Poitiers, Agincourt) and the Black Death, until Joan of Arc's victories (1429) turn the tide. By 1453 the English hold only Calais."},
@@ -45,13 +45,13 @@
     {"from":1485,"to":1603,"title":"The Tudors","text":"Henry VII ends the civil wars. Henry VIII breaks with Rome (1534) and Elizabeth I's England defeats the Spanish Armada (1588), begins overseas voyages and enjoys the age of Shakespeare."},
     {"from":1603,"to":1707,"title":"Stuarts, civil war and revolution","text":"The Stuart kings of Scotland inherit England. Conflict between Crown and Parliament leads to civil war, Charles I's execution (1649) and Cromwell's republic, then the Restoration (1660) and the Glorious Revolution (1688). England unites with Scotland in 1707."}
   ]},
-  {"names":["United Kingdom","United Kingdom of Great Britain and Ireland","Kingdom of Great Britain","British Empire","British Colonial Empire"],"wiki":"History_of_the_United_Kingdom","eras":[
+  {"names":["United Kingdom","United Kingdom of Great Britain and Ireland","Kingdom of Great Britain","British Empire","British Colonial Empire"],"wiki":"History_of_the_United_Kingdom","britannica":"topic/history-of-United-Kingdom","eras":[
     {"from":1707,"to":1815,"title":"Great Britain rises","text":"England and Scotland unite (1707). Britain wins naval and colonial supremacy against France, loses the American colonies (1783), begins the Industrial Revolution and leads the coalitions that defeat Napoleon."},
     {"from":1815,"to":1914,"title":"The Victorian empire","text":"Britain is the 'workshop of the world' and rules the largest empire in history — India, much of Africa, Canada, Australia — while its navy polices the seas. At home, railways, reform acts and the abolition of slavery (1833) transform society."},
     {"from":1914,"to":1945,"title":"Two world wars","text":"Britain fights both world wars, standing alone against Nazi Germany in 1940–41. Ireland's southern 26 counties gain independence (1922)."},
     {"from":1945,"to":2025,"title":"After empire","text":"The welfare state and NHS are founded; India (1947) and most colonies become independent. Britain joins the European Community (1973) and leaves the EU (2020)."}
   ]},
-  {"names":["Castile","Castille","Castilla","Crown of Castile","Spain","Kingdom of Castile","Kingdom of Spain","Spanish Empire","Francoist Spain"],"wiki":"History_of_Spain","eras":[
+  {"names":["Castile","Castille","Castilla","Crown of Castile","Spain","Kingdom of Castile","Kingdom of Spain","Spanish Empire","Francoist Spain"],"wiki":"History_of_Spain","britannica":"topic/history-of-Spain","eras":[
     {"from":711,"to":1212,"title":"Al-Andalus and the Christian north","text":"Most of Iberia is Muslim al-Andalus, whose capital Córdoba is the most brilliant city in Western Europe. Small Christian kingdoms in the north — Asturias, León, Castile, Navarre, Aragon — slowly push south in the Reconquista; Toledo falls to Castile in 1085."},
     {"from":1212,"to":1469,"title":"Castile becomes the great Iberian power","text":"After the victory of Las Navas de Tolosa (1212), Castile conquers Córdoba (1236) and Seville (1248), leaving only the Emirate of Granada in Muslim hands. Castile grows rich on wool exported to Flanders and Italy."},
     {"from":1469,"to":1556,"title":"The Catholic Monarchs and a world empire","text":"The marriage of Isabella of Castile and Ferdinand of Aragon unites Spain. In 1492 they take Granada, expel the Jews and sponsor Columbus. Their grandson Charles V inherits Spain, the Habsburg lands and the Netherlands while conquistadors seize the Aztec and Inca empires."},
@@ -63,13 +63,13 @@
     {"from":1035,"to":1282,"title":"A Mediterranean kingdom forms","text":"The small Pyrenean kingdom of Aragon unites with Barcelona (1137). James I the Conqueror takes Majorca (1229) and Valencia (1238)."},
     {"from":1282,"to":1479,"title":"A sea empire","text":"After the Sicilian Vespers (1282) Aragon takes Sicily, then Sardinia and, in 1442, Naples, competing with Genoa and Venice for Mediterranean trade. In 1469 Ferdinand of Aragon marries Isabella of Castile, uniting Spain."}
   ]},
-  {"names":["Portugal","Kingdom of Portugal"],"wiki":"History_of_Portugal","eras":[
+  {"names":["Portugal","Kingdom of Portugal"],"wiki":"History_of_Portugal","britannica":"topic/history-of-Portugal","eras":[
     {"from":1139,"to":1415,"title":"A kingdom on the edge of Europe","text":"Afonso Henriques becomes the first king of Portugal; Lisbon is taken from the Moors in 1147 and the Algarve by 1249. The alliance with England (1386) is the oldest still in force."},
     {"from":1415,"to":1580,"title":"The Age of Discovery","text":"Portugal takes Ceuta (1415) and its captains feel their way down Africa's coast. Dias rounds the Cape of Good Hope (1488); da Gama reaches India (1498); Cabral lands in Brazil (1500). A chain of forts from Mozambique to Goa, Malacca and Macau gives Portugal the spice trade — at Venice's expense."},
     {"from":1580,"to":1822,"title":"Union with Spain, then Brazil's riches","text":"Portugal is ruled by the Spanish kings (1580–1640) and loses much of its Asian empire to the Dutch. Brazilian gold funds 18th-century Lisbon, rebuilt after the 1755 earthquake. Fleeing Napoleon, the court moves to Rio de Janeiro (1808); Brazil becomes independent in 1822."},
     {"from":1822,"to":2025,"title":"Republic, dictatorship and democracy","text":"The monarchy falls in 1910. Salazar's Estado Novo dictatorship (1933–74) fights colonial wars in Africa until the peaceful Carnation Revolution of 1974 brings democracy."}
   ]},
-  {"names":["Papal States"],"wiki":"Papal_States","eras":[
+  {"names":["Papal States"],"wiki":"Papal_States","britannica":"place/Papal-States","eras":[
     {"from":756,"to":1300,"title":"The popes become princes","text":"The Frankish king Pepin gives the pope lands in central Italy (756). The popes rule this territory while fighting emperors over power in Christendom."},
     {"from":1300,"to":1500,"title":"Avignon, schism and Renaissance popes","text":"The popes live at Avignon (1309–77); then rival popes split the Church (1378–1417). Back in Rome, Renaissance popes act as Italian princes, building St Peter's and patronising Raphael and Michelangelo."},
     {"from":1500,"to":1870,"title":"Counter-Reformation to unification","text":"Rome is sacked (1527) and the Church responds to the Reformation at Trent. The Papal States survive into the 19th century, until Italian troops take Rome in 1870. The Vatican City is created in 1929."}
@@ -78,7 +78,7 @@
     {"from":1005,"to":1381,"title":"Venice's great rival","text":"Genoa builds a trading empire with colonies in the Crusader states, the Black Sea (Caffa) and Constantinople's suburb of Pera. It fights Venice in four wars, winning at Curzola (1298) but losing the War of Chioggia (1381)."},
     {"from":1381,"to":1797,"title":"The bankers' republic","text":"Genoa loses its eastern colonies to the Ottomans but its bankers (the Bank of St George) become financiers of the Spanish Empire. Columbus was a Genoese. The republic ends with Napoleon in 1797."}
   ]},
-  {"names":["Milan","Lombardy","Milano (Austria)","Duchy of Milan"],"wiki":"Duchy_of_Milan","eras":[
+  {"names":["Milan","Lombardy","Milano (Austria)","Duchy of Milan"],"wiki":"Duchy_of_Milan","britannica":"place/Duchy-of-Milan","eras":[
     {"from":1277,"to":1450,"title":"The Visconti","text":"The Visconti lords make Milan a powerful duchy (1395) that fights Venice and Florence for control of northern Italy."},
     {"from":1450,"to":1535,"title":"The Sforza","text":"Condottiero Francesco Sforza takes Milan and makes peace with Venice at Lodi (1454). Ludovico Sforza employs Leonardo da Vinci. French and Spanish armies then fight over the duchy."},
     {"from":1535,"to":1796,"title":"Spanish and Austrian Milan","text":"Milan is ruled by Spain until 1714 and then by Austria, until Napoleon arrives in 1796."}
@@ -87,7 +87,7 @@
     {"from":1115,"to":1434,"title":"A merchant republic","text":"Florence grows rich on wool, cloth and banking; its gold florin is Europe's standard coin. Dante, Giotto and Petrarch lay the foundations of the Renaissance."},
     {"from":1434,"to":1569,"title":"The Medici and the Renaissance","text":"Cosimo and Lorenzo the Magnificent de' Medici rule behind republican forms and patronise Brunelleschi, Botticelli, Leonardo and Michelangelo. After Savonarola and turmoil, the Medici become Grand Dukes of Tuscany."}
   ]},
-  {"names":["Naples","Kingdom of Naples","Kingdom of the Two Sicilies","Sicily","Kingdom of Sicily"],"wiki":"Kingdom_of_Naples","eras":[
+  {"names":["Naples","Kingdom of Naples","Kingdom of the Two Sicilies","Sicily","Kingdom of Sicily"],"wiki":"Kingdom_of_Naples","britannica":"place/Kingdom-of-Naples","eras":[
     {"from":1071,"to":1266,"title":"Normans and Hohenstaufen","text":"Norman adventurers conquer southern Italy and Arab-ruled Sicily, creating a rich multicultural kingdom. Emperor Frederick II rules it as a brilliant court in Palermo."},
     {"from":1266,"to":1504,"title":"Angevins and Aragonese","text":"French Angevin kings rule until the Sicilian Vespers (1282) gives Sicily to Aragon. Naples itself passes to Aragon in 1442, and is claimed by France in 1494."},
     {"from":1504,"to":1861,"title":"Spanish viceroys and Bourbon kings","text":"Southern Italy is ruled by Spanish viceroys, then by a Bourbon dynasty (the Two Sicilies from 1816), until Garibaldi's Thousand conquer it for Italy in 1860."}
@@ -98,7 +98,7 @@
     {"from":1526,"to":1918,"title":"Divided, then Habsburg","text":"After Mohács (1526) Hungary is split between the Ottomans, Habsburg Royal Hungary and Transylvania. The Habsburgs reconquer it by 1699; in 1867 it becomes an equal partner in Austria-Hungary."},
     {"from":1918,"to":2025,"title":"Independent Hungary","text":"Hungary loses two-thirds of its territory at Trianon (1920), joins the Axis, and falls under Soviet control after 1945; the 1956 revolution is crushed. It becomes a democracy in 1989 and joins the EU in 2004."}
   ]},
-  {"names":["Poland","Poland-Lithuania","Polish–Lithuanian Commonwealth","Kingdom of Poland","Duchies of Poland","Polish-Lithuania Kingdom","House of Jagiellon","Polish-Lithuanian Commonwealth","Second Polish Republic","Republic of Poland"],"wiki":"History_of_Poland","eras":[
+  {"names":["Poland","Poland-Lithuania","Polish–Lithuanian Commonwealth","Kingdom of Poland","Duchies of Poland","Polish-Lithuania Kingdom","House of Jagiellon","Polish-Lithuanian Commonwealth","Second Polish Republic","Republic of Poland"],"wiki":"History_of_Poland","britannica":"topic/history-of-Poland","eras":[
     {"from":966,"to":1385,"title":"The Piast kingdom","text":"Mieszko I accepts Christianity (966). Poland fragments, suffers Mongol raids, and is reunited under Casimir the Great (1333–70). Lithuania, the last pagan state in Europe, expands across Rus' lands."},
     {"from":1385,"to":1572,"title":"Union with Lithuania","text":"Grand Duke Jogaila of Lithuania marries Queen Jadwiga and converts; the union defeats the Teutonic Knights at Grunwald (1410) and becomes one of Europe's largest states. Copernicus studies in Kraków."},
     {"from":1569,"to":1795,"title":"The Commonwealth of nobles","text":"The Polish–Lithuanian Commonwealth elects its kings and grants religious tolerance. Jan Sobieski saves Vienna (1683), but a weak central government lets Russia, Prussia and Austria partition the state out of existence (1772–95)."},
@@ -107,30 +107,30 @@
   {"names":["Teutonic Knights","State of the Teutonic Order","Teutonic Order"],"wiki":"State_of_the_Teutonic_Order","eras":[
     {"from":1226,"to":1525,"title":"A crusader state on the Baltic","text":"The German crusading order conquers the pagan Prussians and builds a powerful state ruled from Marienburg castle. Its defeat by Poland-Lithuania at Grunwald (1410) begins its decline; in 1525 its last Grand Master becomes the Lutheran Duke of Prussia."}
   ]},
-  {"names":["Kyivan Rus","Kievan Rus","Rus' Khaganate","Other Rus Principalities"],"wiki":"Kievan_Rus'","eras":[
+  {"names":["Kyivan Rus","Kievan Rus","Rus' Khaganate","Other Rus Principalities"],"wiki":"Kievan_Rus'","britannica":"topic/Kievan-Rus","eras":[
     {"from":862,"to":1054,"title":"Vikings, furs and Constantinople","text":"Scandinavian Rus' rulers unite East Slavic tribes along the river route 'from the Varangians to the Greeks'. Vladimir adopts Orthodox Christianity (988); under Yaroslav the Wise Kyiv is one of Europe's great cities."},
     {"from":1054,"to":1240,"title":"Fragmentation and the Mongols","text":"Rus' splinters into rival principalities — Kyiv, Novgorod, Vladimir-Suzdal and others. The Mongols sack Kyiv in 1240 and impose tribute for two centuries."}
   ]},
   {"names":["Novgorod","Principality of Novgorod","Novgorod Republic"],"wiki":"Novgorod_Republic","eras":[
     {"from":1136,"to":1478,"title":"Lord Novgorod the Great","text":"A merchant republic governed by its assembly (veche), Novgorod controls a vast fur-producing hinterland and trades with the Hanseatic League. Spared the Mongol sack, it is finally annexed by Ivan III of Moscow in 1478."}
   ]},
-  {"names":["Tsardom of Muscovy","Grand Duchy of Moscow","Russian Empire","Russia","Muscovy","Grand Principality of Moscow","Tsardom of Russia","Russian Federation"],"wiki":"History_of_Russia","eras":[
+  {"names":["Tsardom of Muscovy","Grand Duchy of Moscow","Russian Empire","Russia","Muscovy","Grand Principality of Moscow","Tsardom of Russia","Russian Federation"],"wiki":"History_of_Russia","britannica":"topic/history-of-Russia","eras":[
     {"from":1283,"to":1547,"title":"The rise of Moscow","text":"The princes of Moscow collect tribute for the Golden Horde and gradually absorb rival Russian lands. Ivan III ends Tatar overlordship (1480) and annexes Novgorod; Moscow styles itself the 'Third Rome'."},
     {"from":1547,"to":1682,"title":"The Tsardom","text":"Ivan IV 'the Terrible' is crowned tsar, conquers Kazan and Astrakhan and begins the conquest of Siberia. After the Time of Troubles the Romanov dynasty is founded (1613)."},
     {"from":1682,"to":1801,"title":"Peter, Catherine and empire","text":"Peter the Great modernises Russia, defeats Sweden and builds St Petersburg. Catherine the Great takes Crimea and much of Poland."},
     {"from":1801,"to":1917,"title":"Imperial Russia","text":"Russia defeats Napoleon (1812), expands into Central Asia and the Caucasus, frees the serfs (1861) and industrialises late. Defeat in war and revolution end the monarchy in 1917."},
     {"from":1991,"to":2025,"title":"Post-Soviet Russia","text":"The Russian Federation emerges from the USSR's collapse. After a chaotic 1990s, Vladimir Putin centralises power; Russia annexes Crimea (2014) and invades Ukraine (2022)."}
   ]},
-  {"names":["USSR","Soviet Union"],"wiki":"Soviet_Union","eras":[
+  {"names":["USSR","Soviet Union"],"wiki":"Soviet_Union","britannica":"place/Soviet-Union","eras":[
     {"from":1922,"to":1953,"title":"Lenin and Stalin","text":"The Bolsheviks win the civil war and found the USSR. Stalin's forced collectivisation and industrialisation cause famine and terror, but the Soviet Union bears the greatest share of the fighting against Nazi Germany and emerges a superpower."},
     {"from":1953,"to":1991,"title":"Cold War superpower","text":"The USSR launches Sputnik and Gagarin, dominates Eastern Europe and rivals the USA worldwide. Economic stagnation and Gorbachev's reforms lead to collapse in 1991."}
   ]},
-  {"names":["Sweden","Swedes","Swedes and Goths","Kingdom of Sweden"],"wiki":"History_of_Sweden","eras":[
+  {"names":["Sweden","Swedes","Swedes and Goths","Kingdom of Sweden"],"wiki":"History_of_Sweden","britannica":"topic/history-of-Sweden","eras":[
     {"from":800,"to":1523,"title":"Vikings to Kalmar Union","text":"Swedish Vikings trade and raid down Russia's rivers. A Christian kingdom forms; from 1397 Sweden is part of the Kalmar Union with Denmark and Norway."},
     {"from":1523,"to":1721,"title":"Sweden's age of greatness","text":"Gustav Vasa makes Sweden independent. Gustavus Adolphus' armies intervene decisively in the Thirty Years' War and Sweden dominates the Baltic, until Peter the Great's Russia defeats Charles XII (Poltava, 1709)."},
     {"from":1721,"to":2025,"title":"Neutral and prosperous","text":"Sweden settles into constitutional monarchy, stays out of wars after 1814 and builds a famously generous welfare state; it joined NATO in 2024."}
   ]},
-  {"names":["Denmark","Denmark-Norway","Kalmar Union"],"wiki":"History_of_Denmark","eras":[
+  {"names":["Denmark","Denmark-Norway","Kalmar Union"],"wiki":"History_of_Denmark","britannica":"topic/history-of-Denmark","eras":[
     {"from":800,"to":1397,"title":"Viking Denmark","text":"Danish Vikings raid and settle England (the Danelaw); Cnut the Great rules England, Denmark and Norway (1016–35). Denmark dominates the Baltic entrance."},
     {"from":1397,"to":1523,"title":"The Kalmar Union","text":"Queen Margaret unites Denmark, Norway and Sweden under one crown; Sweden breaks away in 1523."},
     {"from":1523,"to":1814,"title":"Denmark-Norway","text":"Denmark and Norway remain united, collecting tolls on all ships entering the Baltic and fighting repeated wars with Sweden. Norway passes to Sweden in 1814."}
@@ -139,30 +139,30 @@
     {"from":843,"to":1603,"title":"An independent kingdom","text":"Kenneth MacAlpin unites Picts and Scots. William Wallace and Robert the Bruce resist English conquest (Bannockburn, 1314). Scotland allies with France and embraces a Calvinist Reformation under John Knox."},
     {"from":1603,"to":1707,"title":"Union of Crowns","text":"James VI of Scotland inherits England (1603). The two kingdoms merge into Great Britain in 1707."}
   ]},
-  {"names":["Serbia","Principality of Serbia","Grand Principality of Serbia","Kingdom of Serbia","Serbian Empire","Serbian Despots"],"wiki":"History_of_Serbia","eras":[
+  {"names":["Serbia","Principality of Serbia","Grand Principality of Serbia","Kingdom of Serbia","Serbian Empire","Serbian Despots"],"wiki":"History_of_Serbia","britannica":"topic/history-of-Serbia","eras":[
     {"from":1166,"to":1459,"title":"Medieval Serbia","text":"The Nemanjić dynasty builds a powerful Orthodox kingdom; Stefan Dušan (1331–55) crowns himself emperor. After Kosovo (1389) Serbia becomes an Ottoman vassal and is annexed in 1459."},
     {"from":1804,"to":2025,"title":"Modern Serbia","text":"Uprisings win autonomy and independence (1878). Serbia's conflict with Austria-Hungary sparks WWI; it becomes the core of Yugoslavia (1918–1992), whose violent breakup in the 1990s ends with an independent Serbia."}
   ]},
-  {"names":["Bulgar Khanate","Danube Bulgars","Bulgars","Bulgaria","First Bulgarian Empire","Second Bulgarian Empire"],"wiki":"History_of_Bulgaria","eras":[
+  {"names":["Bulgar Khanate","Danube Bulgars","Bulgars","Bulgaria","First Bulgarian Empire","Second Bulgarian Empire"],"wiki":"History_of_Bulgaria","britannica":"topic/history-of-Bulgaria","eras":[
     {"from":681,"to":1018,"title":"The First Bulgarian Empire","text":"Turkic Bulgars and Slavs found a state south of the Danube. It converts to Christianity (864), becomes the cradle of Cyrillic literature and rivals Byzantium, until Basil II conquers it."},
     {"from":1185,"to":1396,"title":"The Second Bulgarian Empire","text":"Bulgaria revives under the Asen dynasty but falls to the Ottomans in 1396, remaining under Ottoman rule until 1878."}
   ]},
-  {"names":["Golden Horde","Khanate of the Golden Horde","Blue Horde","White Horde"],"wiki":"Golden_Horde","eras":[
+  {"names":["Golden Horde","Khanate of the Golden Horde","Blue Horde","White Horde"],"wiki":"Golden_Horde","britannica":"place/Golden-Horde","eras":[
     {"from":1242,"to":1359,"title":"Mongol rulers of the steppe","text":"Batu Khan's western Mongol khanate rules the steppe from the Danube to Siberia from its capital Sarai and collects tribute from the Russian principalities. It converts to Islam under Özbeg Khan. Venetian and Genoese merchants trade at its Black Sea ports of Tana and Caffa."},
     {"from":1359,"to":1502,"title":"Decline and break-up","text":"Civil wars, plague and Timur's invasions weaken the Horde. Moscow defies it, and it splinters into the khanates of Kazan, Astrakhan, Crimea and Sibir."}
   ]},
-  {"names":["Roman Republic","Rome"],"wiki":"Roman_Republic","eras":[
+  {"names":["Roman Republic","Rome"],"wiki":"Roman_Republic","britannica":"place/Roman-Republic","eras":[
     {"from":-509,"to":-264,"title":"Rome conquers Italy","text":"Having expelled its kings, Rome is governed by elected consuls and the Senate. It survives a Gallic sack (390 BC) and conquers the rest of Italy through war and alliances."},
     {"from":-264,"to":-133,"title":"Mastery of the Mediterranean","text":"Rome defeats Carthage in the Punic Wars despite Hannibal's invasion, then conquers Macedon and Greece. By 146 BC it dominates the whole Mediterranean."},
     {"from":-133,"to":-27,"title":"Civil wars and the end of the Republic","text":"Enormous wealth and slave labour bring inequality and political violence. Generals — Marius, Sulla, Pompey, Caesar — use their armies to seize power. After Caesar's murder, Octavian defeats Antony and Cleopatra and becomes Augustus."}
   ]},
-  {"names":["Roman Empire","Western Roman Empire","Rome (Constantinus)","Rome (Diocletianus)","Rome (Galerius)","Rome (Maximian)"],"wiki":"Roman_Empire","eras":[
+  {"names":["Roman Empire","Western Roman Empire","Rome (Constantinus)","Rome (Diocletianus)","Rome (Galerius)","Rome (Maximian)"],"wiki":"Roman_Empire","britannica":"place/Roman-Empire","eras":[
     {"from":-27,"to":180,"title":"The Pax Romana","text":"Augustus and his successors rule an empire of perhaps 60 million people from Britain to Mesopotamia. Roads, cities, aqueducts and law spread Roman culture; trade reaches India and, indirectly, Han China."},
     {"from":180,"to":284,"title":"Crisis of the third century","text":"Plague, civil wars, invasions by Goths and Persians and runaway inflation nearly break the empire; over 20 emperors rule in 50 years."},
     {"from":284,"to":395,"title":"Diocletian, Constantine and a Christian empire","text":"Diocletian divides rule among four emperors. Constantine embraces Christianity and founds Constantinople (330); by 380 Christianity is the state religion."},
     {"from":395,"to":476,"title":"The fall of the West","text":"The Western half crumbles under pressure from Goths, Vandals, Huns and others; Rome is sacked in 410 and 455. In 476 the last western emperor is deposed. The Eastern Roman Empire continues."}
   ]},
-  {"names":["Greek city-states","Greek colonies","Macedon and Hellenic League"],"wiki":"Ancient_Greece","eras":[
+  {"names":["Greek city-states","Greek colonies","Macedon and Hellenic League"],"wiki":"Ancient_Greece","britannica":"place/ancient-Greece","eras":[
     {"from":-800,"to":-500,"title":"Archaic Greece","text":"Hundreds of independent city-states (poleis) emerge. Greeks found colonies from Marseille to the Black Sea, adopt the alphabet, hold the Olympic Games and compose Homer's epics."},
     {"from":-500,"to":-338,"title":"Classical Greece","text":"Athens and Sparta lead the Greeks to victory over Persia. Democratic Athens has its golden age — the Parthenon, Socrates, Sophocles — before the Peloponnesian War with Sparta."},
     {"from":-338,"to":-146,"title":"The Hellenistic age","text":"Philip II of Macedon conquers Greece; his son Alexander conquers Persia. Greek culture spreads from Egypt to Afghanistan in the kingdoms of his successors, until Rome absorbs them."}
@@ -170,42 +170,42 @@
   {"names":["Carolingian Empire"],"wiki":"Carolingian_Empire","eras":[
     {"from":751,"to":888,"title":"Charlemagne's empire","text":"The Carolingians replace the Merovingian kings. Charlemagne conquers the Lombards, Saxons and Avars, is crowned emperor in 800 and sponsors a revival of learning. His grandsons divide the empire in 843."}
   ]},
-  {"names":["Visigoths","Visigothic Kingdom","Ostrogoths","Vandals","Burgundians","Lombard principalities","Lombard duchies"],"wiki":"Migration_Period","eras":[
+  {"names":["Visigoths","Visigothic Kingdom","Ostrogoths","Vandals","Burgundians","Lombard principalities","Lombard duchies"],"wiki":"Migration_Period","britannica":"topic/barbarian-invasions","eras":[
     {"from":376,"to":568,"title":"The Migration Period","text":"Germanic peoples — Goths, Vandals, Franks, Burgundians, Lombards — cross into the Roman Empire, often as allies and soldiers, and carve out kingdoms on its ruins: the Visigoths in Spain, the Vandals in North Africa, the Ostrogoths and then Lombards in Italy."},
     {"from":568,"to":774,"title":"Successor kingdoms","text":"The Visigothic kingdom of Spain lasts until the Arab conquest of 711; the Lombards rule much of Italy until Charlemagne conquers them in 774."}
   ]},
-  {"names":["Celts","Celtic kingdoms","Celtiberians","Brythonic Kingdoms","Brythons"],"wiki":"Celts","eras":[
+  {"names":["Celts","Celtic kingdoms","Celtiberians","Brythonic Kingdoms","Brythons"],"wiki":"Celts","britannica":"topic/Celt-people","eras":[
     {"from":-800,"to":-50,"title":"Iron Age Celts","text":"Celtic-speaking peoples of the Hallstatt and La Tène cultures spread across Europe from Ireland to Anatolia, sacking Rome (390 BC) and Delphi (279 BC). Caesar conquers Gaul by 50 BC."},
     {"from":-50,"to":1300,"title":"The Celtic fringe","text":"Celtic languages and kingdoms survive in Ireland, Scotland, Wales, Cornwall and Brittany, where Irish monks preserve learning in the early Middle Ages."}
   ]},
-  {"names":["Hunnic Empire","Huns"],"wiki":"Huns","eras":[
+  {"names":["Hunnic Empire","Huns"],"wiki":"Huns","britannica":"topic/Hun-people","eras":[
     {"from":370,"to":469,"title":"The Huns","text":"Nomads from the steppe, the Huns push the Goths into the Roman Empire. Under Attila (434–453) they extort gold from Constantinople and invade Gaul and Italy before their empire collapses."}
   ]},
-  {"names":["Austrian Empire","Austria","Austria Hungary","Austro-Hungarian Empire","Republic of Austria"],"wiki":"History_of_Austria","eras":[
+  {"names":["Austrian Empire","Austria","Austria Hungary","Austro-Hungarian Empire","Republic of Austria"],"wiki":"History_of_Austria","britannica":"topic/history-of-Austria","eras":[
     {"from":1282,"to":1804,"title":"The Habsburg lands","text":"The Habsburgs rule Austria from 1282 and through marriages gather Bohemia, Hungary and more; they hold the imperial crown, resist the Ottomans at Vienna (1529, 1683) and fight Prussia under Maria Theresa."},
     {"from":1804,"to":1867,"title":"The Austrian Empire","text":"Francis I takes the title Emperor of Austria. After 1815 Austria rules Venice and Lombardy, and Metternich leads conservative Europe, but revolutions (1848) and defeats lose its Italian lands."},
     {"from":1867,"to":1918,"title":"Austria-Hungary","text":"The 'Dual Monarchy' of Franz Joseph is a multinational empire of Germans, Hungarians, Czechs, Poles, Croats and others — and the Vienna of Freud, Klimt and Mahler. Its war on Serbia starts WWI; it breaks apart in 1918."},
     {"from":1918,"to":2025,"title":"Republic of Austria","text":"A small German-speaking republic is annexed by Nazi Germany (1938), occupied after the war, and regains full independence as a neutral state in 1955."}
   ]},
-  {"names":["Prussia","Kingdom of Prussia"],"wiki":"Prussia","eras":[
+  {"names":["Prussia","Kingdom of Prussia"],"wiki":"Prussia","britannica":"place/Prussia","eras":[
     {"from":1525,"to":1701,"title":"Duchy to great power","text":"The Teutonic Order's lands become the Duchy of Prussia, united with Brandenburg under the Hohenzollerns."},
     {"from":1701,"to":1871,"title":"Kingdom of Prussia","text":"Frederick the Great's army makes Prussia a great power. After defeat by Napoleon it reforms, and under Bismarck it defeats Austria and France to unite Germany."}
   ]},
-  {"names":["Germany","German Empire","West Germany","East Germany","Federal Republic of Germany"],"wiki":"History_of_Germany","eras":[
+  {"names":["Germany","German Empire","West Germany","East Germany","Federal Republic of Germany"],"wiki":"History_of_Germany","britannica":"topic/history-of-Germany","eras":[
     {"from":1871,"to":1918,"title":"Imperial Germany","text":"The new German Empire becomes Europe's industrial powerhouse and acquires colonies in Africa and the Pacific. Its rivalry with Britain and alliance with Austria-Hungary help bring on WWI."},
     {"from":1918,"to":1945,"title":"Weimar and the Third Reich","text":"The Weimar Republic is undermined by defeat, hyperinflation and the Depression. Hitler's Nazi dictatorship launches WWII and the Holocaust."},
     {"from":1945,"to":2025,"title":"Divided and reunited","text":"Germany is split into a democratic West and a communist East. The Berlin Wall falls in 1989 and Germany reunites in 1990, becoming the EU's largest economy."}
   ]},
-  {"names":["Italy","Kingdom of Italy","Republic of Italy"],"wiki":"History_of_Italy","only":{"Kingdom of Italy":[1861,1946]},"eras":[
+  {"names":["Italy","Kingdom of Italy","Republic of Italy"],"wiki":"History_of_Italy","only":{"Kingdom of Italy":[1861,1946]},"britannica":"topic/history-of-Italy","eras":[
     {"from":1861,"to":1922,"title":"Liberal Italy","text":"The new kingdom adds Venice (1866) and Rome (1870). Millions emigrate. Italy joins WWI on the Allied side in 1915."},
     {"from":1922,"to":1945,"title":"Fascist Italy","text":"Mussolini's dictatorship invades Ethiopia (1935) and joins Hitler in WWII; Italy is invaded by the Allies and fights a civil war."},
     {"from":1946,"to":2025,"title":"The Republic","text":"Italy votes to become a republic and enjoys an 'economic miracle', becoming a founder of the European Union."}
   ]},
-  {"names":["Netherlands","Habsburg Netherlands","Dutch Republic"],"wiki":"History_of_the_Netherlands","eras":[
+  {"names":["Netherlands","Habsburg Netherlands","Dutch Republic"],"wiki":"History_of_the_Netherlands","britannica":"topic/history-of-the-Netherlands","eras":[
     {"from":1384,"to":1581,"title":"Burgundian and Habsburg Netherlands","text":"Rich cloth and trading cities like Bruges, Ghent and Antwerp pass to Burgundy and then the Habsburgs."},
     {"from":1581,"to":1795,"title":"The Dutch Golden Age","text":"The northern provinces revolt against Spain and form the Dutch Republic. Amsterdam becomes the world's trading hub; the VOC seizes the spice trade; Rembrandt and Vermeer paint."}
   ]},
-  {"names":["Swiss Confederation","Switzerland"],"wiki":"History_of_Switzerland","eras":[
+  {"names":["Swiss Confederation","Switzerland"],"wiki":"History_of_Switzerland","britannica":"topic/history-of-Switzerland","eras":[
     {"from":1291,"to":1798,"title":"The Old Swiss Confederacy","text":"Alpine cantons ally against the Habsburgs; Swiss pikemen become Europe's most feared mercenaries. Independence is recognised in 1648."},
     {"from":1815,"to":2025,"title":"Neutral federation","text":"Switzerland's neutrality is guaranteed in 1815; it becomes a federal state in 1848 and stays out of both world wars."}
   ]}

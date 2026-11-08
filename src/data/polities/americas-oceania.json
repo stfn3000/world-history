@@ -1,5 +1,5 @@
 [
-  {"names":["Olmec"],"wiki":"Olmecs","eras":[
+  {"names":["Olmec"],"wiki":"Olmecs","britannica":"topic/Olmec","eras":[
     {"from":-1600,"to":-350,"title":"Mesoamerica's first civilisation","text":"In the swampy lowlands of Mexico's Gulf Coast, the Olmec build San Lorenzo and La Venta and carve colossal basalt heads. Their gods, ball game and calendar influence every later Mesoamerican culture."}
   ]},
   {"names":["Maya chiefdoms and states","Maya states","Maya city-states","Mayas","Maya","Maya Yucateco"],"wiki":"Maya_civilization","eras":[
@@ -8,56 +8,56 @@
     {"from":900,"to":1521,"title":"Postclassic Maya","text":"After the southern cities collapse, Chichén Itzá and then Mayapán dominate the Yucatán, which fragments into small states before the Spanish conquest."},
     {"from":1521,"to":1901,"title":"Resistance under Spanish rule","text":"The Spanish conquest of the Maya is slow; the last independent Maya city, Nojpetén, falls only in 1697, and the Caste War of Yucatán (1847–1901) is a long Maya uprising."}
   ]},
-  {"names":["Teotihuacan"],"wiki":"Teotihuacan","eras":[
+  {"names":["Teotihuacan"],"wiki":"Teotihuacan","britannica":"place/Teotihuacan","eras":[
     {"from":-100,"to":550,"title":"City of the Gods","text":"One of the largest cities in the ancient world (up to 100,000 people), with the Pyramids of the Sun and Moon. Its influence reaches the Maya cities; it is burned and abandoned around 550."}
   ]},
   {"names":["Monte Albán","Zapotec Empire","Mixtec Empire"],"wiki":"Zapotec_civilization","eras":[
     {"from":-500,"to":850,"title":"Monte Albán","text":"The Zapotecs build their hilltop capital in the Oaxaca valley, one of Mesoamerica's first cities, with early writing."},
     {"from":850,"to":1521,"title":"Zapotecs and Mixtecs","text":"Smaller Zapotec and Mixtec kingdoms flourish in Oaxaca, famous for their codices and goldwork, until Aztec and then Spanish conquest."}
   ]},
-  {"names":["Toltec Empire","Mesoamerican city-states and chiefdoms"],"wiki":"Toltec","eras":[
+  {"names":["Toltec Empire","Mesoamerican city-states and chiefdoms"],"wiki":"Toltec","britannica":"topic/Toltec","eras":[
     {"from":900,"to":1168,"title":"The Toltecs","text":"From their capital Tula, the Toltecs dominate central Mexico; the Aztecs later revere them as the originators of civilisation."}
   ]},
   {"names":["Aztec Empire","Nahua (Mexico)","Mexicanero (Nahuas)"],"wiki":"Aztec_Empire","eras":[
     {"from":1325,"to":1428,"title":"The rise of the Mexica","text":"The Mexica found Tenochtitlan on an island in Lake Texcoco and serve as mercenaries for more powerful neighbours."},
     {"from":1428,"to":1521,"title":"The Triple Alliance","text":"Tenochtitlan, Texcoco and Tlacopan form the Aztec Empire, which collects tribute from much of central and southern Mexico. Tenochtitlan, with perhaps 200,000 people, causeways and floating gardens, is larger than any city in Spain. Cortés and his Indigenous allies conquer it in 1521."}
   ]},
-  {"names":["Inca Empire","Tawantinsuyu"],"wiki":"Inca_Empire","eras":[
+  {"names":["Inca Empire","Tawantinsuyu"],"wiki":"Inca_Empire","britannica":"place/Tahuantinsuyu","eras":[
     {"from":1438,"to":1527,"title":"Tawantinsuyu","text":"From Cusco, Pachacuti and his successors conquer the Andes from Ecuador to Chile — the largest empire in the Americas — linked by 40,000 km of roads, administered with knotted-string khipus and without money or markets."},
     {"from":1527,"to":1572,"title":"Civil war and conquest","text":"A smallpox epidemic and a civil war between Atahualpa and Huáscar leave the empire vulnerable to Pizarro (1532). A rump Inca state survives at Vilcabamba until 1572."}
   ]},
-  {"names":["Chimú Empire","Chimú","Chimor","Chimu Empire"],"wiki":"Chimú_culture","eras":[
+  {"names":["Chimú Empire","Chimú","Chimor","Chimu Empire"],"wiki":"Chimú_culture","britannica":"topic/Chimu","eras":[
     {"from":900,"to":1470,"title":"The Chimú","text":"A coastal Peruvian kingdom whose adobe capital Chan Chan is the largest city of the pre-Columbian Americas; the Inca conquer it around 1470."}
   ]},
-  {"names":["Moche"],"wiki":"Moche_culture","eras":[
+  {"names":["Moche"],"wiki":"Moche_culture","britannica":"topic/Moche","eras":[
     {"from":100,"to":800,"title":"The Moche","text":"A civilisation of Peru's north coast, famous for irrigation, huge adobe pyramids and lifelike portrait pottery."}
   ]},
-  {"names":["Nazca"],"wiki":"Nazca_culture","eras":[
+  {"names":["Nazca"],"wiki":"Nazca_culture","britannica":"art/Early-Nazca-pottery","eras":[
     {"from":-100,"to":800,"title":"The Nazca","text":"A culture of Peru's southern desert, best known for the giant Nazca Lines drawn on the ground."}
   ]},
   {"names":["Huari Empire","Wari Empire"],"wiki":"Wari_culture","eras":[
     {"from":600,"to":1000,"title":"The Wari","text":"An Andean empire that, alongside Tiwanaku, foreshadows the Inca with roads and administrative centres."}
   ]},
-  {"names":["Chavin"],"wiki":"Chavín_culture","eras":[
+  {"names":["Chavin"],"wiki":"Chavín_culture","britannica":"topic/Chavin","eras":[
     {"from":-900,"to":-200,"title":"Chavín","text":"A religious culture centred on the temple at Chavín de Huántar in the Peruvian Andes, whose art spreads widely."}
   ]},
-  {"names":["Hopewell Culture"],"wiki":"Hopewell_tradition","eras":[
+  {"names":["Hopewell Culture"],"wiki":"Hopewell_tradition","britannica":"topic/Hopewell-culture","eras":[
     {"from":-100,"to":500,"title":"Hopewell","text":"Peoples of the Ohio and Mississippi valleys build great geometric earthworks and trade obsidian, copper and shells across North America."}
   ]},
-  {"names":["Viceroyalty of New Spain","Cuba (Spain)","Hispaniola (Spain)","Florida (Spain)","Santo Domingo (Spain)"],"wiki":"New_Spain","eras":[
+  {"names":["Viceroyalty of New Spain","Cuba (Spain)","Hispaniola (Spain)","Florida (Spain)","Santo Domingo (Spain)"],"wiki":"New_Spain","britannica":"place/Viceroyalty-of-New-Spain","eras":[
     {"from":1521,"to":1821,"title":"New Spain","text":"Spain's viceroyalty rules Mexico, Central America, the Caribbean and (via Manila) the Philippines. Silver from Zacatecas and Potosí fuels world trade while Indigenous populations collapse from epidemics."}
   ]},
-  {"names":["United States","United States of America","British American colonies"],"wiki":"History_of_the_United_States","eras":[
+  {"names":["United States","United States of America","British American colonies"],"wiki":"History_of_the_United_States","britannica":"topic/history-of-United-States","eras":[
     {"from":1607,"to":1776,"title":"Thirteen colonies","text":"English colonies stretch along the Atlantic coast, growing tobacco and rice with enslaved African labour in the South and trading and farming in the North."},
     {"from":1776,"to":1865,"title":"Independence and expansion","text":"The colonies declare independence (1776) and win it (1783). The US expands west by purchase and war, displacing Native nations. The Civil War (1861–65) ends slavery."},
     {"from":1865,"to":1945,"title":"Industrial giant","text":"Railways, immigration and industry make the US the world's largest economy by 1900. It decides both world wars."},
     {"from":1945,"to":2025,"title":"Superpower","text":"The US leads the West in the Cold War, lands on the Moon (1969) and after 1991 is the sole superpower."}
   ]},
-  {"names":["Canada","New France"],"wiki":"History_of_Canada","eras":[
+  {"names":["Canada","New France"],"wiki":"History_of_Canada","britannica":"topic/history-of-Canada","eras":[
     {"from":1608,"to":1763,"title":"New France","text":"French fur traders and missionaries settle along the St Lawrence; Britain conquers New France in the Seven Years' War."},
     {"from":1867,"to":2025,"title":"Dominion of Canada","text":"Canada becomes a self-governing confederation in 1867 and gradually gains full independence."}
   ]},
-  {"names":["Mexico","Federated Republic of Mexico","First Mexican Empire","Second Mexican Empire","Centralist Mexico"],"wiki":"History_of_Mexico","eras":[
+  {"names":["Mexico","Federated Republic of Mexico","First Mexican Empire","Second Mexican Empire","Centralist Mexico"],"wiki":"History_of_Mexico","britannica":"topic/history-of-Mexico","eras":[
     {"from":1821,"to":1910,"title":"Independent Mexico","text":"Mexico wins independence from Spain (1821), loses half its territory to the US (1848), resists a French-installed emperor and is ruled by Porfirio Díaz."},
     {"from":1910,"to":2025,"title":"Revolution and modern Mexico","text":"The Mexican Revolution is followed by 70 years of one-party rule and then multiparty democracy."}
   ]},
@@ -68,7 +68,7 @@
   {"names":["Argentina","Argentine Confederation","Argentine Republic"],"wiki":"History_of_Argentina","eras":[
     {"from":1816,"to":2025,"title":"Argentina","text":"Independent from 1816, Argentina becomes one of the world's richest countries around 1900 on beef and grain exports, before decades of instability and Peronism."}
   ]},
-  {"names":["Thule","Dorset","Paleo-Inuit"],"wiki":"Thule_people","eras":[
+  {"names":["Thule","Dorset","Paleo-Inuit"],"wiki":"Thule_people","britannica":"topic/Thule-culture","eras":[
     {"from":-500,"to":1000,"title":"Paleo-Inuit (Dorset)","text":"The Dorset people live across the Canadian Arctic and Greenland, hunting seals and walrus."},
     {"from":1000,"to":1600,"title":"Thule — ancestors of the Inuit","text":"Thule people from Alaska spread eastward across the Arctic with dog sleds, kayaks and umiaks, meeting Norse Greenlanders."}
   ]},
