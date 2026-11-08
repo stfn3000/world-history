@@ -3,7 +3,7 @@
     {"from":1300,"to":1600,"title":"A Yoruba kingdom","text":"Oyo is one of several Yoruba kingdoms in today's south-western Nigeria, looking to the holy city of Ife. It is driven from its capital by the Nupe in the 16th century and rebuilds."},
     {"from":1600,"to":1836,"title":"The Oyo Empire","text":"With a powerful cavalry, Oyo dominates the region from the Niger to Dahomey, which pays it tribute, and grows rich from trade with the coast, including the Atlantic slave trade. Civil war and the Sokoto jihad bring its collapse in the 1830s."}
   ]},
-  {"names":["Asante","Ashanti Empire"],"wiki":"Ashanti_Empire","eras":[
+  {"names":["Asante","Ashanti Empire"],"wiki":"Asante_Empire","eras":[
     {"from":1701,"to":1824,"title":"The Golden Stool","text":"Osei Tutu and the priest Okomfo Anokye unite the Akan states around Kumasi. Asante grows rich on gold and on trade with European forts on the coast, and builds a sophisticated state with roads and a bureaucracy."},
     {"from":1824,"to":1902,"title":"Wars with Britain","text":"Asante fights a series of wars with Britain; Kumasi is burned in 1874, and after the War of the Golden Stool led by Queen Mother Yaa Asantewaa (1900) Asante is annexed to the Gold Coast colony."}
   ]},
@@ -16,7 +16,7 @@
   {"names":["Mossi States","Mossi Kingdoms"],"wiki":"Mossi_Kingdoms","eras":[
     {"from":1200,"to":1896,"title":"The Mossi kingdoms","text":"Horse-riding Mossi kingdoms centred on Ouagadougou in today's Burkina Faso resist the Mali and Songhai empires and keep their traditional religion, until French conquest in 1896."}
   ]},
-  {"names":["Mwenemutapa","Kingdom of Mutapa"],"wiki":"Kingdom_of_Mutapa","eras":[
+  {"names":["Mwenemutapa","Kingdom of Mutapa"],"wiki":"Mutapa_Empire","eras":[
     {"from":1430,"to":1760,"title":"Mutapa","text":"A Shona state that succeeds Great Zimbabwe, controlling gold mines and the trade to the Swahili coast. The Portuguese try to conquer it in the 16th–17th centuries and make it a vassal for a time."}
   ]},
   {"names":["Ndongo","Kingdom of Ndongo"],"wiki":"Kingdom_of_Ndongo","eras":[
@@ -28,7 +28,7 @@
   {"names":["Zulu","Zululand","Zulu Kingdom"],"wiki":"Zulu_Kingdom","eras":[
     {"from":1816,"to":1879,"title":"The Zulu Kingdom","text":"Shaka turns the Zulu into a military power that dominates south-east Africa. His successors face Boer settlers and the British, who are defeated at Isandlwana (1879) before conquering Zululand the same year."}
   ]},
-  {"names":["Dahomey","Kingdom of Dahomey"],"wiki":"Kingdom_of_Dahomey","eras":[
+  {"names":["Dahomey","Kingdom of Dahomey"],"wiki":"Dahomey","eras":[
     {"from":1600,"to":1904,"title":"Dahomey","text":"A Fon kingdom in today's Benin, known for its all-female military regiments, which takes over the coastal slave ports in the 1720s. France conquers it in 1894."}
   ]},
   {"names":["Buganda","Kingdom of Buganda"],"wiki":"Buganda","eras":[
@@ -43,7 +43,7 @@
   {"names":["Adal","Adal Sultanate"],"wiki":"Adal_Sultanate","eras":[
     {"from":1415,"to":1577,"title":"The Adal Sultanate","text":"A Muslim state based at Harar in the Horn of Africa. Under Imam Ahmad 'Gragn' (1529–43), with Ottoman muskets, it nearly conquers Christian Ethiopia, which survives with Portuguese help."}
   ]},
-  {"names":["Merina Kingdom","Imerina","Madagascar"],"wiki":"Merina_Kingdom","eras":[
+  {"names":["Merina Kingdom","Imerina","Madagascar"],"wiki":"Imerina","eras":[
     {"from":1540,"to":1897,"title":"The Merina Kingdom","text":"Madagascar was settled by Austronesian seafarers from Borneo and by Africans. The highland Merina kingdom unifies most of the island in the 19th century under Radama I and Queen Ranavalona, until France annexes it in 1897."}
   ]},
   {"names":["Oman","Muscat","Muscat and Oman","Zanzibar","Sultanate of Zanzibar","Sultinate of Zanzibar","Trucial Oman"],"wiki":"History_of_Oman","eras":[
@@ -56,7 +56,7 @@
   {"names":["Aceh","Aceh Sultanate"],"wiki":"Aceh_Sultanate","eras":[
     {"from":1496,"to":1903,"title":"The Aceh Sultanate","text":"A powerful Muslim sultanate on northern Sumatra that trades pepper and fights the Portuguese in Malacca; it resists Dutch conquest in a war lasting from 1873 to 1904."}
   ]},
-  {"names":["Mataram","Mataram Kingdom"],"wiki":"Mataram_Kingdom","eras":[
+  {"names":["Mataram","Mataram Kingdom"],"wiki":"Mataram_kingdom","eras":[
     {"from":716,"to":1016,"title":"Mataram in Java","text":"Hindu and Buddhist dynasties in Central and East Java build the temples of Borobudur and Prambanan."}
   ]},
   {"names":["Burma","Toungoo Empire","Konbaung dynasty"],"wiki":"History_of_Myanmar","eras":[
@@ -64,7 +64,7 @@
     {"from":1752,"to":1885,"title":"The Konbaung dynasty","text":"A revived Burmese state sacks Ayutthaya (1767) but loses three wars to Britain, which annexes the whole country by 1885."},
     {"from":1948,"to":2025,"title":"Independent Myanmar","text":"Independent from 1948, Burma is ruled by the military for most of the time since 1962."}
   ]},
-  {"names":["Brunei","Bruneian Empire"],"wiki":"History_of_Brunei","eras":[
+  {"names":["Brunei","Bruneian Empire","Sultanate of Brunei"],"wiki":"History_of_Brunei","eras":[
     {"from":1368,"to":2025,"title":"Brunei","text":"A Muslim sultanate that once ruled much of Borneo and the southern Philippines; reduced to a small state by the 19th century, it is a British protectorate until 1984 and is now rich from oil."}
   ]},
   {"names":["Bengal","Bengal Sultanate"],"wiki":"Bengal_Sultanate","eras":[
@@ -100,7 +100,7 @@
   {"names":["Tiahuanaco Empire","Tiwanaku"],"wiki":"Tiwanaku","eras":[
     {"from":500,"to":1000,"title":"Tiwanaku","text":"A great Andean civilisation centred near Lake Titicaca, with monumental stone gateways and raised-field farming, whose influence reaches across Bolivia, Peru and Chile."}
   ]},
-  {"names":["Iroquois","Ho-de-no-sau-nee-ga (Haudenosaunee)","Haudenosaunee"],"wiki":"Iroquois","eras":[
+  {"names":["Iroquois","Ho-de-no-sau-nee-ga (Haudenosaunee)","Haudenosaunee"],"wiki":"Haudenosaunee","eras":[
     {"from":1450,"to":1783,"title":"The Haudenosaunee Confederacy","text":"Five (from 1722, six) nations of the eastern Great Lakes united by the Great Law of Peace. A major power in the fur trade and in the wars between France and Britain, the confederacy splits during the American Revolution."}
   ]},
   {"names":["Comanche","Nʉmʉnʉʉ (Comanche)"],"wiki":"Comanche","eras":[

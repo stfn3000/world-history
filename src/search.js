@@ -1,24 +1,34 @@
-// Search across curated events, curated territory summaries and every polity
-// name that appears on any border map.
+// Search across curated events and every territory on the maps: the
+// Cliopatria states (year ranges) and the peoples/cultures of
+// historical-basemaps (snapshot years).
 import { esc } from './panel.js';
 import { typeInfo, EVENTS } from './events.js';
 import { POLITIES } from './polities.js';
 import { formatYear, formatEventDate } from './time.js';
 import polityIndex from './data/polity-index.json';
-import { SNAPSHOTS } from './basemaps.js';
+import { polityRanges, NON_STATE, CLIOPATRIA_START } from './borders.js';
 
-const minYear = SNAPSHOTS[0].year;
-
-const polityEntries = Object.entries(polityIndex.names)
-  .map(([name, idx]) => ({ name, years: idx.map((i) => polityIndex.years[i]).filter((y) => y >= minYear) }))
-  .filter((p) => p.years.length);
-
-// Curated aliases (e.g. "Ashanti Empire" → "Asante") so searches find the map name.
+let polityEntries = [];
 const aliasToMap = new Map();
-for (const p of POLITIES) {
-  const onMap = p.names.find((n) => polityIndex.names[n]);
-  if (onMap) for (const n of p.names) aliasToMap.set(n.toLowerCase(), onMap);
-  if (onMap && p.wiki) aliasToMap.set(p.wiki.replace(/_/g, ' ').toLowerCase(), onMap);
+
+// Peoples / cultures from the snapshot maps (and everything before Cliopatria starts).
+const basemapEntries = Object.entries(polityIndex.names)
+  .map(([name, idx]) => ({ name, years: idx.map((i) => polityIndex.years[i]).filter((y) => y >= -10000) }))
+  .map((p) => ({ name: p.name, ranges: p.years.filter((y) => y < CLIOPATRIA_START || NON_STATE.test(p.name)).map((y) => [y, y]) }))
+  .filter((p) => p.ranges.length);
+
+export async function loadSearchIndex() {
+  const ranges = await polityRanges();
+  const byName = new Map(basemapEntries.map((p) => [p.name, p]));
+  for (const [name, r] of ranges) byName.set(name, { name, ranges: r });
+  polityEntries = [...byName.values()];
+  // Curated aliases (e.g. "Venice" → "Republic of Venice") so searches find the map name.
+  for (const p of POLITIES) {
+    const onMap = p.names.find((n) => byName.has(n));
+    if (!onMap) continue;
+    for (const n of p.names) if (!byName.has(n)) aliasToMap.set(n.toLowerCase(), onMap);
+    if (p.wiki) aliasToMap.set(p.wiki.replace(/_/g, ' ').toLowerCase(), onMap);
+  }
 }
 
 function score(text, q) {
@@ -50,12 +60,13 @@ export function search(query) {
   for (const p of polityEntries) {
     if (seen.has(p.name)) continue;
     const s = score(p.name, q);
-    if (s) out.push({ kind: 'polity', score: s + Math.min(10, p.years.length), polity: p });
+    if (s) out.push({ kind: 'polity', score: s + Math.min(10, p.ranges.length), polity: p });
   }
   return out.sort((a, b) => b.score - a.score).slice(0, 14);
 }
 
 export function setupSearch(app) {
+  loadSearchIndex().catch((err) => console.warn('search index', err));
   const input = document.getElementById('search-input');
   const box = document.getElementById('search-results');
   let results = [];
@@ -73,9 +84,10 @@ export function setupSearch(app) {
           const t = typeInfo(r.event.type);
           return `<button class="sr${i === active ? ' active' : ''}" data-i="${i}"><span class="sr-ico">${t.icon}</span><span><b>${esc(r.event.title)}</b><small>${esc(formatEventDate(r.event))}${r.event.place ? ' · ' + esc(r.event.place) : ''}</small></span></button>`;
         }
-        const ys = r.polity.years;
-        const span = ys.length > 1 ? `${formatYear(ys[0])} – ${formatYear(ys[ys.length - 1])}` : formatYear(ys[0]);
-        return `<button class="sr${i === active ? ' active' : ''}" data-i="${i}"><span class="sr-ico">🗺️</span><span><b>${esc(r.polity.name)}</b><small>${r.alias ? `“${esc(r.alias)}” · ` : ''}Territory on maps ${esc(span)} (${ys.length} map${ys.length > 1 ? 's' : ''})</small></span></button>`;
+        const rs = r.polity.ranges;
+        const a = rs[0][0], b = rs[rs.length - 1][1];
+        const span = a === b ? formatYear(a) : `${formatYear(a)} – ${formatYear(b)}`;
+        return `<button class="sr${i === active ? ' active' : ''}" data-i="${i}"><span class="sr-ico">🗺️</span><span><b>${esc(r.polity.name)}</b><small>${r.alias ? `“${esc(r.alias)}” · ` : ''}On the map ${esc(span)}</small></span></button>`;
       })
       .join('');
     box.hidden = false;
@@ -86,7 +98,7 @@ export function setupSearch(app) {
     box.hidden = true;
     input.blur();
     if (r.kind === 'event') app.openEvent(r.event, { jump: true, fly: true });
-    else app.openPolityByName(r.polity.name, r.polity.years);
+    else app.openPolityByName(r.polity.name, r.polity.ranges);
   }
 
   input.addEventListener('input', () => {

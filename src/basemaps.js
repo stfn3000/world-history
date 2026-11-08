@@ -59,7 +59,7 @@ export function prefetchAround(snap) {
 }
 
 // ---- colours -------------------------------------------------------------
-function hash(str) {
+export function hash(str) {
   let h = 2166136261;
   for (let i = 0; i < str.length; i++) {
     h ^= str.charCodeAt(i);
@@ -71,19 +71,24 @@ function hash(str) {
 // Hand-picked hues for a few long-lived powers so they stay recognisable as
 // you scrub through time. Everything else gets a stable hashed hue.
 const FIXED_HUES = {
-  'Roman Empire': 0, 'Roman Republic': 0, 'Byzantine Empire': 285, 'Ottoman Empire': 140, Venice: 205,
-  'Holy Roman Empire': 45, France: 225, 'United Kingdom': 350, England: 350, 'British Empire': 350,
-  Spain: 30, Castile: 30, Portugal: 120, 'Russian Empire': 165, Russia: 165, USSR: 0, 'Mongol Empire': 20,
-  'Great Khanate': 20, 'Han Empire': 55, 'Tang Empire': 55, 'Ming Empire': 55, 'Manchu Empire': 55, China: 55,
-  'Achaemenid Empire': 270, 'Abbasid Caliphate': 95, 'Umayyad Caliphate': 95, 'Mughal Empire': 75, 'Papal States': 50,
-  'United States': 215, Japan: 330, Egypt: 40,
+  'Roman Empire': 0, 'Roman Republic': 0, 'Western Roman Empire': 0, 'Byzantine Empire': 285, 'Eastern Roman Empire': 285,
+  'Ottoman Empire': 140, 'Holy Roman Empire': 45, 'Kingdom of France': 225, France: 225, 'Kingdom of England': 350,
+  'British Empire': 350, 'Kingdom of Great Britain': 350, 'United Kingdom': 350, 'Spanish Empire': 30, 'Kingdom of Spain': 30,
+  'Crown of Castile': 30, 'Kingdom of Portugal': 120, 'Portuguese Empire': 120, 'Russian Empire': 165, 'Tsardom of Russia': 165,
+  'Union of Soviet Socialist Republics': 0, 'Mongol Empire': 20, 'Yuan Dynasty': 20, 'Han Dynasty': 55, 'Tang Dynasty': 55,
+  'Ming Dynasty': 55, 'Qing Dynasty': 55, "People's Republic of China": 55, 'Achaemenid Empire': 270, 'Abbasid Caliphate': 95,
+  'Umayyad Caliphate': 95, 'Mughal Empire': 75, 'Papal States': 50, 'United States of America': 215, 'Japan': 330,
+  'Republic of Venice': 205, 'Republic of Genoa': 0, 'Mali Empire': 35, 'Inca Empire': 300, 'Aztec Triple Alliance': 160,
 };
 
-function colorFor(props) {
-  const key = props.SUBJECTO || props.NAME;
-  const h = FIXED_HUES[key] ?? FIXED_HUES[props.NAME] ?? (hash(key) % 360);
-  const s = 55 + (hash(key + 's') % 25);
-  const l = 52 + (hash(key + 'l') % 12);
+/**
+ * Colour for a territory. `group` (an empire or overlord) decides the hue so
+ * members of one realm look related; `own` varies saturation and lightness.
+ */
+export function colorFor(group, own = group) {
+  const h = FIXED_HUES[group] ?? FIXED_HUES[own] ?? (hash(group) % 360);
+  const s = 55 + (hash(own + 's') % 25);
+  const l = 50 + (hash(own + 'l') % 14);
   return { h, s, l };
 }
 export const hsla = ({ h, s, l }, a, dl = 0) => `hsla(${h}, ${s}%, ${Math.min(90, l + dl)}%, ${a})`;
@@ -92,7 +97,7 @@ export const hsla = ({ h, s, l }, a, dl = 0) => `hsla(${h}, ${s}%, ${Math.min(90
 // d3-geo expects exterior rings clockwise (the opposite of RFC 7946). A
 // polygon wound the "wrong" way is read as covering the rest of the sphere,
 // which breaks area, centroid and point-in-polygon tests, so flip those.
-function rewind(geometry) {
+export function rewind(geometry) {
   const polys = geometry.type === 'Polygon' ? [geometry.coordinates] : geometry.coordinates;
   for (const rings of polys) {
     if (!rings.length) continue;
@@ -101,7 +106,7 @@ function rewind(geometry) {
     }
   }
 }
-function largestPart(geometry) {
+export function largestPart(geometry) {
   if (geometry.type === 'Polygon') return geometry;
   let best = null, bestArea = -1;
   for (const coords of geometry.coordinates) {
@@ -132,7 +137,9 @@ function prepare(geojson, snap) {
       partof: p.PARTOF && p.PARTOF !== p.NAME ? p.PARTOF : null,
       precision: p.BORDERPRECISION || 1,
       area,
-      color: colorFor(p),
+      color: colorFor(p.SUBJECTO || p.NAME, p.NAME),
+      kind: 'map',
+      wikipedia: null,
       center: { lat, lng },
       snapshot: snap.year,
     });

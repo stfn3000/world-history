@@ -2,7 +2,7 @@ import './style.css';
 import { geoContains } from 'd3-geo';
 import { createGlobe } from './globe.js';
 import { createTimeline } from './timeline.js';
-import { snapshotFor, loadSnapshot, prefetchAround } from './basemaps.js';
+import { featuresForYear, prefetchAround, NON_STATE } from './borders.js';
 import { EVENTS, EVENT_BY_ID, EVENT_TYPES, eventsInWindow, timeDistance } from './events.js';
 import { renderTerritory, renderEvent, renderOverview, esc } from './panel.js';
 import { setupSearch } from './search.js';
@@ -13,9 +13,6 @@ import {
 } from './time.js';
 
 const $ = (id) => document.getElementById(id);
-// Cultural / ethnic regions in the border dataset that aren't states — kept
-// out of the "largest powers" list.
-const NON_STATE = /hunter|gatherer|farmers|peoples|cultures?\b|tribes|nomads|foragers|pastoral|fishers|fichers|aboriginal|chiefdoms|^(siberians|khoisan|thule|athabaskan|bantu peoples|sámi|saami|polynesians|papuans|innu|dorset|beothuk|ainu|celts|germanic tribes|arabs|austronesians|mon-khmer)$/i;
 
 const state = {
   year: 1500,
@@ -23,7 +20,8 @@ const state = {
   windowMode: 'auto',
   showEvents: true,
   showWikidata: true,
-  snapshot: null,
+  bordersInfo: null, // { source, snapshotYear } of what is drawn
+  showCultures: true,
   features: [],
   wdEvents: [],
   wdStatus: '',
@@ -110,7 +108,7 @@ const app = {
     scheduleHash();
     refreshEvents();
     scheduleWikidata();
-    const loading = this.ensureSnapshot();
+    const loading = this.ensureBorders();
     if (changed && state.panel?.kind === 'overview') this.openOverview();
     await loading;
   },
@@ -123,42 +121,60 @@ const app = {
     scheduleHash();
   },
 
-  async ensureSnapshot() {
-    const snap = snapshotFor(state.year);
-    if (snap === state.snapshot && state.features.length) return;
-    state.snapshot = snap;
-    $('snapshot-display').innerHTML = `Borders: <b>c. ${esc(formatYear(snap.year))}</b> map`;
-    setStatus(`Loading borders for c. ${formatYear(snap.year)}…`, { sticky: true });
+  async ensureBorders() {
+    const year = state.year;
+    const token = (this._bordersToken = (this._bordersToken || 0) + 1);
+    const slow = setTimeout(() => setStatus('Loading borders…', { sticky: true }), 400);
     try {
-      const features = await loadSnapshot(snap);
-      if (state.snapshot !== snap) return; // user moved on
-      state.features = features;
-      globeApi.setFeatures(features);
-      setStatus('');
-      prefetchAround(snap);
-      // Keep an open territory panel in sync with the new map.
-      if (state.panel?.kind === 'territory') {
-        const prev = state.panel.feature;
-        const same = features.filter((f) => f.name === prev.name).sort((a, b) => b.area - a.area)[0];
-        if (same) this.openTerritory(same, { fly: false, quiet: true });
-        else this.openTerritory(prev, { fly: false, quiet: true, stale: true });
+      const res = await featuresForYear(year, { cultures: state.showCultures });
+      if (token !== this._bordersToken) return; // the user has moved on
+      state.bordersInfo = res;
+      $('snapshot-display').innerHTML =
+        res.source === 'cliopatria'
+          ? 'Borders: <b>year by year</b> (Cliopatria)'
+          : `Borders: <b>c. ${esc(formatYear(res.snapshotYear))}</b> map`;
+      // Only redraw when the set of territories actually changed.
+      const key = res.features.map((f) => f.name + f.from).join('|');
+      if (key !== this._bordersKey) {
+        this._bordersKey = key;
+        state.features = res.features;
+        globeApi.setFeatures(res.features);
+        // Keep an open territory panel in sync with the new map.
+        if (state.panel?.kind === 'territory') {
+          const prev = state.panel.feature;
+          const same = this.findFeature(prev.name);
+          this.openTerritory(same || prev, { fly: false, quiet: true, stale: !same });
+        }
+        if (state.panel?.kind === 'event') this.openEvent(state.panel.event, { fly: false, quiet: true });
       }
-      if (state.panel?.kind === 'event') this.openEvent(state.panel.event, { fly: false, quiet: true });
+      setStatus('');
+      prefetchAround(year);
     } catch (err) {
       console.error(err);
-      setStatus('Could not load the border map (offline?). Events still work.', { sticky: true });
+      if (token === this._bordersToken) setStatus('Could not load the borders (offline?). Events still work.', { sticky: true });
+    } finally {
+      clearTimeout(slow);
     }
+  },
+
+  findFeature(name) {
+    return state.features.filter((x) => x.name === name && x.kind !== 'culture').sort((a, b) => b.area - a.area)[0]
+      || state.features.find((x) => x.name === name);
   },
 
   featureAt(lat, lng) {
     // Features are sorted big → small; prefer the smallest one containing the point.
-    for (let i = state.features.length - 1; i >= 0; i--) {
-      const f = state.features[i];
+    // States first (smallest wins), then umbrella realms, then peoples.
+    const order = [...state.features].sort((a, b) => rank(a) - rank(b) || a.area - b.area);
+    for (const f of order) {
       try {
         if (geoContains(f, [lng, lat])) return f;
       } catch { /* malformed geometry */ }
     }
     return null;
+    function rank(f) {
+      return f.kind === 'umbrella' ? 1 : f.kind === 'culture' ? 2 : 0;
+    }
   },
 
   openTerritory(f, { fly = false, quiet = false, stale = false } = {}) {
@@ -180,10 +196,12 @@ const app = {
     refreshPins();
     openPanel();
     renderTerritory($('panel-body'), f, {
-      year: state.year, window: w, snapshotYear: state.snapshot?.year ?? f.snapshot, eventsHere: here, eventsElsewhere: elsewhere,
+      year: state.year, window: w, snapshotYear: state.bordersInfo?.snapshotYear ?? f.snapshot, eventsHere: here, eventsElsewhere: elsewhere,
+      members: f.kind === 'umbrella' ? state.features.filter((m) => m.memberOf === f.name).sort((a, b) => b.area - a.area) : [],
+      umbrella: f.memberOf ? state.features.find((m) => m.kind === 'umbrella' && m.name === f.memberOf) || null : null,
     }, app);
     if (stale) {
-      $('panel-body').insertAdjacentHTML('afterbegin', `<div class="notice">“${esc(f.name)}” is not on the c. ${esc(formatYear(state.snapshot.year))} map — it may not exist yet, or be named differently.</div>`);
+      $('panel-body').insertAdjacentHTML('afterbegin', `<div class="notice">“${esc(f.name)}” is not on the map in ${esc(formatYear(state.year))} — it may not exist yet, or no longer exist.</div>`);
     }
     if (fly) globeApi.flyTo(f.center.lat, f.center.lng, f.area > 0.3 ? 2.2 : f.area > 0.02 ? 1.5 : 0.9);
     if (!quiet) scheduleHash();
@@ -207,7 +225,7 @@ const app = {
       .sort((a, b) => b.importance - a.importance || Math.abs(a.astro - e.astro) - Math.abs(b.astro - e.astro))
       .slice(0, 6);
     openPanel();
-    renderEvent($('panel-body'), e, { year: state.year, ruler, snapshotYear: state.snapshot?.year, nearby }, app);
+    renderEvent($('panel-body'), e, { year: state.year, ruler, snapshotYear: state.bordersInfo?.snapshotYear, bordersSource: state.bordersInfo?.source, nearby }, app);
     if (fly) globeApi.flyTo(e.lat, e.lng, 1.4);
     if (!quiet) scheduleHash();
   },
@@ -221,9 +239,12 @@ const app = {
 
   openOverview() {
     const w = this.currentWindow();
+    const seen = new Set();
     const powers = state.features
-      .filter((f) => !NON_STATE.test(f.name))
-      .slice(0, 14);
+      .filter((f) => f.kind !== 'culture' && !NON_STATE.test(f.name))
+      .sort((a, b) => b.area - a.area)
+      .filter((f) => !seen.has(f.name) && seen.add(f.name))
+      .slice(0, 16);
     state.panel = { kind: 'overview' };
     globeApi.setSelected(null);
     globeApi.setRing(null);
@@ -234,17 +255,22 @@ const app = {
     scheduleHash();
   },
 
-  async openPolityByName(name, years) {
-    // Stay in the current year if the polity is on the current map; otherwise go to the closest map that has it.
-    let f = state.features.filter((x) => x.name === name).sort((a, b) => b.area - a.area)[0];
-    if (!f && years?.length) {
-      const a = toAstro(state.year);
-      const target = years.reduce((best, y) => (Math.abs(toAstro(y) - a) < Math.abs(toAstro(best) - a) ? y : best), years[0]);
-      await this.setYear(target === -1 ? -1 : target);
-      f = state.features.filter((x) => x.name === name).sort((a2, b) => b.area - a2.area)[0];
+  /** ranges: [[from, to], ...] years in which the territory exists (optional). */
+  async openPolityByName(name, ranges) {
+    let f = this.findFeature(name);
+    if (!f && ranges?.length) {
+      // Jump to the nearest year in which it exists.
+      const y = state.year;
+      let target = null, best = Infinity;
+      for (const [a, b] of ranges) {
+        const t = y < a ? a : y > b ? b : y;
+        if (Math.abs(t - y) < best) { best = Math.abs(t - y); target = t; }
+      }
+      await this.setYear(target === 0 ? 1 : target);
+      f = this.findFeature(name);
     }
     if (f) this.openTerritory(f, { fly: true });
-    else setStatus(`Couldn't find “${name}” on the map.`);
+    else setStatus(`Couldn't find “${name}” on the map in ${formatYear(state.year)}.`);
   },
 
   closePanel() {
@@ -420,6 +446,10 @@ document.addEventListener('pointerdown', (ev) => {
   if (!ev.target.closest('#layers-menu, #btn-layers')) $('layers-menu').hidden = true;
 });
 $('opt-borders').addEventListener('change', (e) => globeApi.setShowBorders(e.target.checked));
+$('opt-cultures').addEventListener('change', (e) => {
+  state.showCultures = e.target.checked;
+  app.ensureBorders();
+});
 $('opt-labels').addEventListener('change', (e) => globeApi.setShowLabels(e.target.checked));
 $('opt-events').addEventListener('change', (e) => { state.showEvents = e.target.checked; refreshEvents(); });
 $('opt-wikidata').addEventListener('change', (e) => {

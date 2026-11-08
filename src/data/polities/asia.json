@@ -1,5 +1,5 @@
 [
-  {"names":["Zhou states","Qin","Han Empire","Han Zhao","Tang Empire","Song Empire","Great Khanate","Ming Empire","Ming Chinese Empire","Post-Ming Warlords","Manchu Empire","Qing Empire","China","Chinese Warlords","Chinese warlords"],"wiki":"History_of_China","eras":[
+  {"names":["Zhou states","Qin","Han Empire","Han Zhao","Tang Empire","Song Empire","Great Khanate","Ming Empire","Ming Chinese Empire","Post-Ming Warlords","Manchu Empire","Qing Empire","China","Chinese Warlords","Chinese warlords","Shang Dynasty","Zhou Dynasty","Warring States China","Qin Dynasty","Han Dynasty","Western Jin","Liu Song Dynasty","Liang Dynasty","Chen Dynasty","Sui Dynasty","Tang Dynasty","Northern Song","Southern Song","Yuan Dynasty","Ming Dynasty","Qing Dynasty","Republic of China","People's Republic of China"],"wiki":"History_of_China","only":{"Republic of China":[1912,1949]},"eras":[
     {"from":-1046,"to":-771,"title":"Western Zhou","text":"The Zhou overthrow the Shang and rule through a feudal network of relatives, justifying their rule by the 'Mandate of Heaven'."},
     {"from":-771,"to":-221,"title":"Spring and Autumn, Warring States","text":"Zhou authority fades and rival states fight for supremacy. It is also China's great age of philosophy: Confucius, Laozi, Mencius, Sun Tzu and the Legalists."},
     {"from":-221,"to":-206,"title":"The Qin unification","text":"The First Emperor, Qin Shi Huang, conquers all rivals, standardises script, coins and laws, links the northern walls and is buried with the Terracotta Army. His dynasty collapses soon after his death."},
@@ -37,7 +37,7 @@
     {"from":-300,"to":850,"title":"Early Cholas","text":"An ancient Tamil dynasty of south India, mentioned in Ashoka's edicts and Tamil Sangam poetry."},
     {"from":850,"to":1279,"title":"The imperial Cholas","text":"Rajaraja I and Rajendra I build a maritime empire across south India and Sri Lanka, raid Srivijaya, and build the great temple at Thanjavur. Their bronzes are among the masterpieces of Indian art."}
   ]},
-  {"names":["Sultanate of Delhi","Delhi Sultanate"],"wiki":"Delhi_Sultanate","eras":[
+  {"names":["Sultanate of Delhi","Delhi Sultanate","Mamluk Dynasty","Khalji Dynasty","Tughlaq Dynasty","Sayyid Dynasty","Lodi Dynasty"],"wiki":"Delhi_Sultanate","eras":[
     {"from":1206,"to":1398,"title":"Turkic sultans in India","text":"Turkic and Afghan dynasties rule northern India from Delhi, fend off the Mongols and build the Qutb Minar. Under Muhammad bin Tughluq the sultanate briefly covers most of India."},
     {"from":1398,"to":1526,"title":"After Timur","text":"Timur's sack of Delhi (1398) shatters the sultanate; the Lodi dynasty rules a smaller state until Babur defeats it at Panipat in 1526."}
   ]},
@@ -49,15 +49,15 @@
     {"from":1605,"to":1707,"title":"Splendour","text":"Under Jahangir, Shah Jahan (builder of the Taj Mahal) and Aurangzeb, the Mughal Empire is one of the richest and most populous states on Earth, producing a quarter of world manufacturing."},
     {"from":1707,"to":1857,"title":"Decline","text":"After Aurangzeb, the Marathas, Persians, Afghans and the British East India Company carve up the empire; the last emperor is exiled after the 1857 rebellion."}
   ]},
-  {"names":["Maratha","Maratha Empire"],"wiki":"Maratha_Confederacy","eras":[
+  {"names":["Maratha","Maratha Empire"],"wiki":"Maratha_Empire","eras":[
     {"from":1674,"to":1818,"title":"The Marathas","text":"Shivaji founds a Hindu kingdom in the western Deccan; the Maratha Confederacy becomes the dominant power in India in the 18th century, until defeated by the British."}
   ]},
-  {"names":["British Raj","India","British East India Company"],"wiki":"History_of_India","eras":[
+  {"names":["British Raj","India","British East India Company","Republic of India"],"wiki":"History_of_India","eras":[
     {"from":1757,"to":1858,"title":"Company rule","text":"After Plassey (1757) the British East India Company conquers India piece by piece, ruling through its own army and puppet princes."},
     {"from":1858,"to":1947,"title":"The British Raj","text":"After the 1857 rebellion the Crown takes direct rule; railways are built and famines recur. Gandhi's and Nehru's Congress leads a mass independence movement."},
     {"from":1947,"to":2025,"title":"Independent India","text":"India becomes independent amid Partition and develops into the world's largest democracy and, by 2023, its most populous country."}
   ]},
-  {"names":["Pakistan"],"wiki":"History_of_Pakistan","eras":[
+  {"names":["Pakistan","Islamic Republic of Pakistan"],"wiki":"History_of_Pakistan","eras":[
     {"from":1947,"to":2025,"title":"Pakistan","text":"Created as a homeland for South Asia's Muslims at Partition; East Pakistan breaks away as Bangladesh in 1971. Military and civilian governments alternate."}
   ]},
   {"names":["Khmer Empire"],"wiki":"Khmer_Empire","eras":[
@@ -74,7 +74,7 @@
     {"from":1351,"to":1767,"title":"Ayutthaya","text":"Ayutthaya grows into a great trading city of Southeast Asia, welcoming Chinese, Japanese, Persian and European merchants, until the Burmese sack it in 1767."},
     {"from":1782,"to":2025,"title":"Bangkok and the Chakri dynasty","text":"The Chakri kings rule from Bangkok; Siam (Thailand) is the only Southeast Asian country never colonised by Europeans."}
   ]},
-  {"names":["Đại Việt","Dai Viet","Vietnam","Cochin China"],"wiki":"History_of_Vietnam","eras":[
+  {"names":["Đại Việt","Dai Viet","Vietnam","Cochin China","Ngô Dynasty","Lê Dynasty","Tây Sơn dynasty","Nguyễn dynasty","Democratic Republic of Vietnam","Republic of Vietnam"],"wiki":"History_of_Vietnam","eras":[
     {"from":938,"to":1802,"title":"Đại Việt","text":"After a thousand years of Chinese rule, the Vietnamese win independence (938). Dynasties such as the Lý, Trần and Lê repel the Mongols three times and expand south at the expense of Champa."},
     {"from":1858,"to":1954,"title":"French Indochina","text":"France conquers Vietnam step by step; Ho Chi Minh leads the independence struggle that defeats the French at Dien Bien Phu (1954)."},
     {"from":1954,"to":2025,"title":"War and reunification","text":"Vietnam is divided, then reunified under communist rule after the Vietnam War (1975); market reforms from 1986 bring rapid growth."}
@@ -82,7 +82,7 @@
   {"names":["Champa"],"wiki":"Champa","eras":[
     {"from":192,"to":1832,"title":"Champa","text":"Hindu and later Muslim Cham kingdoms along the central Vietnamese coast grow rich on maritime trade, rival Angkor and Đại Việt, and are gradually absorbed by Vietnam."}
   ]},
-  {"names":["Japan","Imperial Japan (Fujiwara)","Shogun Japan (Kamakura)","Japan (Warring States)","Imperial Japan","Empire of Japan","Japan (USA)"],"wiki":"History_of_Japan","eras":[
+  {"names":["Japan","Imperial Japan (Fujiwara)","Shogun Japan (Kamakura)","Japan (Warring States)","Imperial Japan","Empire of Japan","Japan (USA)","Asuka Japan","Nara Japan","Heian Japan","Kamakura Shogunate","Ashikaga Shogunate","Warring States Japan","Tokugawa Shogunate"],"wiki":"History_of_Japan","eras":[
     {"from":538,"to":794,"title":"Asuka and Nara","text":"Buddhism and Chinese-style government arrive from Korea and China; Prince Shōtoku issues a constitution and Nara is built as a Tang-style capital."},
     {"from":794,"to":1185,"title":"The Heian period","text":"An elegant court culture flourishes in Kyoto, dominated by the Fujiwara clan; Lady Murasaki writes 'The Tale of Genji'. Samurai clans grow powerful in the provinces."},
     {"from":1185,"to":1467,"title":"Kamakura and Muromachi shogunates","text":"Military rulers (shoguns) govern in the emperor's name. Japan repels two Mongol invasions (1274, 1281); Zen Buddhism and the tea ceremony develop."},
@@ -91,7 +91,7 @@
     {"from":1868,"to":1945,"title":"Imperial Japan","text":"The Meiji Restoration modernises Japan at breakneck speed. It defeats China (1895) and Russia (1905), annexes Korea and invades China, then attacks the US; it surrenders in 1945."},
     {"from":1945,"to":2025,"title":"Postwar Japan","text":"Under a pacifist constitution Japan rebuilds into the world's second-largest economy for decades."}
   ]},
-  {"names":["Korea","Goryeo","Silla","Koguryo","Paekche","Gojoseon","Korea, Republic of","Korea, Democratic People's Republic of","Korea (USA)","Korea (USSR)"],"wiki":"History_of_Korea","eras":[
+  {"names":["Korea","Goryeo","Silla","Koguryo","Paekche","Gojoseon","Korea, Republic of","Korea, Democratic People's Republic of","Korea (USA)","Korea (USSR)","Joseon","Korean Empire","Republic of Korea","Democratic People's Republic of Korea"],"wiki":"History_of_Korea","only":{"Gojoseon":[-2333,-108]},"eras":[
     {"from":-57,"to":668,"title":"The Three Kingdoms","text":"Goguryeo, Baekje and Silla compete for the peninsula, absorbing Buddhism and Chinese culture and passing them on to Japan."},
     {"from":668,"to":935,"title":"Unified Silla","text":"Silla, allied with Tang China, unites most of the peninsula; its capital Gyeongju is a centre of Buddhist art."},
     {"from":918,"to":1392,"title":"Goryeo","text":"The Goryeo dynasty (which gives Korea its name) prints the Tripitaka Koreana and the first book with metal movable type (1377); it endures Mongol domination."},
@@ -112,11 +112,11 @@
   {"names":["Khazars"],"wiki":"Khazars","eras":[
     {"from":650,"to":969,"title":"The Khazar Khaganate","text":"A Turkic trading empire between the Black Sea and Caspian whose elite famously converts to Judaism; it controls the route between the Islamic world, Byzantium and the Rus'."}
   ]},
-  {"names":["Indonesia","Dutch East Indies"],"wiki":"History_of_Indonesia","eras":[
+  {"names":["Indonesia","Dutch East Indies","Republic of Indonesia"],"wiki":"History_of_Indonesia","eras":[
     {"from":1602,"to":1945,"title":"Dutch East Indies","text":"The Dutch East India Company and then the Netherlands conquer the archipelago for its spices, coffee and sugar."},
     {"from":1945,"to":2025,"title":"Indonesia","text":"Sukarno declares independence in 1945; after a war with the Dutch it becomes the world's largest Muslim-majority country."}
   ]},
-  {"names":["Afghanistan"],"wiki":"History_of_Afghanistan","eras":[
+  {"names":["Afghanistan","Emirate of Afghanistan","Kingdom of Afghanistan","Durrani Dynasty"],"wiki":"History_of_Afghanistan","eras":[
     {"from":1747,"to":2025,"title":"Afghanistan","text":"Founded by Ahmad Shah Durrani, Afghanistan becomes a buffer between the Russian and British empires, then a battleground for Soviet (1979–89) and US-led (2001–21) interventions."}
   ]}
 ]

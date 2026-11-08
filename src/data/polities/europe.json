@@ -45,13 +45,13 @@
     {"from":1485,"to":1603,"title":"The Tudors","text":"Henry VII ends the civil wars. Henry VIII breaks with Rome (1534) and Elizabeth I's England defeats the Spanish Armada (1588), begins overseas voyages and enjoys the age of Shakespeare."},
     {"from":1603,"to":1707,"title":"Stuarts, civil war and revolution","text":"The Stuart kings of Scotland inherit England. Conflict between Crown and Parliament leads to civil war, Charles I's execution (1649) and Cromwell's republic, then the Restoration (1660) and the Glorious Revolution (1688). England unites with Scotland in 1707."}
   ]},
-  {"names":["United Kingdom","United Kingdom of Great Britain and Ireland"],"wiki":"History_of_the_United_Kingdom","eras":[
+  {"names":["United Kingdom","United Kingdom of Great Britain and Ireland","Kingdom of Great Britain","British Empire","British Colonial Empire"],"wiki":"History_of_the_United_Kingdom","eras":[
     {"from":1707,"to":1815,"title":"Great Britain rises","text":"England and Scotland unite (1707). Britain wins naval and colonial supremacy against France, loses the American colonies (1783), begins the Industrial Revolution and leads the coalitions that defeat Napoleon."},
     {"from":1815,"to":1914,"title":"The Victorian empire","text":"Britain is the 'workshop of the world' and rules the largest empire in history — India, much of Africa, Canada, Australia — while its navy polices the seas. At home, railways, reform acts and the abolition of slavery (1833) transform society."},
     {"from":1914,"to":1945,"title":"Two world wars","text":"Britain fights both world wars, standing alone against Nazi Germany in 1940–41. Ireland's southern 26 counties gain independence (1922)."},
     {"from":1945,"to":2025,"title":"After empire","text":"The welfare state and NHS are founded; India (1947) and most colonies become independent. Britain joins the European Community (1973) and leaves the EU (2020)."}
   ]},
-  {"names":["Castile","Castille","Castilla","Crown of Castile","Spain"],"wiki":"History_of_Spain","eras":[
+  {"names":["Castile","Castille","Castilla","Crown of Castile","Spain","Kingdom of Castile","Kingdom of Spain","Spanish Empire","Francoist Spain"],"wiki":"History_of_Spain","eras":[
     {"from":711,"to":1212,"title":"Al-Andalus and the Christian north","text":"Most of Iberia is Muslim al-Andalus, whose capital Córdoba is the most brilliant city in Western Europe. Small Christian kingdoms in the north — Asturias, León, Castile, Navarre, Aragon — slowly push south in the Reconquista; Toledo falls to Castile in 1085."},
     {"from":1212,"to":1469,"title":"Castile becomes the great Iberian power","text":"After the victory of Las Navas de Tolosa (1212), Castile conquers Córdoba (1236) and Seville (1248), leaving only the Emirate of Granada in Muslim hands. Castile grows rich on wool exported to Flanders and Italy."},
     {"from":1469,"to":1556,"title":"The Catholic Monarchs and a world empire","text":"The marriage of Isabella of Castile and Ferdinand of Aragon unites Spain. In 1492 they take Granada, expel the Jews and sponsor Columbus. Their grandson Charles V inherits Spain, the Habsburg lands and the Netherlands while conquistadors seize the Aztec and Inca empires."},
@@ -92,19 +92,19 @@
     {"from":1266,"to":1504,"title":"Angevins and Aragonese","text":"French Angevin kings rule until the Sicilian Vespers (1282) gives Sicily to Aragon. Naples itself passes to Aragon in 1442, and is claimed by France in 1494."},
     {"from":1504,"to":1861,"title":"Spanish viceroys and Bourbon kings","text":"Southern Italy is ruled by Spanish viceroys, then by a Bourbon dynasty (the Two Sicilies from 1816), until Garibaldi's Thousand conquer it for Italy in 1860."}
   ]},
-  {"names":["Kingdom of Hungary","Hungary","Imperial Hungary"],"wiki":"Kingdom_of_Hungary","eras":[
+  {"names":["Kingdom of Hungary","Hungary","Imperial Hungary","Hungarian People's Republic"],"wiki":"Kingdom_of_Hungary","eras":[
     {"from":896,"to":1301,"title":"The Árpád kings","text":"Magyar horsemen settle the Carpathian Basin. Stephen I is crowned the first Christian king (1000). The Mongols devastate the kingdom in 1241–42."},
     {"from":1301,"to":1526,"title":"A great Central European power","text":"Angevin kings and Matthias Corvinus (1458–90) make Hungary a major Renaissance kingdom; it contests Dalmatia with Venice and is Christendom's bulwark against the Ottomans."},
     {"from":1526,"to":1918,"title":"Divided, then Habsburg","text":"After Mohács (1526) Hungary is split between the Ottomans, Habsburg Royal Hungary and Transylvania. The Habsburgs reconquer it by 1699; in 1867 it becomes an equal partner in Austria-Hungary."},
     {"from":1918,"to":2025,"title":"Independent Hungary","text":"Hungary loses two-thirds of its territory at Trianon (1920), joins the Axis, and falls under Soviet control after 1945; the 1956 revolution is crushed. It becomes a democracy in 1989 and joins the EU in 2004."}
   ]},
-  {"names":["Poland","Poland-Lithuania","Polish–Lithuanian Commonwealth"],"wiki":"History_of_Poland","eras":[
+  {"names":["Poland","Poland-Lithuania","Polish–Lithuanian Commonwealth","Kingdom of Poland","Duchies of Poland","Polish-Lithuania Kingdom","House of Jagiellon","Polish-Lithuanian Commonwealth","Second Polish Republic","Republic of Poland"],"wiki":"History_of_Poland","eras":[
     {"from":966,"to":1385,"title":"The Piast kingdom","text":"Mieszko I accepts Christianity (966). Poland fragments, suffers Mongol raids, and is reunited under Casimir the Great (1333–70). Lithuania, the last pagan state in Europe, expands across Rus' lands."},
     {"from":1385,"to":1572,"title":"Union with Lithuania","text":"Grand Duke Jogaila of Lithuania marries Queen Jadwiga and converts; the union defeats the Teutonic Knights at Grunwald (1410) and becomes one of Europe's largest states. Copernicus studies in Kraków."},
     {"from":1569,"to":1795,"title":"The Commonwealth of nobles","text":"The Polish–Lithuanian Commonwealth elects its kings and grants religious tolerance. Jan Sobieski saves Vienna (1683), but a weak central government lets Russia, Prussia and Austria partition the state out of existence (1772–95)."},
     {"from":1918,"to":2025,"title":"Rebirth and survival","text":"Poland is reborn in 1918, is invaded by Germany and the USSR in 1939 and suffers enormously, then becomes a Soviet satellite. Solidarity's movement brings democracy in 1989."}
   ]},
-  {"names":["Teutonic Knights","State of the Teutonic Order"],"wiki":"State_of_the_Teutonic_Order","eras":[
+  {"names":["Teutonic Knights","State of the Teutonic Order","Teutonic Order"],"wiki":"State_of_the_Teutonic_Order","eras":[
     {"from":1226,"to":1525,"title":"A crusader state on the Baltic","text":"The German crusading order conquers the pagan Prussians and builds a powerful state ruled from Marienburg castle. Its defeat by Poland-Lithuania at Grunwald (1410) begins its decline; in 1525 its last Grand Master becomes the Lutheran Duke of Prussia."}
   ]},
   {"names":["Kyivan Rus","Kievan Rus","Rus' Khaganate","Other Rus Principalities"],"wiki":"Kievan_Rus'","eras":[
@@ -114,7 +114,7 @@
   {"names":["Novgorod","Principality of Novgorod","Novgorod Republic"],"wiki":"Novgorod_Republic","eras":[
     {"from":1136,"to":1478,"title":"Lord Novgorod the Great","text":"A merchant republic governed by its assembly (veche), Novgorod controls a vast fur-producing hinterland and trades with the Hanseatic League. Spared the Mongol sack, it is finally annexed by Ivan III of Moscow in 1478."}
   ]},
-  {"names":["Tsardom of Muscovy","Grand Duchy of Moscow","Russian Empire","Russia","Muscovy"],"wiki":"History_of_Russia","eras":[
+  {"names":["Tsardom of Muscovy","Grand Duchy of Moscow","Russian Empire","Russia","Muscovy","Grand Principality of Moscow","Tsardom of Russia","Russian Federation"],"wiki":"History_of_Russia","eras":[
     {"from":1283,"to":1547,"title":"The rise of Moscow","text":"The princes of Moscow collect tribute for the Golden Horde and gradually absorb rival Russian lands. Ivan III ends Tatar overlordship (1480) and annexes Novgorod; Moscow styles itself the 'Third Rome'."},
     {"from":1547,"to":1682,"title":"The Tsardom","text":"Ivan IV 'the Terrible' is crowned tsar, conquers Kazan and Astrakhan and begins the conquest of Siberia. After the Time of Troubles the Romanov dynasty is founded (1613)."},
     {"from":1682,"to":1801,"title":"Peter, Catherine and empire","text":"Peter the Great modernises Russia, defeats Sweden and builds St Petersburg. Catherine the Great takes Crimea and much of Poland."},
@@ -125,7 +125,7 @@
     {"from":1922,"to":1953,"title":"Lenin and Stalin","text":"The Bolsheviks win the civil war and found the USSR. Stalin's forced collectivisation and industrialisation cause famine and terror, but the Soviet Union bears the greatest share of the fighting against Nazi Germany and emerges a superpower."},
     {"from":1953,"to":1991,"title":"Cold War superpower","text":"The USSR launches Sputnik and Gagarin, dominates Eastern Europe and rivals the USA worldwide. Economic stagnation and Gorbachev's reforms lead to collapse in 1991."}
   ]},
-  {"names":["Sweden","Swedes","Swedes and Goths"],"wiki":"History_of_Sweden","eras":[
+  {"names":["Sweden","Swedes","Swedes and Goths","Kingdom of Sweden"],"wiki":"History_of_Sweden","eras":[
     {"from":800,"to":1523,"title":"Vikings to Kalmar Union","text":"Swedish Vikings trade and raid down Russia's rivers. A Christian kingdom forms; from 1397 Sweden is part of the Kalmar Union with Denmark and Norway."},
     {"from":1523,"to":1721,"title":"Sweden's age of greatness","text":"Gustav Vasa makes Sweden independent. Gustavus Adolphus' armies intervene decisively in the Thirty Years' War and Sweden dominates the Baltic, until Peter the Great's Russia defeats Charles XII (Poltava, 1709)."},
     {"from":1721,"to":2025,"title":"Neutral and prosperous","text":"Sweden settles into constitutional monarchy, stays out of wars after 1814 and builds a famously generous welfare state; it joined NATO in 2024."}
@@ -139,11 +139,11 @@
     {"from":843,"to":1603,"title":"An independent kingdom","text":"Kenneth MacAlpin unites Picts and Scots. William Wallace and Robert the Bruce resist English conquest (Bannockburn, 1314). Scotland allies with France and embraces a Calvinist Reformation under John Knox."},
     {"from":1603,"to":1707,"title":"Union of Crowns","text":"James VI of Scotland inherits England (1603). The two kingdoms merge into Great Britain in 1707."}
   ]},
-  {"names":["Serbia"],"wiki":"History_of_Serbia","eras":[
+  {"names":["Serbia","Principality of Serbia","Grand Principality of Serbia","Kingdom of Serbia","Serbian Empire","Serbian Despots"],"wiki":"History_of_Serbia","eras":[
     {"from":1166,"to":1459,"title":"Medieval Serbia","text":"The Nemanjić dynasty builds a powerful Orthodox kingdom; Stefan Dušan (1331–55) crowns himself emperor. After Kosovo (1389) Serbia becomes an Ottoman vassal and is annexed in 1459."},
     {"from":1804,"to":2025,"title":"Modern Serbia","text":"Uprisings win autonomy and independence (1878). Serbia's conflict with Austria-Hungary sparks WWI; it becomes the core of Yugoslavia (1918–1992), whose violent breakup in the 1990s ends with an independent Serbia."}
   ]},
-  {"names":["Bulgar Khanate","Danube Bulgars","Bulgars","Bulgaria"],"wiki":"History_of_Bulgaria","eras":[
+  {"names":["Bulgar Khanate","Danube Bulgars","Bulgars","Bulgaria","First Bulgarian Empire","Second Bulgarian Empire"],"wiki":"History_of_Bulgaria","eras":[
     {"from":681,"to":1018,"title":"The First Bulgarian Empire","text":"Turkic Bulgars and Slavs found a state south of the Danube. It converts to Christianity (864), becomes the cradle of Cyrillic literature and rivals Byzantium, until Basil II conquers it."},
     {"from":1185,"to":1396,"title":"The Second Bulgarian Empire","text":"Bulgaria revives under the Asen dynasty but falls to the Ottomans in 1396, remaining under Ottoman rule until 1878."}
   ]},
@@ -174,14 +174,14 @@
     {"from":376,"to":568,"title":"The Migration Period","text":"Germanic peoples — Goths, Vandals, Franks, Burgundians, Lombards — cross into the Roman Empire, often as allies and soldiers, and carve out kingdoms on its ruins: the Visigoths in Spain, the Vandals in North Africa, the Ostrogoths and then Lombards in Italy."},
     {"from":568,"to":774,"title":"Successor kingdoms","text":"The Visigothic kingdom of Spain lasts until the Arab conquest of 711; the Lombards rule much of Italy until Charlemagne conquers them in 774."}
   ]},
-  {"names":["Celts","Celtic kingdoms","Celtiberians"],"wiki":"Celts","eras":[
+  {"names":["Celts","Celtic kingdoms","Celtiberians","Brythonic Kingdoms","Brythons"],"wiki":"Celts","eras":[
     {"from":-800,"to":-50,"title":"Iron Age Celts","text":"Celtic-speaking peoples of the Hallstatt and La Tène cultures spread across Europe from Ireland to Anatolia, sacking Rome (390 BC) and Delphi (279 BC). Caesar conquers Gaul by 50 BC."},
     {"from":-50,"to":1300,"title":"The Celtic fringe","text":"Celtic languages and kingdoms survive in Ireland, Scotland, Wales, Cornwall and Brittany, where Irish monks preserve learning in the early Middle Ages."}
   ]},
   {"names":["Hunnic Empire","Huns"],"wiki":"Huns","eras":[
     {"from":370,"to":469,"title":"The Huns","text":"Nomads from the steppe, the Huns push the Goths into the Roman Empire. Under Attila (434–453) they extort gold from Constantinople and invade Gaul and Italy before their empire collapses."}
   ]},
-  {"names":["Austrian Empire","Austria","Austria Hungary","Austro-Hungarian Empire"],"wiki":"History_of_Austria","eras":[
+  {"names":["Austrian Empire","Austria","Austria Hungary","Austro-Hungarian Empire","Republic of Austria"],"wiki":"History_of_Austria","eras":[
     {"from":1282,"to":1804,"title":"The Habsburg lands","text":"The Habsburgs rule Austria from 1282 and through marriages gather Bohemia, Hungary and more; they hold the imperial crown, resist the Ottomans at Vienna (1529, 1683) and fight Prussia under Maria Theresa."},
     {"from":1804,"to":1867,"title":"The Austrian Empire","text":"Francis I takes the title Emperor of Austria. After 1815 Austria rules Venice and Lombardy, and Metternich leads conservative Europe, but revolutions (1848) and defeats lose its Italian lands."},
     {"from":1867,"to":1918,"title":"Austria-Hungary","text":"The 'Dual Monarchy' of Franz Joseph is a multinational empire of Germans, Hungarians, Czechs, Poles, Croats and others — and the Vienna of Freud, Klimt and Mahler. Its war on Serbia starts WWI; it breaks apart in 1918."},
@@ -191,12 +191,12 @@
     {"from":1525,"to":1701,"title":"Duchy to great power","text":"The Teutonic Order's lands become the Duchy of Prussia, united with Brandenburg under the Hohenzollerns."},
     {"from":1701,"to":1871,"title":"Kingdom of Prussia","text":"Frederick the Great's army makes Prussia a great power. After defeat by Napoleon it reforms, and under Bismarck it defeats Austria and France to unite Germany."}
   ]},
-  {"names":["Germany","German Empire","West Germany","East Germany"],"wiki":"History_of_Germany","eras":[
+  {"names":["Germany","German Empire","West Germany","East Germany","Federal Republic of Germany"],"wiki":"History_of_Germany","eras":[
     {"from":1871,"to":1918,"title":"Imperial Germany","text":"The new German Empire becomes Europe's industrial powerhouse and acquires colonies in Africa and the Pacific. Its rivalry with Britain and alliance with Austria-Hungary help bring on WWI."},
     {"from":1918,"to":1945,"title":"Weimar and the Third Reich","text":"The Weimar Republic is undermined by defeat, hyperinflation and the Depression. Hitler's Nazi dictatorship launches WWII and the Holocaust."},
     {"from":1945,"to":2025,"title":"Divided and reunited","text":"Germany is split into a democratic West and a communist East. The Berlin Wall falls in 1989 and Germany reunites in 1990, becoming the EU's largest economy."}
   ]},
-  {"names":["Italy","Kingdom of Italy"],"wiki":"History_of_Italy","eras":[
+  {"names":["Italy","Kingdom of Italy","Republic of Italy"],"wiki":"History_of_Italy","only":{"Kingdom of Italy":[1861,1946]},"eras":[
     {"from":1861,"to":1922,"title":"Liberal Italy","text":"The new kingdom adds Venice (1866) and Rome (1870). Millions emigrate. Italy joins WWI on the Allied side in 1915."},
     {"from":1922,"to":1945,"title":"Fascist Italy","text":"Mussolini's dictatorship invades Ethiopia (1935) and joins Hitler in WWII; Italy is invaded by the Allies and fights a civil war."},
     {"from":1946,"to":2025,"title":"The Republic","text":"Italy votes to become a republic and enjoys an 'economic miracle', becoming a founder of the European Union."}

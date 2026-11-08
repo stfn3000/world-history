@@ -46,6 +46,10 @@ for (const [file, list] of await loadDir('events')) {
 // ---- polities
 const index = JSON.parse(await readFile(new URL('polity-index.json', root), 'utf8'));
 const mapNames = new Set(Object.keys(index.names).map((n) => n.toLowerCase()));
+try {
+  const clio = JSON.parse(await readFile(new URL('../public/borders/index.json', import.meta.url), 'utf8'));
+  for (const r of clio.rows) mapNames.add(r[0].replace(/^\((.*)\)$/, '$1').toLowerCase());
+} catch { /* borders not built */ }
 const seenNames = new Map();
 let nPolities = 0, nEras = 0, matched = 0;
 for (const [file, list] of await loadDir('polities')) {

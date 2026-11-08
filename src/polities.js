@@ -15,12 +15,19 @@ for (const p of POLITIES) {
   for (const n of p.names) byName.set(n.toLowerCase(), p);
 }
 
-/** Curated entry for a dataset feature, trying NAME, then SUBJECTO, then PARTOF. */
-export function polityFor(feature) {
-  for (const n of [feature.name, feature.subjecto, feature.partof]) {
+/**
+ * Curated entry for a map feature in `year`: tries its own name, then the
+ * realm it belongs to. An entry's optional `only` limits a name to a range of
+ * years, for names that cover different states at different times.
+ */
+export function polityFor(feature, year) {
+  for (const n of [feature.name, feature.memberOf, feature.subjecto, feature.partof]) {
     if (!n) continue;
     const p = byName.get(n.toLowerCase());
-    if (p) return { polity: p, via: n === feature.name ? null : n };
+    if (!p) continue;
+    const lim = p.only && Object.entries(p.only).find(([k]) => k.toLowerCase() === n.toLowerCase())?.[1];
+    if (lim && year != null && (year < lim[0] || year > lim[1])) continue;
+    return { polity: p, via: n === feature.name ? null : n };
   }
   return null;
 }
@@ -29,15 +36,10 @@ export function polityByName(name) {
   return byName.get(String(name).toLowerCase()) || null;
 }
 
-/** The era of a polity that best describes `year` (the closest one if none contains it). */
+/** The period of a polity that contains `year`, or null. */
 export function eraFor(polity, year) {
   if (!polity?.eras?.length) return null;
   const a = toAstro(year);
-  let best = null, bestD = Infinity;
-  for (const e of polity.eras) {
-    const f = toAstro(e.from), t = toAstro(e.to);
-    const d = a < f ? f - a : a > t ? a - t : 0;
-    if (d < bestD) { best = e; bestD = d; }
-  }
-  return { era: best, exact: bestD === 0, distance: bestD };
+  const era = polity.eras.find((e) => a >= toAstro(e.from) && a <= toAstro(e.to));
+  return era ? { era, exact: true } : null;
 }

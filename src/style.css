@@ -127,6 +127,8 @@ a { color: var(--accent-2); }
   transition: opacity .3s;
 }
 .terr-label.big { font-size: 16px; text-transform: uppercase; letter-spacing: .12em; }
+.terr-label.umbrella { font-style: italic; text-transform: uppercase; letter-spacing: .14em; color: rgba(255, 236, 190, .9); }
+.terr-label.culture { font-style: italic; font-weight: 500; color: rgba(220, 225, 235, .55); text-transform: none; letter-spacing: .02em; }
 
 /* ---------- side panel ---------- */
 .panel {
@@ -284,3 +286,13 @@ kbd { background: #222a3d; border: 1px solid var(--line-strong); border-bottom-w
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; }
 }
+
+/* ---------- citations ---------- */
+.cite-marks { white-space: nowrap; }
+.cite { font-size: 11px; vertical-align: super; line-height: 0; color: var(--accent-2); text-decoration: none; margin-left: 1px; }
+.cite:hover { text-decoration: underline; }
+.sources { margin-top: 22px; border-top: 1px solid var(--line); padding-top: 4px; }
+.sources ol { margin: 0; padding-left: 22px; font-size: 13px; }
+.sources li { margin-bottom: 4px; }
+.sources li:target { background: rgba(143, 184, 255, .12); border-radius: 6px; }
+.inline-link { background: none; border: 0; padding: 0; color: var(--accent); font-weight: 600; text-decoration: underline dotted; }

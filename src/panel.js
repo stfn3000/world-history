@@ -28,56 +28,92 @@ function rangeLabel(year, w) {
   return `${formatYear(from)} – ${formatYear(to)}`;
 }
 
-function polityLinks(name, wikiTitle, year) {
+function polityLinks(name, wikiTitle, year, britannica) {
   const century = centuryLabel(year);
   return [
     wikiTitle ? link(wikiUrl(wikiTitle), `Wikipedia: ${wikiTitle.replace(/_/g, ' ')}`, '📖') : link(wikiSearch(name), `Search Wikipedia for “${name}”`, '📖'),
-    link(wikiSearch(`History of ${name}`), `History of ${name}`, '📚'),
+    britannica ? link(`https://www.britannica.com/${britannica}`, 'Britannica article', '🏛️') : link(britannicaSearch(name), 'Search Britannica', '🏛️'),
     link(youtubeSearch(`${name} history ${century}`), `YouTube: ${name} in the ${century}`, '▶️'),
     link(youtubeSearch(`history of ${name} documentary`), 'YouTube documentaries', '🎬'),
-    link(britannicaSearch(name), 'Britannica', '🏛️'),
     link(wikiUrl(wikiYearTitle(year)), `What else happened in ${formatYear(year)}`, '🗓️'),
   ].join('');
 }
 
-/** Territory panel. ctx = { year, window, snapshotYear, eventsHere, eventsElsewhere } */
+/**
+ * Citations. Text carries no markers in the middle: the numbers come once,
+ * after the last paragraph, and the numbered list sits at the end of the panel.
+ */
+function citeMarks(sources) {
+  if (!sources?.length) return '';
+  return ` <span class="cite-marks">${sources.map((_, i) => `<a href="#src-${i + 1}" class="cite">[${i + 1}]</a>`).join('')}</span>`;
+}
+function sourcesList(sources) {
+  if (!sources?.length) return '';
+  return `<section class="sources"><h4>Sources</h4><ol>${sources
+    .map(
+      (s, i) => `<li id="src-${i + 1}"><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title)}</a>${s.publisher ? ` <span class="muted">— ${esc(s.publisher)}</span>` : ''}</li>`,
+    )
+    .join('')}</ol></section>`;
+}
+
+const yearsLabel = (a, b) => (a === b ? formatYear(a) : `${formatYear(a)} – ${formatYear(b)}`);
+
+/** Territory panel. ctx = { year, window, snapshotYear, eventsHere, eventsElsewhere, members, umbrella } */
 export function renderTerritory(el, f, ctx, app) {
-  const match = polityFor(f);
+  const match = polityFor(f, ctx.year);
   const polity = match?.polity;
   const eraInfo = polity ? eraFor(polity, ctx.year) : null;
-  const relation = [
-    f.subjecto ? `Under <b>${esc(f.subjecto)}</b>` : '',
-    f.partof && f.partof !== f.subjecto ? `Part of <b>${esc(f.partof)}</b>` : '',
-  ].filter(Boolean).join(' · ');
-  const precision = ['', 'approximate borders', 'moderately precise borders', 'borders fixed by treaty / law'][f.precision] || '';
+  const era = eraInfo?.era;
+
+  let relation = '';
+  if (f.memberOf) {
+    relation = ctx.umbrella
+      ? `Part of <button class="inline-link" data-action="umbrella">${esc(f.memberOf)}</button>`
+      : `Part of <b>${esc(f.memberOf)}</b>`;
+  } else if (f.subjecto) relation = `Under <b>${esc(f.subjecto)}</b>`;
+  if (f.partof && f.partof !== f.subjecto) relation += `${relation ? ' · ' : ''}Part of <b>${esc(f.partof)}</b>`;
+
+  const kindLabel = f.kind === 'umbrella' ? 'Realm' : f.kind === 'culture' ? 'People / culture' : 'Territory';
+  const bordersNote =
+    f.source === 'cliopatria'
+      ? `Borders for ${esc(yearsLabel(f.from, f.to))} · <a href="https://github.com/Seshat-Global-History-Databank/cliopatria" target="_blank" rel="noopener">Cliopatria</a>`
+      : `Approximate area from the c. ${esc(formatYear(ctx.snapshotYear))} map · <a href="https://github.com/aourednik/historical-basemaps" target="_blank" rel="noopener">historical-basemaps</a>`;
 
   let eraHtml = '';
-  if (eraInfo) {
-    const { era, exact } = eraInfo;
+  if (era) {
     eraHtml = `<section class="era-card">
-      <div class="kicker">${exact ? `In ${esc(formatYear(ctx.year))}` : `Nearest period on record`}${match.via ? ` · about ${esc(match.via)}` : ''}</div>
+      <div class="kicker">In ${esc(formatYear(ctx.year))}${match.via ? ` · about ${esc(match.via)}` : ''}</div>
       <h3>${esc(era.title || '')} <span class="muted">${esc(formatYear(era.from))} – ${esc(formatYear(era.to))}</span></h3>
-      <p>${esc(era.text)}</p>
+      <p>${esc(era.text)}${citeMarks(era.sources)}</p>
     </section>`;
-    if (polity.eras.length > 1) {
-      eraHtml += `<details class="era-list"><summary>Timeline of ${esc(polity.names[0])} (${polity.eras.length} periods)</summary><ol>
-        ${polity.eras
-          .map(
-            (e) => `<li class="${e === era ? 'current' : ''}"><button data-jump="${Math.round((toAstro(e.from) + toAstro(e.to)) / 2)}" title="Jump to this period">
-            <span class="muted">${esc(formatYear(e.from))} – ${esc(formatYear(e.to))}</span> ${esc(e.title || '')}</button></li>`,
-          )
-          .join('')}
-      </ol></details>`;
-    }
+  }
+  if (polity && polity.eras.length > 1) {
+    eraHtml += `<details class="era-list"><summary>Timeline of ${esc(polity.names[0])} (${polity.eras.length} periods)</summary><ol>
+      ${polity.eras
+        .map(
+          (e) => `<li class="${e === era ? 'current' : ''}"><button data-jump="${Math.round((toAstro(e.from) + toAstro(e.to)) / 2)}" title="Jump to this period">
+          <span class="muted">${esc(formatYear(e.from))} – ${esc(formatYear(e.to))}</span> ${esc(e.title || '')}</button></li>`,
+        )
+        .join('')}
+    </ol></details>`;
   }
 
+  const membersHtml = ctx.members?.length
+    ? `<section><h4>Member states on the map <span class="muted">${ctx.members.length}</span></h4><div class="power-list">${ctx.members
+        .slice(0, 30)
+        .map((m, i) => `<button class="terr-chip" data-member="${i}" style="--c:hsl(${m.color.h} ${m.color.s}% ${m.color.l}%)">${esc(m.name)}</button>`)
+        .join('')}</div></section>`
+    : '';
+
+  const wikiTitle = polity?.wiki || (f.wikipedia ? f.wikipedia.replace(/ /g, '_') : null);
   el.innerHTML = `
-    <div class="kicker">Territory · ${esc(eraName(ctx.year))}</div>
+    <div class="kicker">${kindLabel} · ${esc(eraName(ctx.year))}</div>
     <h2>${esc(f.name)}</h2>
     ${relation ? `<div class="relation">${relation}</div>` : ''}
-    <div class="muted small">Borders from the c. ${esc(formatYear(ctx.snapshotYear))} map${precision ? ` · ${precision}` : ''}</div>
+    <div class="muted small">${bordersNote}</div>
     ${eraHtml}
     <section class="wiki-card" id="wiki-card"><div class="loading">Loading from Wikipedia…</div></section>
+    ${membersHtml}
     <section>
       <h4>Events here <span class="muted">${esc(rangeLabel(ctx.year, ctx.window))}</span></h4>
       ${ctx.eventsHere.length ? `<ul class="ev-list">${ctx.eventsHere.map((e) => eventItem(e)).join('')}</ul>` : `<p class="muted small">No events on record inside these borders for this period. Try widening the event window (🗺️ Layers) or moving the slider.</p>`}
@@ -89,14 +125,15 @@ export function renderTerritory(el, f, ctx, app) {
     </section>
     <section>
       <h4>Learn more</h4>
-      <div class="links">${polityLinks(f.name, polity?.wiki, ctx.year)}</div>
-    </section>`;
+      <div class="links">${polityLinks(f.name, wikiTitle, ctx.year, polity?.britannica)}</div>
+    </section>
+    ${sourcesList(era?.sources)}`;
 
-  wire(el, app);
+  wire(el, app, { umbrella: ctx.umbrella, members: ctx.members });
 
+  // The Wikipedia lead: for Cliopatria territories we know the exact article.
   const token = (el.dataset.token = String(Math.random()));
-  const hint = f.subjecto ? `${f.subjecto}` : 'kingdom history';
-  const p = polity?.wiki ? wikiSummary(polity.wiki) : polityWikiSummary(f.name, hint);
+  const p = wikiTitle ? wikiSummary(wikiTitle) : polityWikiSummary(f.name, f.subjecto || 'history');
   p.then((s) => {
     if (el.dataset.token !== token) return;
     const card = el.querySelector('#wiki-card');
@@ -120,22 +157,31 @@ export function renderEvent(el, e, ctx, app) {
   const wTitle = e.wiki ? wikiUrl(e.wiki) : e.wikiUrl;
   if (wTitle) links.push(link(wTitle, 'Wikipedia article', '📖'));
   else links.push(link(wikiSearch(e.title), 'Search Wikipedia', '📖'));
+  links.push(e.britannica ? link(`https://www.britannica.com/${e.britannica}`, 'Britannica article', '🏛️') : link(britannicaSearch(e.title), 'Search Britannica', '🏛️'));
   for (const l of e.links || []) links.push(link(l.url, l.label, l.icon || '🔗'));
   links.push(link(youtubeSearch(e.youtube || `${e.title} ${e.year < 0 ? formatYear(e.year) : e.year} history`), 'YouTube videos', '▶️'));
-  links.push(link(britannicaSearch(e.title), 'Britannica', '🏛️'));
   if (e.wikidata) links.push(link(`https://www.wikidata.org/wiki/${e.wikidata}`, 'Wikidata', '🗃️'));
   links.push(link(wikiUrl(wikiYearTitle(e.year)), `Everything in ${formatYear(e.year)}`, '🗓️'));
+
+  // Citation numbers go after the last paragraph of the write-up only.
+  const summary = e.summary ? `<p>${esc(e.summary)}${e.significance ? '' : citeMarks(e.sources)}</p>` : '';
+  const significance = e.significance ? `<section class="significance"><h4>Why it matters</h4><p>${esc(e.significance)}${citeMarks(e.sources)}</p></section>` : '';
+  const rulerNote = ctx.ruler
+    ? ctx.ruler.source === 'cliopatria'
+      ? `borders for ${esc(yearsLabel(ctx.ruler.from, ctx.ruler.to))}`
+      : `on the c. ${esc(formatYear(ctx.snapshotYear))} map`
+    : '';
 
   el.innerHTML = `
     <div class="kicker" style="--c:${t.color}"><span class="type-dot"></span>${t.icon} ${esc(t.label)} · ${esc(e.region)}</div>
     <h2>${esc(e.title)}</h2>
     <div class="ev-meta">🗓️ ${esc(formatEventDate(e))}${e.place ? ` &nbsp;·&nbsp; 📍 ${esc(e.place)}` : ''}</div>
-    <section class="summary" id="ev-summary">${e.summary ? `<p>${esc(e.summary)}</p>` : ''}</section>
-    ${e.significance ? `<section class="significance"><h4>Why it matters</h4><p>${esc(e.significance)}</p></section>` : ''}
-    ${ctx.ruler ? `<section><h4>Whose land was this?</h4><button class="terr-chip" data-action="ruler" style="--c:hsl(${ctx.ruler.color.h} ${ctx.ruler.color.s}% ${ctx.ruler.color.l}%)">${esc(ctx.ruler.name)}${ctx.ruler.subjecto ? ` <span class="muted">(${esc(ctx.ruler.subjecto)})</span>` : ''} →</button><div class="muted small">on the c. ${esc(formatYear(ctx.snapshotYear))} border map</div></section>` : ''}
+    <section class="summary" id="ev-summary">${summary}</section>
+    ${significance}
+    ${ctx.ruler ? `<section><h4>Whose land was this?</h4><button class="terr-chip" data-action="ruler" style="--c:hsl(${ctx.ruler.color.h} ${ctx.ruler.color.s}% ${ctx.ruler.color.l}%)">${esc(ctx.ruler.name)}${ctx.ruler.memberOf || ctx.ruler.subjecto ? ` <span class="muted">(${esc(ctx.ruler.memberOf || ctx.ruler.subjecto)})</span>` : ''} →</button><div class="muted small">${rulerNote}</div></section>` : ''}
     ${ctx.nearby.length ? `<section><h4>Around the same time</h4><ul class="ev-list">${ctx.nearby.map((n) => eventItem(n, { showRegion: true })).join('')}</ul></section>` : ''}
     <section><h4>Learn more</h4><div class="links">${links.join('')}</div></section>
-    ${e.source === 'wikidata' ? '<p class="muted small">This event was loaded live from Wikidata; its short description comes from there.</p>' : ''}`;
+    ${e.source === 'wikidata' ? '<p class="muted small">This event was loaded live from Wikidata; its description comes from Wikidata and Wikipedia.</p>' : sourcesList(e.sources)}`;
 
   wire(el, app, { ruler: ctx.ruler });
 
@@ -146,7 +192,7 @@ export function renderEvent(el, e, ctx, app) {
     wikiSummary(title).then((s) => {
       if (!s || el.dataset.token !== token) return;
       const box = el.querySelector('#ev-summary');
-      if (box) box.innerHTML = `<p>${esc(s.extract)}</p>${s.thumbnail ? `<img src="${esc(s.thumbnail)}" alt="" loading="lazy" />` : ''}`;
+      if (box) box.innerHTML = `<p>${esc(s.extract)}</p>${s.thumbnail ? `<img src="${esc(s.thumbnail)}" alt="" loading="lazy" />` : ''}<p class="muted small">From Wikipedia: <a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title)}</a></p>`;
     });
   } else {
     el.dataset.token = '';
@@ -197,4 +243,13 @@ function wire(el, app, extra = {}) {
   el.querySelectorAll('[data-action="overview"]').forEach((b) => b.addEventListener('click', () => app.openOverview()));
   el.querySelectorAll('[data-action="ruler"]').forEach((b) => b.addEventListener('click', () => app.openTerritory(extra.ruler, { fly: false })));
   el.querySelectorAll('[data-power]').forEach((b) => b.addEventListener('click', () => app.openTerritory(extra.powers[+b.dataset.power], { fly: true })));
+  el.querySelectorAll('[data-member]').forEach((b) => b.addEventListener('click', () => app.openTerritory(extra.members[+b.dataset.member], { fly: true })));
+  el.querySelectorAll('[data-action="umbrella"]').forEach((b) => b.addEventListener('click', () => app.openTerritory(extra.umbrella, { fly: true })));
+  // Citation numbers scroll to the source list inside the panel.
+  el.querySelectorAll('a.cite').forEach((a) =>
+    a.addEventListener('click', (ev) => {
+      ev.preventDefault();
+      el.querySelector(a.getAttribute('href'))?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }),
+  );
 }

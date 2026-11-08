@@ -8,7 +8,7 @@ Pick any moment — the rise of the Mongols, the height of Mali, the Inca conque
 
 ## Features
 
-- **3D globe** (three.js via [globe.gl](https://github.com/vasturiano/globe.gl)) with historical borders for 50+ snapshots from 10,000 BC to 2010.
+- **3D globe** (three.js via [globe.gl](https://github.com/vasturiano/globe.gl)) with the borders of 1,600+ states, changing year by year from 3400 BC to 2024 (Cliopatria) — including city-states like Genoa, Pisa and Florence and realms like the Holy Roman Empire drawn as outlines around their members — plus approximate maps back to 10,000 BC.
 - **Two-level time control**
   - a big, non-linear year slider (recent centuries get more room) with era bands and a tick for every curated event,
   - a fine month/day slider (far left = the whole year); once a date is picked, events later in the year are dimmed,
@@ -48,7 +48,8 @@ The app automatically uses `public/basemaps/` when it exists.
 
 | What | Where | Source |
 | --- | --- | --- |
-| Borders | fetched at runtime; index in `src/data/snapshots.json`, `src/data/polity-index.json` | [aourednik/historical-basemaps](https://github.com/aourednik/historical-basemaps) (GPL-3.0) |
+| States and their borders, 3400 BC – 2024, year by year | `public/borders/` (built by `scripts/build-borders.mjs`; coordinates rounded and simplified) | [Cliopatria](https://github.com/Seshat-Global-History-Databank/cliopatria), Seshat Global History Databank ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) — see [the paper](https://doi.org/10.1038/s41597-025-04516-9) |
+| Maps before 3400 BC, and peoples without a state | fetched at runtime; index in `src/data/snapshots.json`, `src/data/polity-index.json` | [aourednik/historical-basemaps](https://github.com/aourednik/historical-basemaps) (GPL-3.0) |
 | Curated events | `src/data/events/*.json` | written for this app |
 | Territory summaries | `src/data/polities/*.json` | written for this app |
 | Extra events | live from the Wikidata SPARQL endpoint | Wikidata (CC0) |
@@ -88,10 +89,10 @@ Run `npm run validate` to check the data files.
 
 ## Caveats
 
-- Borders exist only for the dataset's snapshot years; for years in between, the most recent earlier map is shown (the timeline says which). Many borders, especially in antiquity and outside Europe, are approximate — the dataset itself is a work in progress.
+- All historical borders are approximate, and Cliopatria maps states only; peoples without a state come from coarser snapshot maps.
 - Dates before about 500 BC are often approximate or debated, and the summaries are short by design — follow the links for depth.
 - Wikidata and Wikipedia are queried live from your browser; if they are unreachable, the curated content still works.
 
 ## License
 
-The app's code and the curated events and summaries are offered under the MIT license. The border data is © André Ourednik and contributors, GPL-3.0, and is downloaded from its repository at runtime (or by `npm run fetch-basemaps`). Wikipedia text is CC BY-SA; Wikidata is CC0.
+The app's code and the curated events and summaries are offered under the MIT license. `public/borders/` is adapted from Cliopatria (Seshat Global History Databank), licensed CC BY 4.0: coordinates are rounded and simplified, nothing else is changed. The snapshot maps are © André Ourednik and contributors, GPL-3.0, and are downloaded from their repository at runtime (or by `npm run fetch-basemaps`). Wikipedia text is CC BY-SA; Wikidata is CC0.

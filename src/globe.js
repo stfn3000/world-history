@@ -26,9 +26,9 @@ export function createGlobe(container, handlers) {
     // ---- territories
     .polygonGeoJsonGeometry('geometry')
     .polygonCapColor((d) => capColor(d))
-    .polygonSideColor((d) => hsla(d.color, 0.25, -20))
-    .polygonStrokeColor((d) => (d === state.selected ? '#fff6d5' : hsla(d.color, d.precision >= 2 ? 0.85 : 0.5, 18)))
-    .polygonAltitude((d) => (d === state.selected ? 0.022 : d === state.hover ? 0.014 : 0.006 + Math.min(d.area, 0.5) * 0.004))
+    .polygonSideColor((d) => (d.kind === 'umbrella' || d.kind === 'culture' ? 'rgba(0,0,0,0)' : hsla(d.color, 0.25, -20)))
+    .polygonStrokeColor((d) => strokeColor(d))
+    .polygonAltitude((d) => altitude(d))
     .polygonsTransitionDuration(200)
     .polygonLabel(() => '') // we draw our own tooltip
     .onPolygonHover((d) => {
@@ -38,6 +38,9 @@ export function createGlobe(container, handlers) {
       container.style.cursor = d ? 'pointer' : 'grab';
     })
     .onPolygonClick((d, ev, coords) => handlers.onTerritoryClick?.(d, coords))
+    // Umbrella realms (e.g. the Holy Roman Empire) are outlines drawn over
+    // their member states; clicks go through to the members underneath.
+    .pointerEventsFilter((obj, d) => !(d && d.kind === 'umbrella'))
     .onGlobeClick((coords) => handlers.onGlobeClick?.(coords))
     // ---- html layer: event pins + territory labels
     .htmlLat((d) => d.lat)
@@ -83,9 +86,22 @@ export function createGlobe(container, handlers) {
   }
 
   function capColor(d) {
+    if (d.kind === 'umbrella') return d === state.selected ? hsla(d.color, 0.25, 10) : 'rgba(0,0,0,0)';
     if (d === state.selected) return hsla(d.color, 0.78, 12);
-    if (d === state.hover) return hsla(d.color, 0.7, 8);
+    if (d === state.hover) return hsla(d.color, d.kind === 'culture' ? 0.4 : 0.7, 8);
+    if (d.kind === 'culture') return hsla(d.color, 0.16, -5);
     return hsla(d.color, d.precision >= 2 ? 0.5 : 0.4);
+  }
+  function strokeColor(d) {
+    if (d === state.selected) return '#fff6d5';
+    if (d.kind === 'umbrella') return hsla(d.color, 0.95, 28);
+    if (d.kind === 'culture') return hsla(d.color, 0.3, 10);
+    return hsla(d.color, d.precision >= 2 ? 0.85 : 0.5, 18);
+  }
+  function altitude(d) {
+    if (d.kind === 'culture') return d === state.hover ? 0.006 : 0.003;
+    if (d.kind === 'umbrella') return d === state.selected ? 0.024 : 0.012;
+    return d === state.selected ? 0.022 : d === state.hover ? 0.014 : 0.007;
   }
 
   function refreshPolygonStyle() {
@@ -103,7 +119,7 @@ export function createGlobe(container, handlers) {
   function labelFor(f) {
     if (!f._label) {
       const el = document.createElement('div');
-      el.className = 'terr-label';
+      el.className = `terr-label${f.kind === 'umbrella' ? ' umbrella' : f.kind === 'culture' ? ' culture' : ''}`;
       el.textContent = f.name;
       el.dataset.lat = f.center.lat;
       el.dataset.lng = f.center.lng;
@@ -119,7 +135,15 @@ export function createGlobe(container, handlers) {
       // Smaller territories get a label as you zoom in.
       const small = window.innerWidth < 700;
       const minArea = (small ? 0.03 : 0.012) * Math.pow(state.altitude / 2.2, 2.2);
-      state.labels = state.features.filter((f) => f.area >= minArea).slice(0, small ? 40 : 90).map(labelFor);
+      // Umbrella realms first, then states, then (large) peoples; one label per name.
+      const rank = (f) => (f.kind === 'umbrella' ? 0 : f.kind === 'culture' ? 2 : 1);
+      const seen = new Set();
+      state.labels = state.features
+        .filter((f) => f.area >= (f.kind === 'culture' ? minArea * 3 : minArea))
+        .sort((a, b) => rank(a) - rank(b) || b.area - a.area)
+        .filter((f) => !seen.has(f.name) && seen.add(f.name))
+        .slice(0, small ? 40 : 90)
+        .map(labelFor);
       for (const l of state.labels) {
         const big = l.feature.area > 0.15;
         l.el.classList.toggle('big', big);

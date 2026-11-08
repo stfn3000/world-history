@@ -26,7 +26,7 @@
     {"from":1438,"to":1527,"title":"Tawantinsuyu","text":"From Cusco, Pachacuti and his successors conquer the Andes from Ecuador to Chile — the largest empire in the Americas — linked by 40,000 km of roads, administered with knotted-string khipus and without money or markets."},
     {"from":1527,"to":1572,"title":"Civil war and conquest","text":"A smallpox epidemic and a civil war between Atahualpa and Huáscar leave the empire vulnerable to Pizarro (1532). A rump Inca state survives at Vilcabamba until 1572."}
   ]},
-  {"names":["Chimú Empire","Chimú"],"wiki":"Chimú_culture","eras":[
+  {"names":["Chimú Empire","Chimú","Chimor","Chimu Empire"],"wiki":"Chimú_culture","eras":[
     {"from":900,"to":1470,"title":"The Chimú","text":"A coastal Peruvian kingdom whose adobe capital Chan Chan is the largest city of the pre-Columbian Americas; the Inca conquer it around 1470."}
   ]},
   {"names":["Moche"],"wiki":"Moche_culture","eras":[
@@ -57,15 +57,15 @@
     {"from":1608,"to":1763,"title":"New France","text":"French fur traders and missionaries settle along the St Lawrence; Britain conquers New France in the Seven Years' War."},
     {"from":1867,"to":2025,"title":"Dominion of Canada","text":"Canada becomes a self-governing confederation in 1867 and gradually gains full independence."}
   ]},
-  {"names":["Mexico"],"wiki":"History_of_Mexico","eras":[
+  {"names":["Mexico","Federated Republic of Mexico","First Mexican Empire","Second Mexican Empire","Centralist Mexico"],"wiki":"History_of_Mexico","eras":[
     {"from":1821,"to":1910,"title":"Independent Mexico","text":"Mexico wins independence from Spain (1821), loses half its territory to the US (1848), resists a French-installed emperor and is ruled by Porfirio Díaz."},
     {"from":1910,"to":2025,"title":"Revolution and modern Mexico","text":"The Mexican Revolution is followed by 70 years of one-party rule and then multiparty democracy."}
   ]},
-  {"names":["Brazil","Portuguese Brazil","Viceroyalty of Brazil","Kingdom of Brazil","Dutch Brazil"],"wiki":"History_of_Brazil","eras":[
+  {"names":["Brazil","Portuguese Brazil","Viceroyalty of Brazil","Kingdom of Brazil","Dutch Brazil","Empire of Brazil","Brazilian Republic","Unitary State of Brazil"],"wiki":"History_of_Brazil","eras":[
     {"from":1500,"to":1822,"title":"Colonial Brazil","text":"Portugal builds a sugar colony worked by millions of enslaved Africans; gold rushes in Minas Gerais follow. The Portuguese court moves to Rio in 1808."},
     {"from":1822,"to":2025,"title":"Empire and republic","text":"Brazil becomes an independent empire (1822), abolishes slavery last in the Americas (1888) and becomes a republic (1889)."}
   ]},
-  {"names":["Argentina"],"wiki":"History_of_Argentina","eras":[
+  {"names":["Argentina","Argentine Confederation","Argentine Republic"],"wiki":"History_of_Argentina","eras":[
     {"from":1816,"to":2025,"title":"Argentina","text":"Independent from 1816, Argentina becomes one of the world's richest countries around 1900 on beef and grain exports, before decades of instability and Peronism."}
   ]},
   {"names":["Thule","Dorset","Paleo-Inuit"],"wiki":"Thule_people","eras":[

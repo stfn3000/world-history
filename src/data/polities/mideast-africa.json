@@ -1,5 +1,5 @@
 [
-  {"names":["Egypt"],"wiki":"History_of_Egypt","eras":[
+  {"names":["Egypt","Early Dynastic Period of Egypt","Old Kingdom of Egypt","Lower Egypt","Upper Egypt","Middle Kingdom of Egypt","New Kingdom of Egypt","Twenty-sixth Dynasty of Egypt","Thirtieth Dynasty of Egypt","Muhammad Ali dynasty","Khedivate of Egypt","Kingdom of Egypt","Republic of Egypt"],"wiki":"History_of_Egypt","eras":[
     {"from":-5000,"to":-3100,"title":"Predynastic Egypt","text":"Farming villages along the Nile develop into the rival kingdoms of Upper and Lower Egypt."},
     {"from":-3100,"to":-2181,"title":"The Old Kingdom","text":"Unified Egypt is ruled by god-kings from Memphis. The pyramids of Saqqara and Giza are built; hieroglyphic writing and a powerful bureaucracy develop."},
     {"from":-2181,"to":-1550,"title":"Middle Kingdom and the Hyksos","text":"After a period of collapse, the Middle Kingdom reunites Egypt and conquers Nubia; later the Hyksos from the Levant rule the north."},
@@ -40,7 +40,7 @@
     {"from":1370,"to":1405,"title":"Timur's conquests","text":"Timur (Tamerlane) conquers from Delhi to Anatolia with terrifying brutality, building towers of skulls and filling Samarkand with captured artisans."},
     {"from":1405,"to":1507,"title":"The Timurid Renaissance","text":"His successors rule Iran and Central Asia from Herat and Samarkand; Ulugh Beg builds an observatory and Persian miniature painting peaks."}
   ]},
-  {"names":["Safavid Empire","Persia","Iran","Achaemenid Empire","Parthia","Parthian Empire","Sasanian Empire","Sasanian dependencies"],"wiki":"History_of_Iran","eras":[
+  {"names":["Safavid Empire","Persia","Iran","Achaemenid Empire","Parthia","Parthian Empire","Sasanian Empire","Sasanian dependencies","Safavid Dynasty","Afsharid Iran","Qajar Dynasty","Pahlavi Dynasty","Islamic Republic of Iran"],"wiki":"History_of_Iran","eras":[
     {"from":-550,"to":-330,"title":"The Achaemenid Persian Empire","text":"Cyrus the Great and Darius I build the largest empire the world had yet seen, from Egypt and Greece's edge to the Indus, linked by the Royal Road. Alexander the Great conquers it."},
     {"from":-247,"to":224,"title":"Parthia","text":"The Parthian Arsacids rule Iran and Mesopotamia and halt Roman expansion (Carrhae, 53 BC), controlling the Silk Road between Rome and China."},
     {"from":224,"to":651,"title":"The Sasanian Empire","text":"A Zoroastrian Persian empire, Rome's great rival for four centuries. Exhausted by war with Byzantium, it falls to the Arab conquests."},
@@ -84,7 +84,7 @@
   {"names":["Axum","Kingdom of Aksum"],"wiki":"Kingdom_of_Aksum","eras":[
     {"from":100,"to":940,"title":"Aksum","text":"A trading empire in Ethiopia and Eritrea that controls Red Sea commerce between Rome and India, mints its own coins, raises giant stone stelae and converts to Christianity in the 4th century."}
   ]},
-  {"names":["Ethiopia","Ethiopia (Italy)"],"wiki":"History_of_Ethiopia","eras":[
+  {"names":["Ethiopia","Ethiopia (Italy)","Ethiopian Empire","Zagwe dynasty"],"wiki":"History_of_Ethiopia","eras":[
     {"from":1137,"to":1270,"title":"The Zagwe dynasty","text":"King Lalibela carves astonishing rock-hewn churches as a 'New Jerusalem'."},
     {"from":1270,"to":1632,"title":"The Solomonic empire","text":"A dynasty claiming descent from Solomon and the Queen of Sheba rules Christian Ethiopia, fights the Adal Sultanate and, with Portuguese help, survives the jihad of Ahmad Gragn (1529–43)."},
     {"from":1632,"to":1855,"title":"Gondar and the Era of Princes","text":"Emperors build castles at Gondar; later regional lords rule while emperors are figureheads."},
@@ -100,10 +100,10 @@
   {"names":["Empire of Ghana","Ghana Empire"],"wiki":"Ghana_Empire","eras":[
     {"from":300,"to":1100,"title":"The land of gold","text":"Ghana (Wagadu), in today's Mauritania and Mali, grows rich by taxing the trans-Saharan trade in gold and salt. Arab writers call it the land of gold."}
   ]},
-  {"names":["Great Zimbabwe","Kingdom of Zimbabwe"],"wiki":"Kingdom_of_Zimbabwe","eras":[
+  {"names":["Great Zimbabwe","Kingdom of Zimbabwe"],"wiki":"Kingdom_of_Great_Zimbabwe","eras":[
     {"from":1100,"to":1450,"title":"The stone city","text":"Shona kings build the great stone enclosures of Great Zimbabwe and trade gold and ivory through the Swahili ports for Chinese porcelain and Indian beads."}
   ]},
-  {"names":["Kanem-Bornu","Kanem–Bornu Empire"],"wiki":"Kanem–Bornu_Empire","eras":[
+  {"names":["Kanem-Bornu","Kanem–Bornu Empire","Empire of Kanem","Bornu Empire"],"wiki":"Kanem–Bornu_Empire","eras":[
     {"from":700,"to":1900,"title":"Around Lake Chad","text":"One of Africa's longest-lasting states, ruled by the Sayfawa dynasty around Lake Chad, trading horses, slaves and ivory across the Sahara and adopting Islam in the 11th century."}
   ]},
   {"names":["Benin","Kingdom of Benin"],"wiki":"Kingdom_of_Benin","eras":[
@@ -124,10 +124,10 @@
   {"names":["Turkey","Republic of Turkey"],"wiki":"History_of_the_Republic_of_Turkey","eras":[
     {"from":1923,"to":2025,"title":"The Turkish Republic","text":"Atatürk builds a secular nation-state from the Ottoman ruins: Latin alphabet, women's suffrage, new laws. Turkey joins NATO (1952) and becomes a regional power bridging Europe and Asia."}
   ]},
-  {"names":["Israel"],"wiki":"History_of_Israel","eras":[
+  {"names":["Israel","State of Israel"],"wiki":"History_of_Israel","eras":[
     {"from":1948,"to":2025,"title":"The State of Israel","text":"Founded in 1948 amid war with its Arab neighbours; repeated wars follow (1956, 1967, 1973), and the conflict with the Palestinians over land and statehood remains unresolved."}
   ]},
-  {"names":["Saudi Arabia","Arabia (Nejd)","Arabia"],"wiki":"History_of_Saudi_Arabia","eras":[
+  {"names":["Saudi Arabia","Arabia (Nejd)","Arabia","Kingdom of Saudi Arabia"],"wiki":"History_of_Saudi_Arabia","eras":[
     {"from":1744,"to":1932,"title":"The Saudi states","text":"An alliance between the Al Saud and the reformer Muhammad ibn Abd al-Wahhab creates successive states in central Arabia; Ibn Saud conquers most of the peninsula in the early 20th century."},
     {"from":1932,"to":2025,"title":"The Kingdom","text":"Saudi Arabia is proclaimed in 1932; oil discovered in 1938 makes it one of the world's richest states and guardian of Mecca and Medina."}
   ]}
